@@ -1,0 +1,141 @@
+.regManagementMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.regManagementMainContainer .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #1C1E23;
+  gap: 10px;
+  border-radius: 7px;
+}
+.regManagementMainContainer .header .titleWing {
+  width: 5rem;
+}
+.regManagementMainContainer .header .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.regManagementMainContainer .header .headerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.regManagementMainContainer .regManagementBodyContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  background-color: #1C1E23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  overflow: auto;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 0.2rem;
+}
+.regManagementMainContainer .regManagementBodyContainer::-webkit-scrollbar {
+  display: block !important;
+}
+@media screen and (max-width: 1750px) {
+  .regManagementMainContainer .regManagementBodyContainer {
+    flex-wrap: wrap;
+  }
+}
+.regManagementMainContainer .regManagementBodyContainer .inputSelectBox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.regManagementMainContainer .regManagementBodyContainer .inputSelectBox .registerButton {
+  width: 2.55rem;
+  background-color: #f0c059;
+  color: #874404;
+  text-transform: capitalize;
+  font-size: 0.18rem;
+  height: 0.5rem;
+  border-radius: 0.1rem;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox {
+  display: flex;
+  flex-direction: column;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .rebateBoxHeader {
+  background-color: #141519;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+  height: 0.5rem;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .rebateBoxHeader .rebateBoxTitle {
+  color: #ADB6C3;
+  font-size: 0.18rem;
+  font-weight: 600;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody {
+  width: 100%;
+  border-bottom-right-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  background-color: #2e2f37;
+  padding: 0.1rem;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: #26262c;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.1rem 0.1rem 0.1rem 0.2rem;
+  border-radius: 0.1rem;
+  font-size: initial;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #f0c059;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root,
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input,
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon,
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-bpeome-MuiSvgIcon-root-MuiSelect-icon,
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input,
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .selectBox .css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  color: #fff;
+}
+.regManagementMainContainer .regManagementBodyContainer .agentRabateBox .agentRabateBody .inputDownBox .inputBox .imageBox .iconImage {
+  width: 0.5rem;
+}
+
+.css-17gx806 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.css-yf8vq0-MuiSelect-nativeInput {
+  color: #68707b !important;
+}
+
+.css-16352vv-MuiFormControl-root .MuiInputBase-root {
+  color: #68707b !important;
+}
+
+.css-1k3x8v3 {
+  color: #68707b !important;
+}
+
+.css-16352vv-MuiFormControl-root .MuiInputBase-root .MuiSelect-select {
+  color: #68707b !important;
+}/*# sourceMappingURL=regManagement.css.map */

@@ -1,0 +1,509 @@
+.main-invite-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: gray;
+  color: gray;
+}
+.main-invite-container .invite-container-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #202329;
+  border-radius: 5px;
+  border: 1px solid rgb(61, 60, 60);
+  color: white;
+}
+.main-invite-container .invite-overview {
+  padding: 0.2rem;
+}
+.main-invite-container .invite-overview .hour {
+  padding: 20px;
+  margin: 10px 0;
+  color: white;
+  background-color: #f0c059;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.main-invite-container .invite-overview .invite-link {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  font-size: initial;
+}
+.main-invite-container .invite-overview .invite-link div span {
+  font-size: 0.18rem;
+}
+.main-invite-container .invite-overview .invite-link button {
+  width: 5vw;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  font-weight: 600;
+  font-size: 0.16rem;
+  text-transform: capitalize;
+}
+.main-invite-container .invite-overview .remarks {
+  color: #f0c059;
+}
+.main-invite-container .invite-overview .remarks span {
+  font-size: 0.18rem;
+}
+.main-invite-container .invite-overview .over {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.main-invite-container .invite-overview .over div {
+  border: 1px solid #f0c059;
+  display: flex;
+  height: 15vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 0.18rem;
+}
+.main-invite-container .taxaTabs {
+  color: #fff;
+  font-weight: 600;
+}
+.main-invite-container .MuiTabs-root button {
+  color: white;
+  font-size: 0.16rem;
+}
+.main-invite-container .invite-header-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-invite-container .invite-header-label img {
+  height: 80px;
+}
+.main-invite-container .invite-header-label .id-Container {
+  display: flex;
+  flex-direction: column;
+}
+.main-invite-container .invite-header-label .id-Container span span {
+  color: white;
+}
+.main-invite-container .invite-header-label .label-button button {
+  padding: 50px;
+  color: black;
+  background-color: #f0c059;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 10px;
+}
+.main-invite-container .invite-header-label2 {
+  display: flex;
+  align-items: center;
+}
+.main-invite-container .invite-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1c1e23;
+  align-items: center;
+}
+.main-invite-container .invite-header img {
+  height: 10px;
+}
+.main-invite-container .invite-header img:nth-child(3) {
+  rotate: 180deg;
+}
+.main-invite-container .invite-header-label {
+  padding: 15px;
+  background-color: #1c1e23;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.main-invite-container .invite-body {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  border-radius: 7px !important;
+}
+.main-invite-container .invite-body .el-card__body {
+  width: 100%;
+  background-color: #1c1e23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.main-invite-container .invite-body .invite-tabs {
+  display: flex;
+  width: 100%;
+}
+.main-invite-container .invite-body .invite-tabs .css-8atqhb {
+  background-color: #1c1e23;
+  border-radius: 10px;
+}
+.main-invite-container .invite-body .buttonGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.main-invite-container .invite-body .buttonGroup button {
+  background-color: #f0c059;
+  border: none;
+  border: 15px;
+}
+.main-invite-container .invite-body .buttonGroup .css-1rieq0t-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  color: white;
+}
+.main-invite-container .invite-body .button-group button {
+  padding: 10px;
+  margin-right: 15px;
+  color: white;
+  border: 1px solid white;
+}
+.main-invite-container .invite-body .button-group button:nth-child(1) {
+  background-color: #f0c059;
+}
+.main-invite-container .invite-body .hint {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.main-invite-container .invite-body .hint span {
+  color: red;
+}
+.main-invite-container .invite-body .top-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.main-invite-container .invite-body .top-bottom .item {
+  height: 12vh;
+  border: thin solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  max-width: 2rem;
+  min-width: 2rem;
+  text-align: center;
+  font-size: 16rem;
+  cursor: pointer;
+}
+.main-invite-container .invite-body .top-bottom .item p {
+  font-size: 0.16rem;
+}
+.main-invite-container .invite-body .top-bottom .item .unit {
+  color: red;
+}
+.main-invite-container .invite-body .top-bottom .item .num {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.main-invite-container .invite-body .top-bottom .item p:nth-child(1) {
+  background-color: #f0c059;
+  transition: 0.6s;
+  padding: 15px;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+.main-invite-container .invite-body .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 0.2rem;
+}
+.main-invite-container .invite-body .list .item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main-invite-container .invite-body .list .item h1 {
+  margin: 20px 0;
+  color: white;
+}
+.main-invite-container .invite-body .list .th {
+  color: white;
+  display: flex;
+  font-size: 12px;
+  margin-right: 50px;
+  border-radius: 5px;
+  width: 100%;
+}
+.main-invite-container .invite-body .list .th .title {
+  height: 10vh;
+  border: 1px solid rgb(136, 131, 131);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5px;
+}
+.main-invite-container .invite-body .list .th .title span:nth-child(1) {
+  background-color: #f0c059;
+  color: rgb(17, 17, 17);
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.main-invite-container .invite-body .list .th .title span:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-invite-container .invite-body .lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+}
+.main-invite-container .invite-body .lists .item {
+  display: flex;
+  flex-direction: column;
+}
+.main-invite-container .invite-body .lists .item h1 {
+  margin: 20px 0;
+  color: white;
+}
+.main-invite-container .invite-body .lists .ths {
+  color: white;
+  flex-direction: column;
+  font-size: 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.main-invite-container .invite-body .lists .ths .title {
+  height: 5vh;
+  border: 1px solid rgb(71, 70, 70);
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  width: 100%;
+}
+.main-invite-container .invite-body .lists .ths .title span:nth-child(1) {
+  background-color: #f0c059;
+  color: rgb(17, 17, 17);
+  padding-top: 5px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.main-invite-container .teamOverView {
+  width: 100%;
+}
+.main-invite-container .teamOverView .top-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 10px;
+}
+.main-invite-container .teamOverView .top-bottom .item {
+  height: 10vh;
+  border: 2px solid rgb(63, 62, 62);
+  border-radius: 5px;
+}
+.main-invite-container .invite-button-content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.main-invite-container .invite-button-content .buts-div button {
+  background-color: #f0c059;
+  color: white;
+  margin-top: 20px;
+}
+.main-invite-container .invite-button-content .input-divs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main-invite-container .invite-button-content .input-divs span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding: 0;
+}
+.main-invite-container .invite-button-content .input-divs span .MuiFormLabel-root {
+  color: white;
+}
+.main-invite-container .invite-button-content .input-divs span .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  color: white;
+}
+.main-invite-container .invite-button-content .buttonGroup {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-invite-container .invite-button-content .commisao-label {
+  color: white;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+.main-invite-container .invite-button-content .commisao1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  color: white;
+  padding: 20px;
+}
+.main-invite-container .invite-button-content .commisao1 span {
+  color: #f0c059;
+}
+.main-invite-container .invite-button-content .commisao-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-invite-container .invite-button-content .commisao-content span {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-invite-container .invite-button-content .commisao-content span span {
+  color: #f0c059;
+}
+.main-invite-container .invite-button-content .tutorial-container {
+  padding: 20px;
+  border: 1px solid rgb(61, 60, 60);
+  border-radius: 5px;
+}
+.main-invite-container .invite-button-content .none-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-invite-container .invite-button-content .invite-container-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #202329;
+  border-radius: 5px;
+  border: 1px solid rgb(61, 60, 60);
+  color: white;
+}
+.main-invite-container .invite-button-content .invite-container-label span {
+  color: gray;
+}
+.main-invite-container .invite-button-content #taxa {
+  justify-content: space-around;
+}
+.main-invite-container .invite-button-content .invite-dates-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  align-items: center;
+  width: 100%;
+}
+.main-invite-container .invite-button-content .invite-dates span input[type=date] {
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-invite-container .invite-button-content .invite-dates span input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: white;
+  color: white;
+}
+.main-invite-container .invite-button-content .invite-dates span input {
+  padding: 15px;
+}
+.main-invite-container .invite-button-content .invite-dates .textInput {
+  position: relative;
+}
+.main-invite-container .invite-button-content .invite-dates .textInput .search-icon {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  font-size: 30px;
+  color: #f0c059;
+}
+.main-invite-container .invite-button-content .invite-dates span input {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+  margin-right: 10px;
+}
+.main-invite-container .invite-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1e23;
+  width: 20%;
+  gap: 10px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  min-width: 13vw;
+}
+.main-invite-container .invite-button .MuiButton-root {
+  color: #adb6c3;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+}
+.main-invite-container .invite-button .isActive {
+  background-color: #f0c059;
+  border-radius: 15px;
+  color: white;
+}
+.main-invite-container .invite-button button {
+  width: 80%;
+}
+.main-invite-container .invite-button-content {
+  width: 55vw;
+  background-color: #1c1e23;
+}
+.main-invite-container .invite-button-content .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.main-invite-container .invite-button-content .social-icons #qr {
+  margin: 10px;
+  height: 20vh;
+}
+.main-invite-container .invite-button-content .social-icons .links-social {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.main-invite-container .invite-button-content .social-icons .links-social .socialerroso {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid gray;
+  padding-bottom: 10px;
+}
+.main-invite-container .invite-button-content .social-icons .links-social .socialerroso span {
+  width: inherit;
+  padding: inherit;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.main-invite-container .invite-button-content .social-icons .links-social .socialerroso img {
+  width: 30px;
+}
+.main-invite-container .invite-button-content .social-icons .links-social span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid gray;
+  width: 40vw;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+
+.transferRecordMain {
+  padding: 0.2rem;
+}/*# sourceMappingURL=invite.css.map */

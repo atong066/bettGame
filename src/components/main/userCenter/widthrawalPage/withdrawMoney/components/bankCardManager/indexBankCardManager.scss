@@ -1,0 +1,538 @@
+.bankCardAddMainContainer {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    gap: .3rem;
+    width: 100%;
+    padding: .2rem;
+
+    .selectBankTypeContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .typeLabelBox {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .bankLabel {
+                color: #fff;
+                font-size: .18rem;
+
+                &:last-child {
+                    color: #68707B;
+                }
+            }
+        }
+
+        .bankTypeBoxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: .2rem;
+            position: relative;
+
+            // display: flex;
+            // gap: 1rem;
+            // position: relative;
+            // width: 100%;
+
+
+            .checkContainer {
+                overflow: hidden;
+                position: relative;
+                border-radius: 7px;
+                width: 100%;
+                height: 100%;
+
+                .cardBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: transparent;
+                    min-width: fit-content;
+                    border-radius: 7px;
+                    padding: .3rem .1rem .3rem .1rem;
+                    align-items: center;
+                    border: thin solid;
+                    border-color: #313843;
+                    color: #313843;
+                    gap: 3px;
+                    cursor: pointer;
+
+                    &:hover {
+                        border: thin solid #F0C059;
+
+                        .bankName {
+                            color: #F0C059;
+                        }
+                    }
+
+                    &.active {
+                        border: thin solid #F0C059;
+
+                        .bankName {
+                            color: #F0C059;
+                        }
+                    }
+
+                    .bankName {
+                        color: #313843;
+                        font-size: .18rem;
+                    }
+                }
+
+                .badge {
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0;
+                    padding: 3px;
+                    display: none;
+                    rotate: 45deg;
+                    height: 50px;
+                    width: 50px;
+                    margin: -25px;
+
+                    &.active {
+                        background-color: #f0c059;
+                        display: block;
+                    }
+
+                    .checkIcon {
+                        color: #874404;
+                        rotate: -45deg;
+                        right: 10px;
+                    }
+
+                    .MuiAvatar-root {
+                        top: 11px !important;
+                        right: 4px !important;
+                    }
+                }
+            }
+
+            .bankMainBox {
+                display: flex;
+                align-items: center;
+                border: thin solid;
+                border-color: #313843;
+                border-radius: 7px;
+                padding: .1rem .1rem .1rem .2rem;
+                width: 100%;
+                height: .8rem;
+                cursor: pointer;
+
+                .bankIconBox {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .bankIcon {
+                        width: .6rem;
+                    }
+
+                    .additionalAddLabel {
+                        color: #fff;
+                        font-size: .18rem;
+                        height: .18rem;
+                    }
+
+                    .bankInfoBOx {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .1rem;
+
+                        .accountCard {
+                            display: flex;
+                            align-items: center;
+                            color: #68707B;
+
+                            .copyID {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                gap: 5px;
+
+                                .copyIcon {
+                                    width: .2rem;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        scale: 1.1;
+                                    }
+
+                                    &:active {
+                                        scale: .9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .bankArrowBox {
+                    display: flex;
+                    align-items: center;
+                    margin-left: auto;
+
+                    .arrowIcon {
+                        color: #313843;
+                        width: .3rem;
+                        height: .3rem;
+                    }
+                }
+
+                &.active {
+                    border-color: #F0C059;
+                }
+            }
+
+        }
+
+        .bankTypeBox {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .typeLabelBox {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .bankLabel {
+                    color: #fff;
+                    font-size: 18px;
+
+                    &:last-child {
+                        color: #68707B;
+                    }
+                }
+            }
+
+            .bankMainBox {
+                display: flex;
+                align-items: center;
+                border: thin solid;
+                border-color: #313843;
+                border-radius: 7px;
+                padding: .6rem .5rem .6rem 1.3rem;
+                width: 50%;
+                cursor: pointer;
+
+                .bankIconBox {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .bankIcon {
+                        width: 3.7rem;
+                    }
+
+                    .additionalAddLabel {
+                        color: #fff;
+                        font-size: .18rem;
+                    }
+                }
+
+                .bankArrowBox {
+                    display: flex;
+                    align-items: center;
+                    margin-left: auto;
+
+                    .arrowIcon {
+                        color: #313843;
+                        width: .3rem;
+                        height: .3rem;
+                    }
+                }
+
+                &.active {
+                    border-color: #F0C059;
+                }
+            }
+
+        }
+    }
+}
+
+
+.realNameInputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .2rem .2rem .2rem;
+    width: 5rem;
+    gap: 1.5rem;
+
+    input::placeholder {
+        color: #fff;
+        opacity: 1;
+    }
+
+    .inputContainerBox {
+        display: flex;
+        align-items: center;
+        min-width: fit-content;
+        border: thin solid;
+        border-color: #313843;
+        border-radius: 7px;
+        padding: .1rem;
+        cursor: pointer;
+
+        .nameIconBox {
+            display: flex;
+            align-items: center;
+            gap: .1rem;
+            width: 100%;
+
+            .nameIcon {
+                color: #68707B;
+                font-size: 25px;
+                width: .3rem;
+            }
+
+            .nameInput {
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                line-height: normal;
+            }
+        }
+
+        &:has(input[type="text"]:focus) {
+            border-color: #F0C059;
+        }
+    }
+
+    .modalButton {
+        background-color: #F0C059;
+        text-transform: capitalize;
+        font-size: .18rem;
+        font-style: 400;
+        font-weight: 100;
+        height: .55rem;
+        color: #874404;
+        border-radius: .1rem;
+    }
+
+    .pixLabel {
+        color: #EA4E3D;
+        font-size: .14rem;
+    }
+}
+
+.usdtMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 .2rem .2rem .2rem;
+    width: 5rem;
+    gap: 1.5rem;
+
+    .modalButton {
+        background-color: #F0C059;
+        text-transform: capitalize;
+        font-size: .18rem;
+        font-style: 400;
+        font-weight: 100;
+        height: .55rem;
+        color: #874404;
+        border-radius: .1rem;
+    }
+}
+
+.usdtQRContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .2rem .2rem .2rem;
+    width: 6rem;
+
+    .remarkBox {
+        width: 100%;
+        text-align: justify;
+        color: #fff;
+        font-size: .18rem;
+    }
+
+    .copyQrBox {
+        display: flex;
+        align-items: center;
+        padding: 0 .2rem .2rem .2rem;
+
+        .copyID {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #fff;
+            font-size: .18rem;
+            height: .18rem;
+
+            .copyIcon {
+                width: .2rem;
+                cursor: pointer;
+
+                &:active {
+                    scale: .9;
+                }
+            }
+        }
+    }
+
+    .qrImageBox {
+        padding: .1rem 0 0 0;
+
+        .qrImage {
+            width: 2rem;
+            border-radius: .2rem;
+        }
+    }
+
+    .TRXBox {
+        width: 100%;
+        font-size: .18rem;
+
+        .trxLabel {
+            color: #fff;
+            font-size: .18rem;
+        }
+    }
+}
+
+.enterPassContainerConfirmPass {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .3rem .3rem .3rem .3rem;
+
+    .enterPassContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        .labelWithEyeBox {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 95%;
+            margin: auto;
+
+            .passWordEye {
+                .MuiSvgIcon-root {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .inputLabelsPass {
+                font-size: .18rem;
+                line-height: normal;
+                color: #fff;
+            }
+        }
+
+        input::selection {
+            background-color: transparent;
+        }
+
+        .withdrawPassAutoTab {
+            width: .8rem !important;
+            height: .8rem;
+            border: thin solid;
+            border-color: #313843;
+            background-color: transparent;
+            font-size: 60px;
+            color: #fff;
+            cursor: pointer;
+            caret-color: transparent;
+
+            &:focus {
+                outline: none;
+                border: thin solid;
+                border-color: #F0C059;
+
+                &:last-child {
+                    border-left: thin solid;
+                }
+
+                &:not(:first-child):not(:last-child) {
+                    border-right: thin solid;
+                    border-left: thin solid;
+                    border-color: #F0C059;
+                }
+            }
+
+            &:first-child {
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                border-left: none;
+            }
+
+            &:not(:first-child):not(:last-child) {
+                border-right: thin solid;
+                border-left: none;
+                border-color: #313843;
+            }
+        }
+    }
+
+    .paraLabelContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: initial;
+
+        .labelBoxes {
+            font-size: .16rem;
+            width: 90%;
+            color: #fff;
+            line-height: 1.5;
+        }
+
+        .labelQuestion {
+            font-size: .16rem;
+            width: 25%;
+            text-align: right;
+            color: #F0C059;
+            line-height: 1.5;
+        }
+    }
+
+    .confirmButton {
+        font-size: .2rem;
+        text-transform: capitalize;
+        height: .5rem;
+        border-radius: .1rem;
+        background-color: #F0C059;
+        font-weight: 100;
+        color: #874404;
+    }
+
+    .footLabel {
+        color: #FFAA09;
+        font-size: .16rem;
+        letter-spacing: normal;
+        position: relative;
+        left: -0.1rem;
+    }
+
+    .headLabel {
+        color: #fff;
+        font-weight: 600;
+        font-size: .18rem;
+        letter-spacing: normal;
+        position: relative;
+        left: -0.1rem;
+    }
+}

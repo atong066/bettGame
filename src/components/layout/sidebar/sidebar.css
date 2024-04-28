@@ -1,0 +1,213 @@
+.sideBar {
+  overflow: auto;
+  padding: 0.15rem 0.15rem 1rem;
+  height: 100%;
+  max-width: 2.4rem;
+  min-width: 2.4rem;
+  width: 2.4rem;
+  transition: 200ms ease-in-out;
+}
+.sideBar.active {
+  width: 0;
+  overflow: hidden;
+  max-width: 2.4rem;
+  min-width: 0;
+  padding: 0.15rem 0;
+  transition: width 200ms ease-in-out;
+}
+.sideBar.newActive {
+  overflow: auto;
+  padding: 0.15rem 0.15rem 1rem;
+  height: 100%;
+  max-width: 2.4rem;
+  min-width: 2.4rem;
+  width: 2.4rem;
+  transition: width 3s ease;
+  border: 2px solid blue;
+}
+.sideBar .sidebarContainer {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.05rem, 0.5vw, 0.1rem);
+  min-width: 0;
+  overflow: hidden;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer {
+  width: 100%;
+  height: auto;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer {
+  display: grid;
+  gap: 0.1rem;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: auto auto;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #adb6c3;
+  font-weight: 500;
+  border-radius: 0.07rem;
+  cursor: pointer !important;
+  padding: 0.05rem;
+  text-align: center;
+  font-weight: 600;
+  height: 0.7rem;
+  min-height: 0.7rem;
+  position: relative;
+  background-color: #22242a;
+  width: 1rem;
+  gap: 0.03rem;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox .imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.3rem;
+  width: 0.42rem;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox .imageContainer .gameImagesX {
+  position: absolute;
+  width: 100%;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox .labelContainer {
+  font-size: 0.16rem;
+  font-weight: 100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 99%;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox.active {
+  background-color: rgba(240, 192, 89, 0.8666666667);
+  color: currentColor;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox.active:hover .gameImagesX {
+  filter: none;
+}
+.sideBar .sidebarContainer .mainGameChooseContainer .gameContainer .gameBox:hover {
+  color: rgba(240, 192, 89, 0.8666666667);
+  background-color: #2B2F37;
+}
+.sideBar .sidebarContainer .linksContainer {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 0.9rem 0.9rem;
+  padding: 0.1rem 0.1rem 0;
+  height: auto;
+  border-radius: 0.1rem;
+  background-color: #22242a;
+}
+.sideBar .sidebarContainer .linksContainer .invite {
+  grid-column: 1/span 2;
+}
+.sideBar .sidebarContainer .linksContainer .pageLink {
+  cursor: pointer;
+  position: relative;
+  height: 0.6rem;
+  width: 0.9rem;
+  display: flex;
+  margin-bottom: 0.1rem;
+}
+.sideBar .sidebarContainer .linksContainer .pageLink:last-child {
+  width: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.sideBar .sidebarContainer .linksContainer .pageLink:last-child .linkLabel {
+  font-size: 0.18rem;
+  margin-right: 0.55rem;
+}
+.sideBar .sidebarContainer .linksContainer .pageLink .linkImage {
+  width: 100%;
+}
+.sideBar .sidebarContainer .linksContainer .pageLink .linkLabel {
+  position: absolute;
+  margin: 0.05rem 0.08rem;
+  font-size: 0.12rem;
+  color: white;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.sidebarFooterContainer {
+  width: 100%;
+}
+.sidebarFooterContainer .footerActions {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  display: -ms-flexbox;
+  font-size: 0.18rem;
+  height: 0.5rem;
+  padding: 0.04rem 0 0.04rem 0.14rem;
+}
+.sidebarFooterContainer .footerActions .footerItemContainer {
+  display: flex;
+  align-items: center;
+}
+.sidebarFooterContainer .footerActions .footerItemContainer:hover .iconContainer {
+  background: rgba(240, 192, 89, 0.8666666667);
+}
+.sidebarFooterContainer .footerActions .footerItemContainer:hover .iconLabel {
+  color: rgba(240, 192, 89, 0.8666666667);
+}
+.sidebarFooterContainer .footerActions .iconContainer {
+  align-items: center;
+  background: #68707b;
+  border-radius: 50%;
+  display: flex;
+  height: 0.26rem;
+  justify-content: center;
+  margin-right: 0.15rem;
+  position: relative;
+  width: 0.26rem;
+}
+.sidebarFooterContainer .footerActions .iconContainer .iconBorder {
+  color: #1c1e23;
+  font-size: 0.24rem;
+  margin-left: 0.01rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebarFooterContainer .footerActions .iconContainer .iconBorder .itemIcon {
+  width: 1em;
+  font-size: 0.19rem !important;
+}
+.sidebarFooterContainer .footerActions .iconLabel {
+  color: #68707b;
+  cursor: pointer;
+}
+
+.langTab {
+  position: relative;
+  height: 0.6rem;
+  width: 0.9rem;
+  display: flex;
+  margin-bottom: 0.1rem;
+}
+.langTab .linkImage {
+  width: 100%;
+}
+.langTab .linkLabel {
+  position: absolute;
+  margin: 0.05rem 0.08rem;
+  font-size: 0.12rem;
+  color: white;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.multimediaContainer img {
+  height: 0.36rem;
+  width: 0.36rem;
+}/*# sourceMappingURL=sidebar.css.map */

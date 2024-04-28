@@ -1,0 +1,64 @@
+.securityMainContainer {
+  .securityMainContainerBox {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .securityContainer {
+      background-color: #1c1e23;
+      border-radius: .1rem;
+      font-size: initial;
+      padding: 0px 0.2rem;
+
+      .securityContentBoxCursor {
+        cursor: pointer !important;
+      }
+
+      .securityContentBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: initial;
+        padding: .04rem;
+        height: 0.8rem;
+        border-bottom: .01rem solid #313843;
+        cursor: default;
+        user-select: none;
+
+        .iconWLabelBox {
+          display: flex;
+          align-items: center;
+          font-size: initial;
+
+          .iconImage {
+            height: 0.25rem;
+            width: 0.25rem;
+          }
+
+          .iconLabel {
+            font-size: .2rem;
+            color: #fff;
+            margin-left: 0.16rem;
+          }
+        }
+
+        .arrowBox {
+          display: flex;
+          align-items: center;
+          position: relative;
+          right: -0.1rem;
+
+          .arrowLabel {
+            font-size: .2rem;
+            color: #68707B;
+            margin-right: 0.1rem;
+          }
+        }
+      }
+
+      .securityContentBoxLast {
+        border-bottom: none;
+      }
+    }
+  }
+}

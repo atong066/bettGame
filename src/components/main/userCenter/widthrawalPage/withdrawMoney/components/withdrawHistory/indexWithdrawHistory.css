@@ -1,0 +1,129 @@
+.withdrawMainHistoryTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.2rem;
+}
+.withdrawMainHistoryTable .hederTableContainerBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.withdrawMainHistoryTable .hederTableContainerBox .collectionBox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.withdrawMainHistoryTable .hederTableContainerBox .collectionBox .collectionLabel {
+  color: #68707B;
+  font-size: 0.18rem;
+}
+.withdrawMainHistoryTable .hederTableContainerBox .collectionBox .collectionLabel:last-child {
+  color: #fff;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: auto;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory {
+  display: table-header-group;
+  border-radius: 5px;
+  font-size: 0.18rem;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory {
+  display: table-row;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory:first-child {
+  background-color: #202329;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory:first-child .tableCellHistory {
+  color: #fff !important;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory:first-child .tableCellHistory:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-right: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory:first-child .tableCellHistory:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory:first-child .tableCellHistory:not(:first-child):not(:last-child) {
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+  border-right: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableHeadhistory .tableRowhistory .tableCellHistory {
+  display: table-cell;
+  color: white !important;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.25rem;
+  border-right: none;
+  border-left: none;
+  vertical-align: middle;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory {
+  display: table-row-group;
+  font-size: 13.5px;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory {
+  display: table-row;
+  transition: all 0.3s ease;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(even) {
+  background-color: #202329;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(even) .tableCellHistory {
+  color: #fff !important;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(even) .tableCellHistory:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-right: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(even) .tableCellHistory:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(even) .tableCellHistory:not(:first-child):not(:last-child) {
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+  border-right: none;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(odd) {
+  background-color: transparent !important;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(odd) .tableCellHistory {
+  color: #fff !important;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(odd) .tableCellHistory:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory:nth-child(odd) .tableCellHistory:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.withdrawMainHistoryTable .historyTableContainer .historyTable .tableBodyhistory .tableRowBodyhistory .tableCellHistory {
+  display: table-cell;
+  text-align: center;
+  color: white !important;
+  padding: 0.15rem;
+  vertical-align: middle;
+}/*# sourceMappingURL=indexWithdrawHistory.css.map */

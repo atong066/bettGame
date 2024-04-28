@@ -1,0 +1,42 @@
+.searchInputContainer {
+  display: flex;
+  border: thin solid #313843;
+  border-radius: 0.37rem;
+  position: relative;
+  min-height: 0.45rem;
+}
+.searchInputContainer input {
+  background-color: transparent;
+  border: none;
+  border-radius: 37rem;
+  padding: 0 0.2rem;
+  font-size: 0.18rem;
+  color: #adb6c4;
+  width: 100%;
+  outline: none;
+}
+.searchInputContainer input:focus {
+  outline: none;
+  border-color: thin solid #f0c059;
+}
+.searchInputContainer input:hover {
+  border-color: thin solid #f0c059;
+}
+.searchInputContainer:has(input[type=number]:focus) {
+  border: thin solid;
+  border-color: #F0C059;
+}
+.searchInputContainer .searchIcon {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: none;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.1rem;
+  border: none;
+  cursor: pointer;
+}
+.searchInputContainer .searchIcon img {
+  height: 0.25rem;
+  filter: brightness(0) saturate(100%) invert(89%) sepia(89%) saturate(4033%) hue-rotate(315deg) brightness(101%) contrast(88%);
+}/*# sourceMappingURL=inputComponent.css.map */

@@ -1,0 +1,215 @@
+.loginControllers {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.1rem;
+}
+.loginControllers .passwordControlls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+.loginControllers .passwordControlls label {
+  margin: 0;
+}
+.loginControllers .passwordControls {
+  display: flex;
+  align-items: flex-start;
+}
+.loginControllers .passwordControls label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.loginControllers .passwordControls .termsAgree {
+  display: flex;
+  align-items: center;
+  font-size: 0.18rem;
+  color: #F0C059;
+  cursor: pointer;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.loginControllers .extraLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.1rem;
+}
+
+.loginTitleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1c1e23;
+}
+.loginTitleBox .loginTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 7px;
+  cursor: pointer;
+}
+.loginTitleBox .loginTitle .loginTitleBox {
+  border-bottom: 3px solid;
+  border-color: #F0C059;
+  line-height: 0.25rem;
+  padding-bottom: 15px;
+  margin-bottom: 0.3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.loginTitleBox .loginTitle .loginTitleBox .LoginIconBox {
+  display: flex;
+  align-items: center;
+}
+.loginTitleBox .loginTitle .loginTitleBox .LoginIconBox .loginIconHere {
+  font-size: 0.3rem;
+  color: #F0C059;
+}
+.loginTitleBox .loginTitle .loginTitleBox .loginLabel {
+  display: flex;
+  align-items: center;
+  font-size: 0.22rem;
+  color: #F0C059;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  max-width: fit-content;
+  width: 100%;
+  text-wrap: nowrap;
+  width: 100%;
+}
+
+.ValidateBox .validationLabel {
+  color: #EA4E3D;
+  font-size: 0.14rem;
+  line-height: 1;
+}
+
+.checkbox_wrapper_4 * {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.checkbox_wrapper_4 {
+  display: flex;
+}
+
+.checkbox_wrapper_4 .cbx {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.checkbox_wrapper_4 .cbx span {
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox_wrapper_4 .cbx span:first-child {
+  position: relative;
+  width: 0.26rem;
+  height: 0.26rem;
+  border-radius: 2px;
+  transform: scale(1);
+  border: 1px solid #313843;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 1px rgba(0, 16, 75, 0.05);
+}
+
+.checkbox_wrapper_4 .cbx span:first-child svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 0.25rem;
+  stroke-dashoffset: 0.25rem;
+  transition: all 0.2s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox_wrapper_4 .inp-cbx {
+  position: absolute;
+  visibility: hidden;
+}
+
+.checkbox_wrapper_4 .inp-cbx:checked + .cbx span:first-child {
+  background: #04BE02;
+  border-color: #04BE02;
+  animation: wave-4 0.2s ease;
+}
+
+.checkbox_wrapper_4 .inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.checkbox_wrapper_4 .inline-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@keyframes wave-4 {
+  50% {
+    transform: scale(0.9);
+  }
+}
+.passwordValidatorContainer {
+  display: flex;
+  margin-bottom: 0.14rem;
+  font-size: 0.14rem;
+  margin-top: 0.1rem;
+}
+.passwordValidatorContainer .labelPassValBox {
+  display: flex;
+  align-items: center;
+}
+.passwordValidatorContainer .labelPassValBox .passValLabel {
+  color: #FFFFFF;
+  font-size: 0.18rem;
+  margin-right: 0.1rem;
+  transition: all 0.3s;
+  line-height: 1;
+}
+.passwordValidatorContainer .labelPassValBox .passIndicator {
+  background-color: #313843;
+  border-radius: 0.08rem;
+  height: 0.08rem;
+  width: 0.7rem;
+  line-height: 1;
+}
+
+.requiredField {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 0.18rem;
+  position: relative;
+}
+.requiredField .requiredSpan {
+  display: flex;
+  font-size: 0.18rem;
+  height: 0.18rem;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  color: #EA4E3D;
+  padding-right: 2px;
+}/*# sourceMappingURL=loginModal.css.map */

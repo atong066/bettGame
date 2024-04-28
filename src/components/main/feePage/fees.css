@@ -1,0 +1,326 @@
+.feesMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.2rem;
+}
+.feesMainContainer .jurosContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #1C1E23;
+  border-radius: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer {
+  width: 100%;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .jurosTabs {
+  color: #fff;
+  font-weight: 600;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .css-ahj2mt-MuiTypography-root {
+  padding: 0 !important;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  font-size: initial;
+  border: 0.01rem solid #313843;
+  margin: 0.2rem 0.2rem 0 0.2rem;
+  border-radius: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 {
+  height: 2rem;
+  color: #fff;
+  padding: 0.1rem;
+  width: 100%;
+  position: relative;
+  border-radius: 0.1rem;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 .labelBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 .labelBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 .labelBox {
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 .labelBox .labelTitle,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 .labelBox .labelTitle,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 .labelBox .labelTitle {
+  font-size: 0.18rem;
+  font-weight: 600;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 .labelBox .labelAmount,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 .labelBox .labelAmount,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 .labelBox .labelAmount {
+  font-size: 0.2rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0.5rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 .labelBox .labelEarningRate,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 .labelBox .labelEarningRate,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 .labelBox .labelEarningRate {
+  font-size: 0.18rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 .coinBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 .coinBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 .coinBox {
+  position: absolute;
+  bottom: 0;
+  right: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox1 {
+  background: linear-gradient(180deg, #79d873, #76d2ad);
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox2 {
+  background: linear-gradient(180deg, #7adcf5, #54a9e2);
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .cardsContainer .cardBox3 {
+  background: linear-gradient(180deg, #64aff6, #4c6ef5);
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .graphContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .graphContainer .graphScrollBox {
+  overflow-y: hidden !important;
+  overflow-x: auto !important;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .graphContainer .graphScrollBox::-webkit-scrollbar {
+  display: block;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .graphContainer .graphScrollBox .graphTitle {
+  color: #fff;
+  font-size: 20px;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .registrationMainContainer {
+  width: 100%;
+  padding: 0.2rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer {
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border: thin solid #313843;
+  border-radius: 0.1rem;
+  color: #adb6b9;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 0.16rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.16rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .balanceTitle {
+  font-size: 0.18rem;
+  font-weight: 100;
+  color: #fff;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .titleBox {
+  width: 85%;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .titleBox .title {
+  font-size: 0.18rem;
+  color: #ADB6C3;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .balanceBox {
+  border: thin solid #313843;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  position: relative;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .balanceBox .imageBox {
+  position: absolute;
+  bottom: -0.1rem;
+  right: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceBonusBox .balanceBox .imageBox .balanceImage {
+  width: 1.6rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .balanceTitle {
+  font-size: 0.18rem;
+  font-weight: 600;
+  color: #fff;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .balanceTitleWithTable {
+  margin-top: 8px;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer {
+  display: flex;
+  gap: 0.2rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .titleBox {
+  width: 85%;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .titleBox .title {
+  font-size: 15px;
+  color: #ADB6C3;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox1,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox2,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox3 {
+  border: thin solid #313843;
+  padding: 0.2rem;
+  border-radius: 7px;
+  position: relative;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox1 .imageBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox2 .imageBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox3 .imageBox {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox1 .imageBox .balanceImage,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox2 .imageBox .balanceImage,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox3 .imageBox .balanceImage {
+  width: 0.7rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .boxContainer .balanceBox3 {
+  width: 100%;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .middleBoxConrtainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  border: thin solid #313843;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  margin-top: 0.05rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .middleBoxConrtainer .firstBox {
+  width: 100%;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceInstructions .middleBoxConrtainer .firstBox .firstP {
+  color: #ADB6C3;
+  font-size: 0.18rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .balanceTitle {
+  font-size: 0.18rem;
+  font-weight: 600;
+  color: #fff;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer {
+  display: flex;
+  gap: 0.2rem;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .titleBox .title {
+  font-size: 0.15rem;
+  color: #ADB6C3;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox1,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox2,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox3 {
+  border: thin solid #313843;
+  padding: 0.2rem;
+  border-radius: 7px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox1 .spanBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox2 .spanBox,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox3 .spanBox {
+  position: absolute;
+  mix-blend-mode: overlay;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox1 .spanBox .spanNumber,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox2 .spanBox .spanNumber,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox3 .spanBox .spanNumber {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(28, 100, 245);
+  opacity: 0.3;
+}
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox1 .titleBox .title,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox2 .titleBox .title,
+.feesMainContainer .jurosContentContainer .jurosMenuContainer .regrasContainer .balanceCompliance .boxContainer .balanceBox3 .titleBox .title {
+  font-size: 17px;
+  color: #ADB6C3;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  font-size: initial;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  font-size: initial;
+  border: 0.01rem solid;
+  border-color: #313843;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer .contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: initial;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer .contentContainer .labelContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  font-size: 0.18rem;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer .contentContainer .labelContainer .contentLabel {
+  font-size: 0.18rem;
+  color: #68707B;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer .contentContainer .labelContainer .contentsLabel {
+  font-size: 0.18rem;
+  color: #fff;
+}
+.feesMainContainer .jurosContentContainer .feeBannerMainContainer .bannerContainer .contentContainerSecond {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.feesMainContainer .bonusSearchButton {
+  font-size: 0.18rem;
+  height: 0.5rem;
+  margin-left: 0.2rem;
+  width: 1.2rem;
+  font-weight: 100;
+  color: #874404;
+}/*# sourceMappingURL=fees.css.map */

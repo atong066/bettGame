@@ -1,0 +1,33 @@
+.icons-container {
+  background-color: rgb(28, 28, 28);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  transition: .2s ease;
+  &.active {
+    left: -5rem;
+    transition: .3s ease;
+
+  }
+  .imageLabelConBox {
+    .imageContainer {
+      img {
+        height: 27px;
+      }
+    }
+  }
+  img {
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  img:hover {
+    border-radius: 5px;
+    transform: scale(1.3);
+  }
+}

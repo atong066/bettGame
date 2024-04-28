@@ -1,0 +1,120 @@
+.discount-container {
+  --bgColor: #1c1e23;
+  --bgColor2: #202329;
+  --color: #f0c059;
+  --tC: white;
+  --tc2: #adb6c3;
+  font-size: 20px;
+  overflow: hidden;
+}
+.discount-container .dicount-jackpot {
+  display: flex;
+}
+.discount-container .prive-header {
+  display: flex;
+  flex-direction: column;
+}
+.discount-container .prive-header .prive-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+  background-color: var(--bgColor2);
+  padding: 20px;
+  border: 1px solid rgb(71, 70, 70);
+}
+.discount-container .discount-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  color: var(--tC);
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.discount-container .discount-header button {
+  background-color: var(--color);
+  color: var(--tC);
+}
+.discount-container .discount-header .header img:nth-child(3) {
+  transform: rotate(180deg);
+}
+.discount-container .discount-header .header img {
+  height: 10px;
+}
+.discount-container .discount-label {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: var(--bgColor);
+  color: var(--tc2);
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.discount-container .discount-body {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: var(--bgColor);
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+.discount-container .discount-body .linktelegram {
+  text-align: center;
+  margin: 20px 0;
+}
+.discount-container .discount-body .linktelegram span {
+  color: red;
+}
+.discount-container .discount-body .aboutPriviledge {
+  line-height: 3;
+}
+.discount-container .discount-body .body-data {
+  display: flex;
+  justify-content: space-between;
+}
+.discount-container .discount-body .body-data .head-data {
+  border: 1px solid rgb(75, 73, 73);
+  padding: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+.discount-container .discount-body .body-data .head-datas {
+  border: 1px solid rgb(75, 73, 73);
+  padding: 20px;
+  width: 100%;
+}
+.discount-container .discount-body .label-head {
+  border: 1px solid rgb(43, 41, 41);
+}
+.discount-container .discount-body .body-label {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--tC);
+  background-color: var(--bgColor2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.discount-container .discount-body .body-label .ant-table-column-title {
+  background-color: var(--bgColor);
+}
+.discount-container .discount-body .label2 {
+  background-color: var(--bgColor);
+}
+.discount-container .discount-body .body-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.discount-container .discount-body .body-content .bodyContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.discount-container .discount-body .body-content .bodyContent span {
+  padding: 20px;
+}
+.discount-container .discount-footer {
+  color: var(--tc2);
+  background-color: var(--bgColor);
+  padding: 20px;
+  line-height: 3;
+}/*# sourceMappingURL=discount.css.map */

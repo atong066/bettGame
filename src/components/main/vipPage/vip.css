@@ -1,0 +1,351 @@
+.vipMainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.vipMainContainer .vipHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #1C1E23;
+  gap: 0.1rem;
+  border-radius: 7px;
+}
+.vipMainContainer .vipHeader .titleWing {
+  width: 5rem;
+}
+.vipMainContainer .vipHeader .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.vipMainContainer .vipHeader .vipHeaderTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.vipMainContainer .medalMainContainer {
+  background-color: #1C1E23;
+  display: flex;
+  padding: 0.45rem 0.25rem 0.25rem 0.25rem;
+  border-radius: 0.1rem;
+  position: relative;
+}
+.vipMainContainer .medalMainContainer .vipLevelBadge {
+  position: absolute;
+  font-size: initial;
+  top: 0;
+  left: 0;
+  background-color: #EA4E3D;
+  border-radius: 0.08rem 0.08rem 0.08rem 0;
+  padding: 0.03rem 0.06rem 0.06rem 0.06rem;
+  font-size: 0.18rem;
+  height: 0.3rem;
+}
+.vipMainContainer .medalMainContainer .vipLevelBadge .levelBadge {
+  font-size: 0.22rem;
+  color: #fff;
+}
+.vipMainContainer .medalMainContainer .medalBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.vipMainContainer .medalMainContainer .medalBox .medalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+.vipMainContainer .medalMainContainer .medalBox .medalContainer .medalRibbonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+.vipMainContainer .medalMainContainer .medalBox .medalContainer .medalRibbonContainer .vipLevel {
+  color: #e4b74f;
+  font-size: 40px;
+  position: relative;
+  top: 0px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.vipMainContainer .medalMainContainer .medalBox .levelNeed {
+  display: flex;
+  gap: 10px;
+}
+.vipMainContainer .medalMainContainer .medalBox .levelNeed .medalLabel {
+  font-size: 0.2rem;
+  line-height: 0.22rem;
+  color: #68707B;
+  font-weight: 400;
+}
+.vipMainContainer .medalMainContainer .medalBox .levelNeed .medalLabel:nth-child(2) {
+  margin-left: 0.1rem;
+}
+.vipMainContainer .medalMainContainer .medalBox .levelNeed .medalContent1 {
+  font-size: 0.2rem;
+  line-height: 0.22rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #EA4E3D;
+}
+.vipMainContainer .medalMainContainer .medalBox .levelNeed .medalContent2 {
+  font-size: 0.2rem;
+  line-height: 0.22rem;
+  font-weight: 600;
+  color: #fff;
+}
+.vipMainContainer .medalMainContainer .medalBox .highestLevel {
+  position: relative;
+  overflow: hidden;
+  margin-left: 0.1rem;
+}
+.vipMainContainer .medalMainContainer .medalBox .highestLevel .avatarFlash {
+  animation: changeImg 3s ease 0s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0.4) 50%, hsla(0, 0%, 100%, 0));
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: skewX(-45deg);
+  width: 8%;
+}
+.vipMainContainer .medalMainContainer .medalBox .highestLevel p {
+  font-size: 18px;
+  background: linear-gradient(90deg, red, #fb0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+.vipMainContainer .medalMainContainer .medalButtonContainer {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.vipMainContainer .medalMainContainer .medalButtonContainer .vipButtons {
+  border-radius: 0.1rem;
+  font-size: 0.16rem;
+  height: 0.4rem;
+  line-height: 0.18rem;
+  padding: 0 0.05rem;
+  width: 1rem;
+  text-transform: capitalize;
+  border-color: #F0C059;
+  color: #874404;
+  background-color: #F0C059;
+}
+.vipMainContainer .vipLevelMainContainer {
+  background-color: #1C1E23;
+  border-radius: 0.1rem;
+}
+.vipMainContainer .vipLevelMainContainer .levelHeaderTitle {
+  padding: 0.2rem;
+  font-size: 0.24rem;
+  height: 0.2em;
+  color: #fff;
+}
+.vipMainContainer .vipLevelMainContainer .divLine {
+  border: thin solid #313843;
+}
+.vipMainContainer .vipLevelMainContainer .vipTabs {
+  font-size: 0.2rem;
+  color: #fff;
+  font-weight: 600;
+}
+.vipMainContainer .vipLevelMainContainer .MuiTabs-root button {
+  color: white;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer {
+  padding: 0.2rem;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .vipTableHead {
+  height: 0.1rem;
+  background-color: #202329;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .vipTableHead .tableHeader {
+  font-size: 23px;
+  color: #fff;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .borderedRow.active {
+  border: 2px solid #e4b74f;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .vipTableData {
+  color: #9d9d9d;
+  font-size: 0.16rem;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .vipTableData .secondData {
+  background-color: #919191;
+  color: #fff;
+  margin: auto;
+  line-height: normal;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .coloredData {
+  color: #FFAA09;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer .imgContainer {
+  max-height: 70px;
+  max-width: 70px;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer .imgContainer .imgIconX {
+  width: 100%;
+  height: 100%;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer .medalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer .medalContainer .medalRibbonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 75px;
+  height: 75px;
+}
+.vipMainContainer .vipLevelMainContainer .vipLevelTableContainer .medalRowContainer .medalContainer .medalRibbonContainer .vipLevel {
+  color: #e4b74f;
+  font-size: 30px;
+  position: relative;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.vipMainContainer .instructionMainContainer {
+  width: 100%;
+  margin-bottom: 0.3rem;
+  background-color: #1C1E23;
+  border-radius: 0.1rem;
+}
+.vipMainContainer .instructionMainContainer .titleContainer {
+  padding: 0.2rem;
+}
+.vipMainContainer .instructionMainContainer .titleContainer .titleLabel {
+  font-size: initial;
+}
+.vipMainContainer .instructionMainContainer .titleContainer .titleLabel label {
+  color: #fff;
+  font-size: 0.22rem;
+  line-height: 0.22rem;
+  font-weight: 600;
+}
+.vipMainContainer .instructionMainContainer .divLine {
+  border-top: 0.01rem solid #313843;
+}
+.vipMainContainer .instructionMainContainer .instructionContainer {
+  padding: 0.2rem;
+  color: #ADB6C3;
+  font-size: 0.18rem;
+  line-height: 1.56;
+  display: flex;
+  flex-direction: column;
+}
+
+.rechargeData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ADB6C3;
+}
+.rechargeData .depoData {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #68707b;
+  color: black;
+  border-radius: 20px;
+  font-size: 0.16rem;
+  position: relative;
+}
+.rechargeData .depoData .progressData {
+  height: 0.2rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 20px;
+}
+.rechargeData .depoData .progressData .progressingData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: #fff;
+  font-size: 0.16rem;
+  padding: 0.02rem;
+  width: 100%;
+}
+
+.rechargeHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.rechargeHeader .infoTag {
+  border: 1px solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.alertContainer {
+  width: 10rem;
+  font-size: 0.14rem;
+}
+
+.vipRules {
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+.vipRules .header {
+  height: 2rem;
+  border-bottom: 1px solid white;
+  margin-bottom: 0.3rem;
+}
+.vipRules .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hrLineDiv {
+  border: 0.01rem solid;
+  border-color: #ADB6C3;
+  width: 0.15rem;
+  margin: auto;
+}/*# sourceMappingURL=vip.css.map */

@@ -1,0 +1,113 @@
+.missionContainer {
+  display: flex;
+}
+.missionContainer .fixedLeft {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.missionContainer .fixedLeft .leftSideButton {
+  line-height: normal;
+  background-color: #F0C059;
+  color: #874404;
+  font-weight: 600;
+  width: 10rem;
+}
+.missionContainer .fixedLeft .leftSideButton .leftSideButtonTitle {
+  width: 10rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.missionContainer .scrollRight {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 0 0 1rem;
+  height: 600px;
+  width: 100%;
+}
+.missionContainer .scrollRight .banner {
+  display: flex;
+  align-items: center;
+  background-color: #1C1E23;
+  padding: 1rem;
+  border-radius: 7px;
+  gap: 5px;
+}
+.missionContainer .scrollRight .banner .phoneImageBox {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.missionContainer .scrollRight .banner .phoneImageBox .phoneImage {
+  width: 3.5rem;
+}
+.missionContainer .scrollRight .banner .labelBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.missionContainer .scrollRight .banner .labelBox .boxLabel {
+  font-size: 14px;
+  color: #fff;
+}
+.missionContainer .scrollRight .banner .labelBox .boxLabel .labelContent {
+  color: #FFAA09;
+}
+.missionContainer .scrollRight .banner .labelBox .bonusLabel {
+  color: #68707B;
+}
+.missionContainer .scrollRight .banner .buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+}
+.missionContainer .scrollRight .banner .buttonBox .downloadButton {
+  background-color: #F0C059;
+  color: #874404;
+  font-weight: 600;
+}
+.missionContainer .scrollRight .contextBox {
+  background-color: #1C1E23;
+  padding: 1rem;
+  border-radius: 7px;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.missionContainer .scrollRight .contextBox label {
+  color: white;
+  margin: auto;
+  font-size: 18px;
+}
+.missionContainer .scrollRight .contextBox .imgContainer {
+  max-width: 15rem;
+  margin: auto;
+  text-align: center;
+}
+.missionContainer .scrollRight .contextBox .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+.missionContainer .scrollRight .contextBox .missionLabels {
+  text-indent: 30px;
+  line-height: 30px;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  gap: 10px;
+}
+.missionContainer .scrollRight .noDataMissionImpossible {
+  padding: 1rem 1rem 2rem 1rem;
+  border-radius: 7px;
+}/*# sourceMappingURL=mission.css.map */

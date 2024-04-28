@@ -1,0 +1,263 @@
+.sideBar {
+    overflow: auto;
+    padding: .15rem .15rem 1rem;
+    height: 100%;
+    max-width: 2.4rem;
+    min-width: 2.4rem;
+    width: 2.4rem;
+    transition: 200ms ease-in-out;
+
+    &.active {
+        width: 0;
+        overflow: hidden;
+        max-width: 2.4rem;
+        min-width: 0;
+        padding: .15rem 0;
+        transition: width 200ms ease-in-out;
+    }
+
+    &.newActive {
+        overflow: auto;
+        padding: .15rem .15rem 1rem;
+        height: 100%;
+        max-width: 2.4rem;
+        min-width: 2.4rem;
+        width: 2.4rem;
+        transition: width 3s ease;
+        border: 2px solid blue;
+    }
+
+    .sidebarContainer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(0.05rem, 0.5vw, .1rem);
+        min-width: 0;
+        overflow: hidden;
+
+        .mainGameChooseContainer {
+            width: 100%;
+            height: auto;
+
+            .gameContainer {
+                display: grid;
+                gap: .1rem;
+                width: 100%;
+                justify-items: center;
+                grid-template-columns: auto auto;
+
+                .gameBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: #adb6c3;
+                    font-weight: 500;
+                    border-radius: .07rem;
+                    cursor: pointer !important;
+                    padding: .05rem;
+                    text-align: center;
+                    font-weight: 600;
+                    height: .7rem;
+                    min-height: .7rem;
+                    position: relative;
+                    background-color: #22242a;
+                    width: 1rem;
+                    gap: .03rem;
+
+                    .imageContainer {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 0.3rem;
+                        width: 0.42rem;
+
+                        .gameImagesX {
+                            position: absolute;
+                            width: 100%;
+
+                            // &:hover {
+                            //     filter: brightness(0) saturate(100%) invert(70%) sepia(86%) saturate(382%) hue-rotate(349deg) brightness(97%) contrast(93%);
+                            // }
+                        }
+                    }
+
+                    .labelContainer {
+                        font-size: .16rem;
+                        font-weight: 100;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        width: 99%;
+                    }
+
+
+                    &.active {
+                        background-color: #f0c059dd;
+                        color: currentColor;
+
+                        &:hover {
+                            .gameImagesX {
+                                filter: none;
+                            }
+                        }
+
+                    }
+
+                    &:hover {
+                        color: #f0c059dd;
+                        background-color: #2B2F37;
+                        // .gameImagesX {
+                        //     filter: brightness(0) saturate(100%) invert(70%) sepia(86%) saturate(382%) hue-rotate(349deg) brightness(97%) contrast(93%);
+                        // }
+
+                        // background-color: #f0c059dd;
+                    }
+                }
+
+            }
+
+        }
+
+        .linksContainer {
+            width: 100%;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: 0.9rem 0.9rem;
+            padding: 0.1rem 0.1rem 0;
+            height: auto;
+            border-radius: .1rem;
+            background-color: #22242a;
+
+            .invite {
+                grid-column: 1 / span 2;
+            }
+
+            .pageLink {
+                cursor: pointer;
+
+                &:last-child {
+                    width: 1.9rem;
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+
+                    .linkLabel {
+                        font-size: .18rem;
+                        margin-right: .55rem;
+                    }
+                }
+
+                position: relative;
+                height: 0.6rem;
+                width: 0.9rem;
+                display: flex;
+                margin-bottom: 0.1rem;
+
+                .linkImage {
+                    width: 100%;
+                }
+
+                .linkLabel {
+                    position: absolute;
+                    margin: .05rem .08rem;
+                    font-size: .12rem;
+                    color: #ffff;
+                    word-wrap: break-word;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.sidebarFooterContainer {
+    width: 100%;
+
+    .footerActions {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        display: -ms-flexbox;
+        font-size: .18rem;
+        height: .5rem;
+        padding: .04rem 0 .04rem .14rem;
+
+        .footerItemContainer {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+                .iconContainer {
+                    background: #f0c059dd;
+                }
+
+                .iconLabel {
+                    color: #f0c059dd;
+                }
+            }
+        }
+
+        .iconContainer {
+            align-items: center;
+            background: #68707b;
+            border-radius: 50%;
+            display: -ms-flexbox;
+            display: flex;
+            height: .26rem;
+            justify-content: center;
+            margin-right: .15rem;
+            position: relative;
+            width: .26rem;
+
+            .iconBorder {
+                color: #1c1e23;
+                font-size: .24rem;
+                margin-left: .01rem;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                .itemIcon {
+                    width: 1em;
+                    font-size: .19rem !important;
+                }
+            }
+        }
+
+        .iconLabel {
+            color: #68707b;
+            cursor: pointer;
+        }
+    }
+}
+
+.langTab {
+    position: relative;
+    height: 0.6rem;
+    width: 0.9rem;
+    display: flex;
+    margin-bottom: 0.1rem;
+
+    .linkImage {
+        width: 100%;
+    }
+
+    .linkLabel {
+        position: absolute;
+        margin: .05rem .08rem;
+        font-size: .12rem;
+        color: #ffff;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+}
+
+.multimediaContainer {
+    img {
+        height: .36rem;
+        width: .36rem;
+    }
+}

@@ -1,0 +1,50 @@
+.success {
+  background-color: #1d9146;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem !important;
+}
+
+.alertContent {
+  padding: 0.2rem !important;
+  background-color: #1C1E23;
+}
+.alertContent .css-1ak8igq-MuiTypography-root-MuiDialogContentText-root {
+  color: #f0c059 !important;
+}
+
+.alertFooter {
+  padding: 0.2rem !important;
+  background-color: #15171b;
+}
+.alertFooter .css-1ak8igq-MuiTypography-root-MuiDialogContentText-root {
+  color: #f0c059 !important;
+}
+
+.warning {
+  color: #f0c059;
+  font-weight: 600;
+  padding: 0.5rem !important;
+}
+
+.error {
+  color: #ff3636;
+  font-weight: 600;
+  padding: 0.5rem !important;
+}
+
+.alertDefault {
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.5rem !important;
+}
+
+.alertCloseButtonsss {
+  background: #f0c059;
+  color: #874404;
+  font-size: 0.18rem !important;
+  border-radius: 0.1rem !important;
+  height: 0.4rem;
+  text-transform: capitalize !important;
+  border-color: #f0c059 !important;
+}/*# sourceMappingURL=alert-modal.css.map */

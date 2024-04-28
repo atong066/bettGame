@@ -1,0 +1,64 @@
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  display: flex !important;
+  justify-content: space-evenly !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 430px) {
+  .swiper-slide img {
+    height: 13vh;
+  }
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background-color: white;
+}
+
+:root {
+  --swiper-theme-color: white !important;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0.1rem !important;
+}
+
+.swiper-slide {
+  flex-shrink: 1 !important;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
+.swiper-slide {
+  filter: blur(5px);
+}
+
+.swiper-slide-active {
+  filter: blur(0);
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 17px !important;
+  padding: 7px 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.swiper-3d {
+  cursor: pointer;
+}/*# sourceMappingURL=swipe.css.map */

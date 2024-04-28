@@ -1,0 +1,17 @@
+.alertMainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    background-color: #fff;
+    gap: .2rem;
+    border-radius: .1rem;
+    width: 5.5rem;
+    min-width: fit-content;
+    .alertImage{
+        width: .3rem;
+    }
+    .alertMessage{
+        font-size: .2rem;
+    }
+}

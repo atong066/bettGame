@@ -1,0 +1,290 @@
+.dailyMainContainerType5 {
+    height: 3.1rem;
+    overflow-y: auto;
+    padding: 0 0.2rem;
+    user-select: none;
+
+    .dailyContainer {
+        display: flex;
+        align-items: center;
+        border-bottom: 0.01rem solid #313843;
+        justify-content: space-between;
+        padding: 0.15rem 0;
+
+        .imageLabelBox {
+            display: flex;
+            align-items: center;
+
+            .scoreImage {
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.2rem;
+            }
+
+            .labelBox {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .lableTitle {
+                    font-size: .18rem;
+                    color: #68707B;
+                    line-height: normal;
+                    text-align: left;
+                    min-width: max-content;
+                }
+            }
+        }
+
+        .scoreBox {
+            font-size: initial;
+            text-align: end;
+
+            .scoreLabel {
+                color: #04BE02;
+                font-size: .18rem;
+                text-align: end;
+            }
+        }
+    }
+
+    .marqueeContainer {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        animation: marquee 90s linear infinite;
+
+        .dailyContainer {
+            display: flex;
+            align-items: center;
+            border-bottom: 0.01rem solid #313843;
+            justify-content: space-between;
+            padding: 0.15rem 0;
+
+            .imageLabelBox {
+                display: flex;
+                align-items: center;
+
+                .scoreImage {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    margin-right: 0.2rem;
+                }
+
+                .labelBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .lableTitle {
+                        font-size: .18rem;
+                        color: #68707B;
+                        line-height: normal;
+                        text-align: left;
+                        min-width: max-content;
+                    }
+                }
+            }
+
+            .scoreBox {
+                font-size: initial;
+                text-align: end;
+
+                .scoreLabel {
+                    color: #04BE02;
+                    font-size: .18rem;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+.shareMainContainerModal {
+    padding: .05rem .25rem .25rem .25rem;
+    font-size: initial;
+    user-select: none;
+
+    .socialMedaPlatformContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: .1rem;
+
+        .socialMediaBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .08rem;
+            cursor: pointer;
+
+            img {
+                width: .4rem;
+            }
+
+            .linksLabel {
+                color: #fff;
+                font-size: .14rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .linkBoxContainer {
+        display: flex;
+        align-items: center;
+        margin-top: 0.15rem;
+        gap: .2rem;
+        user-select: none;
+
+        .linkBox {
+            display: flex;
+            align-items: center;
+            background-color: #0046af;
+            border-radius: .05rem;
+            padding: .08rem;
+            width: 3.45rem;
+            height: .4rem;
+
+            .linkLabel {
+                font-size: .17rem;
+                color: #fff;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        .copyBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0046af;
+            border-radius: .05rem;
+            padding: .08rem;
+            height: .4rem;
+            width: .4rem;
+            cursor: pointer;
+
+            img {
+                width: .2rem;
+            }
+        }
+    }
+}
+
+.withdrawMainContainerBox {
+    font-size: initial;
+    padding: 0 .2rem .2rem;
+    user-select: none;
+
+    .titleMoneyBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .1rem;
+        font-size: initial;
+        margin-top: .1rem;
+
+        .titleLabel {
+            font-size: .14rem;
+            color: #ffc700;
+        }
+
+        .titleMoney {
+            font-size: .4rem;
+            font-weight: 600;
+            color: #ffc700;
+        }
+    }
+
+    .mapContainerBox {
+        display: flex;
+        flex-direction: column;
+        font-size: initial;
+        background-color: #131a26;
+        padding: .2rem .1rem .2rem;
+        border-radius: .1rem;
+        margin-top: .1rem;
+        gap: .2rem;
+
+        .mapListBox {
+            display: flex;
+            align-items: center;
+            gap: .1rem;
+            // border-left: thin solid;
+            // border-color: #8190a3;
+            position: relative;
+
+            .divLine {
+                position: absolute;
+                border-left: thin solid;
+                border-color: #8190a3;
+                height: 0.35rem;
+                bottom: -29px;
+                left: 7px;
+
+                .dotBox {
+                    background-color: #8190a3;
+                    width: .05rem;
+                    height: .05rem;
+                    border-radius: .05rem;
+                    position: absolute;
+                    bottom: -2px;
+                    left: -.024rem;
+                }
+
+                &.active{
+                    border-color: #1989fa;;
+                }
+            }
+
+            .imageBox {
+                display: none;
+                align-items: center;
+                width: .15rem;
+                position: absolute;
+                left: 0;
+
+                .mapImage {
+                    width: .15rem;
+                }
+
+                &.active {
+                    display: flex;
+                }
+            }
+
+            .mapLabel {
+                font-size: .15rem;
+                color: #8190a3;
+                margin-left: .25rem;
+
+                .mapMoney {
+                    font-size: .15rem;
+
+                    &.active {
+                        color: #FFAA09;
+                    }
+                }
+
+                &.active {
+                    color: #1989fa;
+                }
+            }
+        }
+    }
+
+    .conVideButton {
+        height: .4rem;
+        font-size: .15rem;
+        text-transform: capitalize;
+        width: 100%;
+        border-radius: .06rem;
+        margin-top: .2rem;
+    }
+}

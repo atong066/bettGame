@@ -1,0 +1,93 @@
+.diarion-cont {
+    padding: 10px;
+}
+.jackpot-container {
+  --bgColor: #1c1e23;
+  --bgColor2: #202329;
+  --color: #f0c059;
+  --tC: white;
+  --tc2: #adb6c3;
+  color: var(--tC);
+  .jackpot-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--bgColor);
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+
+    .header img:nth-child(3) {
+      transform: rotate(180deg);
+    }
+    .header img {
+      height: 10px;
+    }
+    button {
+      background-color: #f0c059;
+      color: var(--tC);
+      margin: 0 10px;
+    }
+  }
+  .diario-body {
+    display: flex;
+    justify-content: space-between;
+    color: var(--tc2);
+    padding: 0 10px;
+    background-color: #1c1e23;
+
+}
+
+  .jackpot-body {
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: var(--bgColor);
+    border-bottom: 2px solid #adb6c3;
+    padding-bottom: 20px;
+    .diario-content {
+        display: grid;
+        background-color: var(--bgColor2);
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+        gap: 20px;
+        .diarion-img {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 10px;
+            border: 1px solid rgb(59, 57, 57);
+            border-radius: 15px;
+            padding: 5px 15px;
+            background-color: var(--bgColor);
+        
+            width: 10vw;
+            img {
+                height: 100px;
+            }
+            span {
+                span {
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+
+    .jackpot-header {
+      text-align: center;
+    }
+    color: var(--tC);
+    line-height: 3;
+  }
+  .jackpot-footer {
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--bgColor2);
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 3;
+  }.diario-footer {
+    line-height: 2;
+  }
+}

@@ -1,0 +1,625 @@
+.main-invite-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: gray;
+
+  .invite-container-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #202329;
+    border-radius: 5px;
+    border: 1px solid rgb(61, 60, 60);
+    color: white;
+  }
+
+  .invite-overview {
+    padding: .2rem;
+
+    .hour {
+      padding: 20px;
+      margin: 10px 0;
+      color: white;
+      background-color: #f0c059;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    .invite-link {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      font-size: initial;
+
+      div {
+        span {
+          font-size: .18rem;
+        }
+      }
+
+      button {
+        width: 5vw;
+        min-width: fit-content;
+        font-weight: 600;
+        font-size: .16rem;
+        text-transform: capitalize;
+      }
+    }
+
+    .remarks {
+      color: #f0c059;
+
+      span {
+        font-size: .18rem;
+      }
+    }
+
+    .over {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+
+      div {
+        border: 1px solid #f0c059;
+        display: flex;
+        height: 15vh;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        font-size: .18rem;
+      }
+    }
+  }
+
+  .taxaTabs {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .MuiTabs-root {
+    button {
+      color: white;
+      font-size: .16rem;
+    }
+
+    // button[aria-selected="true"] {
+    //   color: #f0c059;
+    // }
+  }
+
+  color: gray;
+
+  .invite-header-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: 80px;
+    }
+
+    .id-Container {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        span {
+          color: white;
+        }
+      }
+    }
+
+    .label-button {
+      button {
+        padding: 50px;
+        color: black;
+        background-color: #f0c059;
+        border-radius: 5px;
+        height: 40px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .invite-header-label2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .invite-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1c1e23;
+    align-items: center;
+
+    img {
+      height: 10px;
+
+      &:nth-child(3) {
+        rotate: 180deg;
+      }
+    }
+  }
+
+  .invite-header-label {
+    padding: 15px;
+    background-color: #1c1e23;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+
+  .invite-body {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 7px !important;
+
+    .el-card__body {
+      width: 100%;
+      background-color: #1c1e23;
+      padding: .2rem;
+      border-radius: .1rem;
+    }
+
+    .invite-tabs {
+      display: flex;
+      width: 100%;
+
+      .css-8atqhb {
+        background-color: #1c1e23;
+        border-radius: 10px;
+      }
+    }
+
+    .buttonGroup {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      button {
+        background-color: #f0c059;
+        border: none;
+        border: 15px;
+      }
+
+      .css-1rieq0t-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+        color: white;
+      }
+    }
+
+    .button-group {
+      button {
+        padding: 10px;
+        margin-right: 15px;
+        color: white;
+        border: 1px solid white;
+      }
+
+      button:nth-child(1) {
+        background-color: #f0c059;
+      }
+    }
+
+    .hint {
+      margin-top: 20px;
+      font-size: 12px;
+
+      span {
+        color: red;
+      }
+    }
+
+    .top-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 10px;
+
+      .item {
+        height: 12vh;
+        border: thin solid;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        max-width: 2rem;
+        min-width: 2rem;
+        text-align: center;
+        font-size: 16rem;
+        cursor: pointer;
+
+        p {
+          font-size: .16rem;
+        }
+
+        .unit {
+          color: red;
+        }
+
+        .num {
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
+
+      .item p:nth-child(1) {
+        background-color: #f0c059;
+        transition: 0.6s;
+        padding: 15px;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+
+      }
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: .2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h1 {
+          margin: 20px 0;
+          color: white;
+        }
+      }
+
+      .th {
+        color: white;
+        display: flex;
+        font-size: 12px;
+        margin-right: 50px;
+        border-radius: 5px;
+
+        width: 100%;
+
+        .title {
+          height: 10vh;
+          border: 1px solid rgb(136, 131, 131);
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          margin-left: 5px;
+
+          span:nth-child(1) {
+            background-color: #f0c059;
+            color: rgb(17, 17, 17);
+            padding-top: 5px;
+            padding-bottom: 20px;
+          }
+
+          span:nth-child(2) {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .lists {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin: 20px 0;
+          color: white;
+        }
+      }
+
+      .ths {
+        color: white;
+        flex-direction: column;
+        font-size: 12px;
+        margin-right: 10px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+
+        .title {
+          height: 5vh;
+          border: 1px solid rgb(71, 70, 70);
+          display: flex;
+          justify-content: column;
+          align-items: center;
+          width: 100%;
+
+          span:nth-child(1) {
+            background-color: #f0c059;
+            color: rgb(17, 17, 17);
+            padding-top: 5px;
+            padding-bottom: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .teamOverView {
+    width: 100%;
+
+    .top-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      color: white;
+      gap: 010px;
+
+      .item {
+        height: 10vh;
+        border: 2px solid rgb(63, 62, 62);
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .invite-button-content {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+
+    .buts-div {
+      button {
+        background-color: #f0c059;
+        color: white;
+        margin-top: 20px;
+      }
+    }
+
+    .input-divs {
+      display: flex;
+      justify-content: space-evenly;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        padding: 0;
+
+        .MuiFormLabel-root {
+          color: white;
+        }
+
+        .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+          color: white;
+        }
+      }
+    }
+
+    .buttonGroup {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .commisao-label {
+      color: white;
+      border-bottom: 1px solid gray;
+      padding: 20px;
+    }
+
+    .commisao1 {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid gray;
+      color: white;
+      padding: 20px;
+
+      span {
+        color: #f0c059;
+      }
+    }
+
+    .commisao-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+
+      span {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          color: #f0c059;
+        }
+      }
+    }
+
+    .tutorial-container {
+      padding: 20px;
+      border: 1px solid rgb(61, 60, 60);
+      border-radius: 5px;
+    }
+
+    .none-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .invite-container-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #202329;
+      border-radius: 5px;
+      border: 1px solid rgb(61, 60, 60);
+      color: white;
+
+      span {
+        color: gray;
+      }
+    }
+
+    #taxa {
+      justify-content: space-around;
+    }
+
+    .invite-dates-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5%;
+      align-items: center;
+      width: 100%;
+    }
+
+    .invite-dates {
+      span {
+        input[type="date"] {
+          color: white;
+          padding: 15px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          background-color: white;
+          color: white;
+        }
+
+        input {
+          padding: 15px;
+        }
+      }
+
+      .textInput {
+        position: relative;
+
+        .search-icon {
+          position: absolute;
+          right: 10px;
+          top: -5px;
+          font-size: 30px;
+          color: #f0c059;
+        }
+      }
+
+      span {
+        input {
+          padding: 15px;
+          border-radius: 15px;
+          background-color: transparent;
+          border: 1px solid gray;
+          color: gray;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .invite-button {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1e23;
+    width: 20%;
+    gap: 10px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 10px 0;
+    border-radius: 10px;
+    min-width: 13vw;
+
+    .MuiButton-root {
+      color: #adb6c3;
+      padding: 15px;
+      background-color: transparent;
+      border: none;
+    }
+
+    .isActive {
+      background-color: #f0c059;
+      border-radius: 15px;
+      color: white;
+    }
+
+    button {
+      width: 80%;
+    }
+  }
+
+  .invite-button-content {
+    width: 55vw;
+    background-color: #1c1e23;
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+
+      #qr {
+        margin: 10px;
+        height: 20vh;
+      }
+
+      .links-social {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+        .socialerroso {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 4px solid gray;
+          padding-bottom: 10px;
+
+          span {
+            width: inherit;
+            padding: inherit;
+            display: flex;
+            flex-direction: column;
+            border: none;
+          }
+
+          img {
+            width: 30px;
+          }
+        }
+
+        span {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          border: 1px solid gray;
+          width: 40vw;
+          border-radius: 5px;
+          color: white;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+.transferRecordMain {
+  padding: .2rem;
+}

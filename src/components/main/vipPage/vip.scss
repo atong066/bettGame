@@ -1,0 +1,414 @@
+.vipMainContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .vipHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+        background-color: #1C1E23;
+        // margin-bottom: 1.5rem;
+        gap: .1rem;
+        border-radius: 7px;
+
+        .titleWing {
+            width: 5rem;
+
+            &:nth-child(3) {
+                rotate: 180deg;
+            }
+        }
+
+        .vipHeaderTitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .medalMainContainer {
+        background-color: #1C1E23;
+        display: flex;
+        padding: .45rem .25rem .25rem .25rem;
+        border-radius: .1rem;
+        position: relative;
+
+        .vipLevelBadge {
+            position: absolute;
+            font-size: initial;
+            top: 0;
+            left: 0;
+            background-color: #EA4E3D;
+            border-radius: .08rem .08rem .08rem 0;
+            padding: .03rem .06rem .06rem .06rem;
+            font-size: .18rem;
+            height: 0.3rem;
+
+            .levelBadge {
+                font-size: .22rem;
+                color: #fff;
+            }
+        }
+
+        .medalBox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+
+            .medalContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // background-image: url("/public/vipImages/medal.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: relative;
+                width: 1rem;
+                height: 1rem;
+
+                .medalRibbonContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background-image: url("/public/vipImages/medalRibbon.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    width: 1rem;
+                    height: 1rem;
+
+                    .vipLevel {
+                        color: #e4b74f;
+                        font-size: 40px;
+                        position: relative;
+                        top: 0px;
+                        font-weight: 600;
+                        text-shadow: 1px 1px 2px #161616;
+                        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+                        ;
+                    }
+                }
+            }
+
+            .levelNeed {
+                display: flex;
+                gap: 10px;
+
+                .medalLabel {
+                    font-size: 0.2rem;
+                    line-height: 0.22rem;
+                    color: #68707B;
+                    font-weight: 400;
+
+                    &:nth-child(2) {
+                        margin-left: .1rem;
+                    }
+                }
+
+                .medalContent1 {
+                    font-size: 0.2rem;
+                    line-height: 0.22rem;
+                    font-weight: 600;
+                    font-style: italic;
+                    color: #EA4E3D;
+                }
+
+                .medalContent2 {
+                    font-size: 0.2rem;
+                    line-height: 0.22rem;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+
+            .highestLevel {
+                position: relative;
+                overflow: hidden;
+                margin-left: .1rem;
+
+                .avatarFlash {
+                    animation: changeImg 3s ease 0s;
+                    animation-iteration-count: infinite;
+                    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .4) 50%, hsla(0, 0%, 100%, 0));
+                    content: "";
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    transform: skewX(-45deg);
+                    width: 8%;
+                }
+
+                p {
+                    font-size: 18px;
+                    background: linear-gradient(90deg, red, #fb0);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .medalButtonContainer {
+            width: 30%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .vipButtons {
+                border-radius: 0.1rem;
+                font-size: .16rem;
+                height: 0.4rem;
+                line-height: .18rem;
+                padding: 0 0.05rem;
+                width: 1rem;
+                text-transform: capitalize;
+                border-color: #F0C059;
+                color: #874404;
+                background-color: #F0C059;
+
+            }
+        }
+    }
+
+    .vipLevelMainContainer {
+        background-color: #1C1E23;
+        border-radius: .1rem;
+
+        .levelHeaderTitle {
+            padding: .2rem;
+            font-size: .24rem;
+            height: 0.2em;
+            color: #fff;
+        }
+
+        .divLine {
+            border: thin solid #313843;
+        }
+
+        .vipTabs {
+            font-size: 0.2rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .MuiTabs-root {
+            button {
+                color: white;
+            }
+        }
+
+        .vipLevelTableContainer {
+            padding: .2rem;
+
+            .vipTableHead {
+                height: .1rem;
+                background-color: #202329;
+
+                .tableHeader {
+                    font-size: 23px;
+                    color: #fff;
+                }
+            }
+
+            .borderedRow {
+                &.active {
+                    border: 2px solid #e4b74f;
+                }
+            }
+
+            .vipTableData {
+                color: #9d9d9d;
+                font-size: .16rem;
+
+                .secondData {
+                    background-color: #919191;
+                    color: #fff;
+                    // width: 20rem;
+                    margin: auto;
+                    line-height: normal;
+                    border-radius: 10px;
+                    font-size: 16px;
+                }
+            }
+
+            .coloredData {
+                color: #FFAA09;
+            }
+
+            .medalRowContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .imgContainer {
+                    max-height: 70px;
+                    max-width: 70px;
+
+                    .imgIconX {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .medalContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background-image: url("/public/vipImages/medal.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    position: relative;
+                    width: 75px;
+                    height: 75px;
+
+                    .medalRibbonContainer {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        // background-image: url("/public/vipImages/medalRibbon.png");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        position: relative;
+                        width: 75px;
+                        height: 75px;
+
+                        .vipLevel {
+                            color: #e4b74f;
+                            font-size: 30px;
+                            position: relative;
+                            font-weight: 600;
+                            text-shadow: 1px 1px 2px #161616;
+                            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .instructionMainContainer {
+        width: 100%;
+        margin-bottom: .3rem;
+        background-color: #1C1E23;
+        border-radius: .1rem;
+
+        .titleContainer {
+            padding: .2rem;
+
+            .titleLabel {
+                font-size: initial;
+
+                label {
+                    color: #fff;
+                    font-size: 0.22rem;
+                    line-height: 0.22rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .divLine {
+            border-top: .01rem solid #313843;
+        }
+
+        .instructionContainer {
+            padding: .2rem;
+            color: #ADB6C3;
+            font-size: .18rem;
+            line-height: 1.56;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.rechargeData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ADB6C3;
+
+    .depoData {
+        width: 100%;
+        height: .2rem;
+        background-color: #68707b;
+        color: black;
+        border-radius: 20px;
+        font-size: 0.16rem;
+        position: relative;
+
+        .progressData {
+            height: .2rem;
+            min-width: fit-content;
+            border-radius: 20px;
+
+            .progressingData {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                color: #fff;
+                font-size: 0.16rem;
+                padding: 0.02rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.rechargeHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .infoTag {
+        border: 1px solid;
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+
+.alertContainer {
+    width: 10rem;
+    font-size: .14rem;
+}
+
+.vipRules {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: .3rem;
+    color: white;
+
+    .header {
+        height: 2rem;
+        border-bottom: 1px solid white;
+        margin-bottom: .3rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.hrLineDiv {
+    border: .01rem solid;
+    border-color: #ADB6C3;
+    width: .15rem;
+    margin: auto;
+}

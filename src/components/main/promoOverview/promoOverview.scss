@@ -1,0 +1,98 @@
+.promoOverviewMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+        background-color: #1C1E23;
+        gap: .1rem;
+        border-radius: 7px;
+
+        .titleWing {
+            width: 5rem;
+
+            &:nth-child(3) {
+                rotate: 180deg;
+            }
+        }
+
+        .headerTitle {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    .promoOverviewContainer {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        background-color: #1C1E23;
+        padding: .2rem;
+        border-radius: .1rem;
+
+        .dateInputBox {
+            .dateButton {
+                font-weight: 600;
+            }
+        }
+
+        .contentContainerBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .miniBoxContainer {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: .2rem;
+                column-gap: .2rem;
+                row-gap: .2rem;
+
+                .miniBox {
+                    background-color: rgb(25, 27, 31);
+                    border: 1px solid;
+                    border-color: #f0c0599e;
+                    border-radius: 7px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    padding: .1rem;
+
+                    .miniBoxLable {
+                        font-style: normal;
+                        color: #fff;
+                        font-size: .18rem;
+                    }
+
+                    .miniBoxCurrent {
+                        font-style: italic;
+                        font-size: .18rem;
+                        font-weight: 600;
+                        color: rgb(8, 173, 8);
+                    }
+
+                    .miniBoxContent {
+                        font-style: normal;
+                        font-weight: 600;
+                        color: #f0c059;
+                    }
+                }
+            }
+        }
+    }
+
+    .tableContainerOverView {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+}

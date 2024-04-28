@@ -1,0 +1,192 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.modal.is-active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.is-active .modal-background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, 0.86);
+}
+.modal.is-active .modal-content {
+  position: relative;
+  background: #202329;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal.is-active .modal-content .modal-header {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal.is-active .modal-content .modal-header h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal.is-active .modal-content .modal-header .close-button {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.modal.is-active .modal-content .modal-header .close-button:hover {
+  color: #ccc;
+}
+.modal.is-active .modal-content .modal-body {
+  width: 100%;
+  padding: 0;
+}
+.modal.is-active .modal-content .modal-body .volume-controls {
+  display: flex;
+  align-items: center;
+  background-color: #1c1e23;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: auto;
+}
+.modal.is-active .modal-content .modal-body .volume-controls .volume-label {
+  margin-right: 16px;
+  color: #fff;
+  font-size: 16px;
+}
+.modal.is-active .modal-content .modal-body .volume-controls .MuiSvgIcon-root {
+  color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .volume-controls .MuiSlider-root {
+  color: #f0c059;
+  width: auto;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls {
+  background-color: #1c1e23;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .song-name {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .current-time,
+.modal.is-active .modal-content .modal-body .music-player-controls .duration {
+  color: #fff;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .slider-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 10px;
+  width: 90%;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .slider-container .MuiSlider-rail {
+  color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .slider-container .current-time,
+.modal.is-active .modal-content .modal-body .music-player-controls .slider-container .duration {
+  color: #fff;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .slider-container .MuiSlider-root {
+  color: #f0c059;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .controls-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .controls-icons .MuiIconButton-root {
+  color: #fff;
+  margin: 0 12px;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .controls-icons svg {
+  font-size: 3rem;
+  color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .music-player-controls .MuiSlider-root {
+  color: #f0c059;
+  flex-grow: 1;
+  margin: 0 10px;
+}
+.modal.is-active .modal-content .modal-body .tabs-container {
+  margin-bottom: 10px;
+}
+.modal.is-active .modal-content .modal-body .tabs-container .MuiTab-root {
+  color: #fff;
+}
+.modal.is-active .modal-content .modal-body .tabs-container .MuiTab-root.Mui-selected {
+  color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .tabs-container .MuiTabs-indicator {
+  background-color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .list-container {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+}
+.modal.is-active .modal-content .modal-body .music-system-list .music-list-item, .modal.is-active .modal-content .modal-body .my-songs-list .music-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+}
+.modal.is-active .modal-content .modal-body .music-system-list .music-list-item .MuiListItemText-primary, .modal.is-active .modal-content .modal-body .my-songs-list .music-list-item .MuiListItemText-primary {
+  font-size: 1rem;
+  color: #f0c059;
+}
+.modal.is-active .modal-content .modal-body .music-system-list .music-list-item .MuiListItemText-secondary, .modal.is-active .modal-content .modal-body .my-songs-list .music-list-item .MuiListItemText-secondary {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.modal.is-active .modal-content .modal-body .music-system-list .music-list-item svg, .modal.is-active .modal-content .modal-body .my-songs-list .music-list-item svg {
+  color: #f0c059;
+}
+
+@media (max-width: 768px) {
+  .modal .modal-content {
+    padding: 10px;
+    max-width: 95%;
+  }
+  .modal .modal-content .modal-header h2 {
+    font-size: 1rem;
+  }
+  .modal .modal-content .modal-body .volume-controls .volume-label,
+  .modal .modal-content .modal-body .music-player-controls .song-name {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .modal .modal-content .modal-header .close-button {
+    right: 10px;
+    top: 10px;
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=musicModal.css.map */

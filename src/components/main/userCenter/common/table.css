@@ -1,0 +1,131 @@
+.tableContainer {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: auto;
+}
+.tableContainer .tableHead {
+  display: table-header-group;
+  border-radius: 5px;
+  font-size: 0.2rem;
+  font-weight: 100;
+}
+.tableContainer .tableHead .tableRow {
+  display: table-row;
+  height: 0.5rem;
+  font-weight: 100;
+}
+.tableContainer .tableHead .tableRow:first-child .tableCell:first-child {
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  border: thin solid;
+  border-color: #313843;
+  border-right: none;
+}
+.tableContainer .tableHead .tableRow:first-child .tableCell:last-child {
+  border-top-right-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+}
+.tableContainer .tableHead .tableRow:first-child .tableCell:not(:first-child):not(:last-child) {
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+  border-right: none;
+}
+.tableContainer .tableHead .tableRow .tableCell {
+  display: table-cell;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  padding: 0.2rem;
+  border-right: none;
+  border-left: none;
+  vertical-align: middle;
+}
+.tableContainer .tableHeads {
+  display: table-header-group;
+  border-radius: 5px;
+  font-size: 0.16rem;
+}
+.tableContainer .tableHeads .tableRow {
+  display: table-row;
+  height: 0.5rem;
+}
+.tableContainer .tableHeads .tableRow:first-child .tableCell:first-child {
+  border-top-left-radius: 0.04rem;
+  border-bottom-left-radius: 0.04rem;
+  border: thin solid;
+  border-color: #313843;
+  border-right: none;
+}
+.tableContainer .tableHeads .tableRow:first-child .tableCell:last-child {
+  border-top-right-radius: 0.04rem;
+  border-bottom-right-radius: 0.04rem;
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+}
+.tableContainer .tableHeads .tableRow:first-child .tableCell:not(:first-child):not(:last-child) {
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+  border-right: none;
+}
+.tableContainer .tableHeads .tableRow .tableCell {
+  display: table-cell;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.2rem;
+  border-right: none;
+  border-left: none;
+  vertical-align: middle;
+}
+.tableContainer .tableBody {
+  display: table-row-group;
+  font-size: 0.16rem;
+}
+.tableContainer .tableBody .tableRow {
+  display: table-row;
+  transition: all 0.3s ease;
+  height: 0.5rem;
+}
+.tableContainer .tableBody .tableRow:nth-child(even) {
+  background-color: currentColor;
+}
+.tableContainer .tableBody .tableRow:nth-child(even) .tableCell:first-child {
+  border-top-left-radius: 0.04rem;
+  border-bottom-left-radius: 0.04rem;
+  border-right: none;
+}
+.tableContainer .tableBody .tableRow:nth-child(even) .tableCell:last-child {
+  border-top-right-radius: 0.04rem;
+  border-bottom-right-radius: 0.04rem;
+  border-left: none;
+}
+.tableContainer .tableBody .tableRow:nth-child(even) .tableCell:not(:first-child):not(:last-child) {
+  border-left: none;
+  border-right: none;
+}
+.tableContainer .tableBody .tableRow:nth-child(odd) {
+  background-color: transparent !important;
+}
+.tableContainer .tableBody .tableRow:nth-child(odd) .tableCell:first-child {
+  border-top-left-radius: 0.04rem;
+  border-bottom-left-radius: 0.04rem;
+}
+.tableContainer .tableBody .tableRow:nth-child(odd) .tableCell:last-child {
+  border-top-right-radius: 0.04rem;
+  border-bottom-right-radius: 0.04rem;
+}
+.tableContainer .tableBody .tableRow .tableCell {
+  display: table-cell;
+  text-align: center;
+  color: #68707b;
+  padding: 0.1rem;
+  vertical-align: middle;
+}/*# sourceMappingURL=table.css.map */

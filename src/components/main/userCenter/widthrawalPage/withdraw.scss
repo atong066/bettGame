@@ -1,0 +1,290 @@
+
+.withdrawMainContainer{
+    display: flex;
+    flex-direction: column;
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4rem;
+        background-color: #1C1E23;
+        gap: 10px;
+        border-radius: 7px;
+        .titleWing{
+            width: 5rem;
+            &:nth-child(3){
+                rotate: 180deg;
+            }
+        }
+        .headerTitle{
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .walletContainer{
+        background-color: #1C1E23;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 1.5rem;
+        border-radius: 7px;
+        .MuiTabs-root {
+            button{
+                color:white;
+                font-weight: 600;
+            }
+            // button[aria-selected="true"]{
+            //     color: #f0c059;
+            // }
+        }
+        .css-1776hvf{
+            border: none;
+        }
+        .css-1gsv261{
+            border-bottom: 2px solid;
+            border-color: #313843;
+        }
+        .walletIconBox{
+            .walletIcon{
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+        .walletLabelBox{
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .walletLabel{
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .walletContent{
+                display: flex;
+                gap: 5px;
+                .walletCurrency{
+                    color: #874404;
+                    font-weight: 600;
+                    font-style: italic;
+                }
+                .walletAmount{
+                    color: #FFAA09;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .bankCardContainer{
+        background-color: #1C1E23;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        // padding: 1.5rem;
+        border-radius: 7px;
+        width: 100%;
+        .bankAmount{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            color: #fff;
+            .amountLabel{
+                font-size: 22px;
+                font-style: italic;
+            }
+            .walletCurrency{
+                font-size: 22px;
+                color: #874404;
+                font-weight: 600;
+                font-style: italic;
+            }
+            .walletAmount{
+                font-size: 22px;
+                color: #FFAA09;
+                font-weight: 500;
+            }
+        }
+        .bankCardBox{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            .bankCardLabel{
+                font-size: 22px;
+                font-weight: 600;
+                color: #c5c5c5;
+            }
+            .cardBoxContainer{
+                background-color: #232328;
+                padding: 1rem;
+                border-radius: 7px;
+                .cardBox{   
+                    background-color: #141417;
+                    width: max-content;
+                    border-radius: 7px;
+                    padding: .5rem 2rem .5rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border: thin solid;
+                    gap: 3px;
+                    &:hover{
+                        border: 2px solid #ffa90926;
+                        cursor: pointer;
+                    }
+                    &.active{
+                        border: 2px solid #ffa9099e;
+                    }
+                    .bankName{
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    .bankHolder{
+                        color: #FFAA09;
+                        font-weight: 600;
+                    }
+                    .bankNumber{
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+                .checkContainer {
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 7px;
+
+                    .badge {
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        padding: 3px;
+                        display: none;
+                        rotate: 45deg;
+                        height: 50px;
+                        width: 50px;
+                        margin: -25px;
+
+                        &.active {
+                            background-color: #f0c059;
+                            display: block;
+                        }
+
+                        .checkIcon {
+                            color: #874404;
+                            rotate: -45deg;
+                            right: 10px;
+                        }
+
+                        .MuiAvatar-root {
+                            top: 11px !important;
+                            right: 4px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .amountInputContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .MuiStack-root{
+                .MuiOutlinedInput-notchedOutline{
+                    border: thin solid #f0c059bc;
+                }
+                .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input{
+                    color: #fff;
+                }
+                .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled{
+                    -webkit-text-fill-color: #fff;
+                }
+                .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled{
+                    -webkit-text-fill-color: #b8b8b8;
+                }
+                // .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+                //     border: 2px solid;
+                //     border-color: #F0C059 !important;
+                // }
+                .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root{
+                    color: #fff;
+                }
+                .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+                    color: #fff;
+                }
+                .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+                    color: #fff;
+                }
+                .css-1wc848c-MuiFormHelperText-root{
+                    color: #fff;
+                    font-size: 14px;
+                    font-style: italic;
+                }
+                .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
+                    color: #fff;
+                }
+                .css-i4bv87-MuiSvgIcon-root{
+                    color: #fff;
+                }
+            }
+            .bankButtons{
+                // background-color: #f0c059;
+                // color: #874404;
+                font-weight: 600;
+            }
+            .bankWithdrawalInfoContainer{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .infoBox{
+                    background-color: #232328;
+                    width: 100%;
+                    padding: 1.2rem;
+                    border-radius: 7px;
+                    border: thin solid #874404;
+                    font-size: 17px;
+                    .infoLabelBox{
+                        display: flex;
+                        gap: 5px;
+                        .infoLAbel{
+                            color: #c5c5c5;
+                        }
+                        .infoContent{
+                            color: #FFAA09;
+                        }
+                        .timesLabel{
+                            font-style: italic;
+                            color: red;
+                        }
+                        .currencyLabel{
+                            font-weight: 600;
+                            font-style: italic;
+                            color: #874404;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .addCardButtonBox{
+        background-color: #1C1E23;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 7px;
+        .bankButtons{
+            // background-color: #f0c059;
+            // color: #874404;
+            font-weight: 600;
+            height: 3rem;
+        }
+    }
+}
+.bnkWithrawalData{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2rem;
+}

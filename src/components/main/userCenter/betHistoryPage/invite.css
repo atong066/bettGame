@@ -1,0 +1,262 @@
+.main-invite-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: gray;
+}
+.main-invite-container .taxaTabs {
+  color: #fff;
+  font-weight: 600;
+}
+.main-invite-container .MuiTabs-root button {
+  color: white;
+}
+.main-invite-container .invite-header-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-invite-container .invite-header-label img {
+  height: 80px;
+}
+.main-invite-container .invite-header-label .id-Container {
+  display: flex;
+  flex-direction: column;
+}
+.main-invite-container .invite-header-label .id-Container span span {
+  color: white;
+}
+.main-invite-container .invite-header-label .label-button button {
+  padding: 5px;
+  color: black;
+  background-color: #f0c059;
+  border-color: black;
+  border-radius: 5px;
+}
+.main-invite-container .invite-header-label2 {
+  display: flex;
+  align-items: center;
+}
+.main-invite-container .invite-header {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1c1e23;
+  align-items: center;
+}
+.main-invite-container .invite-header img {
+  height: 10px;
+}
+.main-invite-container .invite-header img:nth-child(3) {
+  rotate: 180deg;
+}
+.main-invite-container .invite-header-label {
+  padding: 15px;
+  background-color: #1c1e23;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.main-invite-container .invite-body {
+  display: flex;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 7px;
+  gap: 1.5rem;
+}
+.main-invite-container .invite-body .invite-button-content {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+.main-invite-container .invite-body .invite-button-content .commisao-label {
+  color: white;
+  border-bottom: 1px solid gray;
+  padding: 20px;
+}
+.main-invite-container .invite-body .invite-button-content .commisao1 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  color: white;
+  padding: 20px;
+}
+.main-invite-container .invite-body .invite-button-content .commisao1 span {
+  color: #f0c059;
+}
+.main-invite-container .invite-body .invite-button-content .commisao-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-invite-container .invite-body .invite-button-content .commisao-content span {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-invite-container .invite-body .invite-button-content .commisao-content span span {
+  color: #f0c059;
+}
+.main-invite-container .invite-body .invite-button-content .tutorial-container {
+  padding: 20px;
+  border: 1px solid rgb(61, 60, 60);
+  border-radius: 5px;
+}
+.main-invite-container .invite-body .invite-button-content .none-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-invite-container .invite-body .invite-button-content .invite-container-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #202329;
+  border-radius: 5px;
+  border: 1px solid rgb(61, 60, 60);
+  color: white;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.main-invite-container .invite-body .invite-button-content .invite-container-label span {
+  color: gray;
+}
+.main-invite-container .invite-body .invite-button-content .invite-container-label2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #202329;
+  border-radius: 5px;
+  border: 1px solid rgb(61, 60, 60);
+  color: white;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.main-invite-container .invite-body .invite-button-content .invite-container-label2 span {
+  color: gray;
+}
+.main-invite-container .invite-body .invite-button-content #taxa {
+  justify-content: space-around;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  align-items: center;
+  width: 100%;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates span input[type=date] {
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates span input[type=date]::-webkit-calendar-picker-indicator {
+  background-color: white;
+  color: white;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates span input {
+  padding: 15px;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates .textInput {
+  position: relative;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates .textInput .search-icon {
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  font-size: 30px;
+  color: #f0c059;
+}
+.main-invite-container .invite-body .invite-button-content .invite-dates span input {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: gray;
+  margin-right: 10px;
+}
+.main-invite-container .invite-body .invite-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1e23;
+  width: 20%;
+  gap: 10px;
+  text-align: center;
+  margin-right: 0 !important;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+.main-invite-container .invite-body .invite-button .MuiButton-root {
+  color: #adb6c3;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+}
+.main-invite-container .invite-body .invite-button .isActive {
+  background-color: #f0c059;
+  color: white;
+}
+.main-invite-container .invite-body .invite-button button {
+  width: 80%;
+  font-size: 12px;
+}
+.main-invite-container .invite-body .invite-button-content {
+  width: 55vw;
+  background-color: #1c1e23;
+  border-radius: 7px;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons #qr {
+  margin: 10px;
+  height: 20vh;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons .links-social {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons .links-social .socialerroso {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid gray;
+  padding-bottom: 10px;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons .links-social .socialerroso span {
+  width: inherit;
+  padding: inherit;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons .links-social .socialerroso img {
+  width: 30px;
+}
+.main-invite-container .invite-body .invite-button-content .social-icons .links-social span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid gray;
+  width: 40vw;
+  border-radius: 5px;
+  color: white;
+  margin-top: 20px;
+}
+
+.tableBody {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.searchButton {
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+}/*# sourceMappingURL=invite.css.map */

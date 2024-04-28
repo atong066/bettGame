@@ -1,0 +1,106 @@
+.datePickerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .rdrDateRangeWrapper{
+        background-color: rgb(20, 20, 26);
+        padding: .08rem;
+        .rdrDateDisplayWrapper{
+            background-color: #0d0d10;
+            .rdrDateDisplayItemActive{
+                border: 2px solid;
+                border-color: #f0c059;
+                input{
+                    background-color: #191b1e;
+                    border-radius: 3px;
+                }
+            }
+            .rdrDateDisplayItem{
+                border: 2px solid;
+                border-color: #d8bb7c;
+                background-color: #393c43;
+                border-radius: 3px;
+                input{
+                    color: #f0c059;
+                }
+            }
+        }
+        .rdrMonthAndYearWrapper{
+            button{
+                background-color: #d8bb7c;
+            }
+            .rdrMonthPicker{
+                select{
+                    color: #fff;
+                    option{
+                        color: #000;
+                    }
+                }
+            }
+            .rdrYearPicker{
+                select{
+                    color: #fff;
+                    option{
+                        color: #000;
+                    }
+                }
+            }
+            .rdrDay{
+                color: #fff;
+            }
+        }
+        .rdrMonthsVertical{
+            .rdrMonth{
+                .rdrDays{
+                    .rdrDay {
+                        span{
+                            color: #ffae00 !important;
+                        }
+                        .rdrInRange{
+                            color: #736342 !important;
+                        }
+                        span{
+                            color: #fff;
+                        }
+                        .rdrDayEndPreview, .rdrDayStartPreview{
+                            color: #dea62c !important;
+                        }
+                        .rdrStartEdge, .rdrEndEdge{
+                            color: #736342 !important;
+                        }
+                    }
+                    .rdrDayPassive{
+                        span{
+                            color: #bfb49d !important;
+                        }
+                    }
+                    .rdrDayToday .rdrDayNumber span:after{
+                        background-color: #ecbc55;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.modalTitle{
+    color: #f0c059;
+    font-size: .18rem;
+}
+.modalCloseCalendar{
+    color: #f0c059 !important;
+}
+
+.css-knqc4i-MuiDialogActions-root{
+  
+    .subMitcalendR{
+        color: #f0c059;
+        font-weight: 600;
+        border: thin solid;
+        &:hover{
+            border: thin solid;
+        }
+    }
+}

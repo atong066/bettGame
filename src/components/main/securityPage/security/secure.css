@@ -1,0 +1,182 @@
+.secureMainContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1e23;
+  border-radius: 0.1rem;
+  margin-bottom: 0.2rem;
+  padding: 0.2rem;
+}
+.secureMainContainer .secureContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 6rem;
+  width: 4.9rem;
+  padding-top: 0.1rem;
+  font-size: initial;
+  min-height: 6rem;
+  padding-bottom: 0.4rem;
+}
+.secureMainContainer .secureContainer .labelBox {
+  width: 100%;
+  font-size: initial;
+}
+.secureMainContainer .secureContainer .labelBox .secureLabel {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.2rem;
+  font-weight: 700;
+  justify-content: flex-start;
+  margin-bottom: 0.3rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.4rem;
+  font-size: initial;
+}
+.secureMainContainer .secureContainer .textFieldContainer .passWordValidation {
+  display: none;
+  align-items: center;
+  min-height: 0.3rem;
+  margin-top: 0.05rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .passWordValidation.active {
+  display: flex;
+}
+.secureMainContainer .secureContainer .textFieldContainer .passWordValidation img {
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-right: 0.1rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .passWordValidation span {
+  font-size: 0.14rem;
+  line-height: 1;
+  color: #EA4E3D;
+}
+.secureMainContainer .secureContainer .textFieldContainer .emailValidation {
+  display: flex;
+  align-items: center;
+  min-height: 0.3rem;
+  margin-top: 0.05rem;
+  visibility: hidden;
+  opacity: 0;
+  margin-bottom: 0;
+  transition: visibility, margin-bottom 200ms, opacity 2s linear;
+}
+.secureMainContainer .secureContainer .textFieldContainer .emailValidation.active {
+  visibility: visible;
+  opacity: 1;
+  margin-bottom: 0.3rem;
+  transition: opacity, margin-bottom 200ms linear;
+}
+.secureMainContainer .secureContainer .textFieldContainer .emailValidation img {
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-right: 0.1rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .emailValidation span {
+  font-size: 0.14rem;
+  line-height: 1;
+  color: #EA4E3D;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox {
+  display: flex;
+  align-items: center;
+  border: 0.01rem solid;
+  border-color: #313843;
+  width: 100%;
+  padding: 0.05rem 0.1rem 0.05rem 0.1rem;
+  border-radius: 0.1rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox .nameIconBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox .nameIconBox .nameIcon {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox .nameIconBox .nameInput {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0 0.1rem;
+  height: 0.4rem;
+  outline: none;
+  font-size: 0.18rem;
+  color: #fff;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox .nameIconBox .receiveCode {
+  border: none;
+  line-height: 1.5;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 0 0.05rem 0;
+  letter-spacing: normal;
+  color: #f0c059;
+  font-size: 0.18rem;
+}
+.secureMainContainer .secureContainer .textFieldContainer .inputContainerBox:has(input[type=text]:focus) {
+  border: 1px solid;
+  border-color: #F0C059;
+}
+.secureMainContainer .secureContainer .addPhoneButton {
+  font-size: 0.2rem;
+  height: 0.55rem;
+  line-height: 1.2;
+  white-space: normal;
+  width: 1.8rem;
+  word-break: break-word;
+  text-transform: capitalize;
+  color: #874404;
+  border-radius: 0.1rem;
+}
+.secureMainContainer .secureContainer .hrDivLine {
+  width: 100%;
+  border-bottom: 0.01rem solid;
+  border-color: #313843;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+.secureMainContainer .secureContainer .instructionBox .intructionTitleBox {
+  display: flex;
+  flex-direction: column;
+}
+.secureMainContainer .secureContainer .instructionBox .intructionTitleBox .instructionTitle {
+  font-size: 0.18rem;
+  margin-bottom: 0.05rem;
+  color: #fff;
+  line-height: 1.5;
+}
+.secureMainContainer .secureContainer .instructionBox .intructionTitleBox .instructionLabel {
+  font-size: 0.16rem;
+  color: #68707B;
+  line-height: 1.5;
+}
+.secureMainContainer .secureContainer .instructionBox .instructionQRBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0 0 0;
+}
+.secureMainContainer .secureContainer .instructionBox .instructionQRBox .instructionQR {
+  border-radius: 0.1rem;
+}
+.secureMainContainer .secureContainer .instructionBox .instructionQRBox .QRAuthenticateCopierClick {
+  margin-top: 0.2rem;
+  cursor: pointer;
+  font-size: 0.18rem;
+  color: #F0C059;
+}
+.secureMainContainer .secureContainer .instructionBoxLast {
+  margin-bottom: 0.2rem;
+}/*# sourceMappingURL=secure.css.map */

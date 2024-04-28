@@ -1,0 +1,60 @@
+.noDataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noDataContainer .noDataImageBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noDataContainer .noDataImageBox .noDataImage {
+  width: 2.1rem;
+}
+.noDataContainer .noDataImageBox .noDataImageV2 {
+  width: 1.1rem;
+}
+.noDataContainer .noDataImageBox .noDataImageV3 {
+  width: 2rem;
+}
+.noDataContainer .noDataImageBox label {
+  text-align: center;
+  font-size: 0.24rem;
+}
+.noDataContainer .noDataImageBox .noDataLabelV2 {
+  font-size: 0.15rem !important;
+  color: #b0a58e;
+}
+.noDataContainer .noDataImageBox .noDataLabelV3 {
+  font-size: 0.18rem !important;
+  color: #b0a58e;
+}
+.noDataContainer .noDataLabelBox {
+  display: flex;
+  align-items: center;
+  font-size: 0.18rem;
+  height: 0.18rem;
+}
+.noDataContainer .noDataLabelBox .noDataLabel {
+  font-size: 0.18rem;
+  height: 0.18rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #b0a58e;
+}
+.noDataContainer .noDataLabelBox .noDataLabelV2 {
+  font-size: 0.1rem;
+  height: 0.1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #b0a58e;
+}
+.noDataContainer .noDataLabelBox .noDataLabelV3 {
+  font-size: 0.18rem;
+  height: 0.1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #b0a58e;
+}/*# sourceMappingURL=no-data.css.map */

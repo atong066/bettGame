@@ -1,0 +1,24 @@
+.textField {
+  width: 40rem;
+  padding: 2px;
+  font-size: 4rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+  background-color: #fff;
+  outline: none;
+  border: thin solid #313843;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  &:hover {
+    background-color: #f9f9f9;
+    color: #fff;
+  }
+  &:focus {
+    outline: none;
+    border: thin solid #131314;
+  }
+  &:active {
+    background-color: #313843;
+    border-color: #313843;
+  }
+}

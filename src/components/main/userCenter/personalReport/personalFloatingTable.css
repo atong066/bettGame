@@ -1,0 +1,6 @@
+.personalFloatingTable {
+  overflow: auto;
+}
+.personalFloatingTable::-webkit-scrollbar {
+  display: block;
+}/*# sourceMappingURL=personalFloatingTable.css.map */

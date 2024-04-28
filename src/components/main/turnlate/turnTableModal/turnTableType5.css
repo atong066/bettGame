@@ -1,0 +1,448 @@
+.type5TurnTableMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background-color: #1C1E23;
+  border-radius: 0.1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202329;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  position: relative;
+  z-index: 1;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.01rem;
+  font-size: initial;
+  width: 100%;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: initial;
+  width: 100%;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent .moneyIcon {
+  width: 0.45rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent .moneyLabel {
+  color: #ffc700;
+  font-size: 0.3rem;
+  font-weight: 600;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent .withdrawButton {
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+  padding: 0.03rem 0.15rem 0.03rem 0.15rem;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: #3b89fe;
+  cursor: pointer;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent .withdrawButton .moneyIconButton {
+  width: 0.18rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressHeader .headerContent .withdrawButton .buttonLabel {
+  color: #fff;
+  font-weight: 600;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  width: 80%;
+  margin: auto;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer .percentageBox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer .percentageBox .percentageLabel {
+  font-size: 0.14rem;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer .progressbarBackGround {
+  background-color: #313843;
+  border-radius: 0.1rem;
+  height: 0.11rem;
+  width: 100%;
+  position: relative;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer .progressbarBackGround .progressBarForeGround {
+  display: flex;
+  align-items: center;
+  background-color: #1672f2;
+  border-radius: 0.1rem;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: right;
+  line-height: 1;
+  white-space: nowrap;
+  transition: width 0.6s ease;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .progressBarContainer .progressbarBackGround .progressBarForeGround::after {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  position: absolute;
+  width: 0.15rem;
+  height: 0.15rem;
+  left: max(0.15rem, 100%);
+  transform: translate(-0.15rem);
+  border-radius: 100%;
+  top: -0.01563rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #dfebff 100%);
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .extraCriteriaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 0.1rem;
+  margin-top: 0.2rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .extraCriteriaContainer .extraLabel {
+  font-size: 0.13rem;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .extraCriteriaContainer .moneyBox {
+  display: flex;
+  align-items: center;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .extraCriteriaContainer .moneyBox .moneyIcon {
+  width: 0.25rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .progressHeaderContainer .extraCriteriaContainer .moneyBox .moneyLabel {
+  color: #ffaa09;
+  font-weight: 600;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: initial;
+  height: 0.8rem;
+  width: 1.3rem;
+  border-radius: 0.1rem;
+  gap: 0.1rem;
+  border: thin solid #313843;
+  cursor: pointer;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active1 {
+  background-color: #1672f2;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active1 .selectLabel {
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active2 {
+  background-color: #ffaa09;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active2 .selectLabel {
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active3 {
+  background-color: #b751ff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor.active3 .selectLabel {
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor .selectTitle {
+  font-size: 0.18rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableSelector .selectTor .selectLabel {
+  text-align: center;
+  font-size: 0.13rem;
+  line-height: 1.2;
+  color: #68707B;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.4rem;
+  position: relative;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame .turnTableMainFrameContainer {
+  bottom: 0;
+  color: #fff;
+  font-size: 0.17rem;
+  height: 4rem;
+  margin: auto;
+  padding-top: 0.16rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 1.26rem;
+  z-index: 10;
+  left: -3px;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame .turnTableMainFrameContainer span {
+  width: 100%;
+  margin-bottom: -0.376471rem;
+  padding-bottom: 0.376471rem;
+  font-size: 0.2rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame .turnTableMainFrameContainer span span {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.2;
+  overflow: hidden;
+  overflow: initial;
+  text-align: center;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  word-break: break-word;
+  white-space: nowrap;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame .turnTableMainFrameContainer img {
+  position: relative;
+  top: 0.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame .turnTableMainFrame {
+  width: 4.3rem;
+  height: 4.3rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame.active {
+  animation-name: canvasRrotation;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .transFormRotateFrame.rotating {
+  animation: rotating 10s linear infinite;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox .turnTableMainButton {
+  width: 1.4rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  bottom: 2rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox:active {
+  scale: 0.99;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox:active .buttonLabelSpin {
+  scale: 0.99;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox .buttonLabelSpin {
+  position: absolute;
+  line-height: 1.2;
+  overflow: hidden;
+  overflow: initial;
+  font-size: 0.22rem;
+  color: #fff;
+  margin-top: 0.15rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .spinButtonBox:has(span[class=buttonLabelSpin]:active) {
+  scale: 0.99;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .turnTableTurningTable .turnTableMainEye {
+  position: absolute;
+  height: 2.7rem;
+  margin: auto;
+  top: -0.23rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.3rem;
+  font-size: initial;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox {
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+  font-size: initial;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .shareLabel {
+  font-size: 0.15rem;
+  color: #fff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  border-color: #ffaa09;
+  border-radius: 0.08rem;
+  padding: 0.05rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 0.55rem;
+  min-width: 0.55rem;
+  gap: 0.05rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox .timeContentBox {
+  line-height: 0.12rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox .timeContentBox .shareLabel {
+  font-size: 0.15rem;
+  color: #fff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox .timeContentBox .shareTime {
+  font-size: 0.15rem;
+  color: #ffaa09;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox .timeLabelBox {
+  text-align: center;
+  line-height: 0.12rem;
+  width: -moz-max-content;
+  width: max-content;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareLabelBox .timerMainContainer .timerContainer .timeBox .timeLabelBox span {
+  font-size: 0.12rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  word-break: break-all;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareContentBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: initial;
+  background-color: rgba(59, 137, 254, 0.2);
+  padding: 0.12rem;
+  border-radius: 0.08rem;
+  cursor: pointer;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareContentBox .shareContentLabel {
+  font-size: 0.15rem;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnAllTableMain .turnTableMainBox .shareContainer .shareContentBox .shareIcon {
+  font-size: 0.16rem;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTable {
+  text-align: center;
+  height: 3.95rem;
+  background-color: #202329;
+  border-radius: 0.1rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations {
+  font-size: initial;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  background-color: #202329;
+  height: 2.55rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsHeader {
+  font-size: initial;
+  margin-bottom: 0.05rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsHeader .regulationTitle {
+  font-size: 0.18rem;
+  color: #fff;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsBodyContainer {
+  font-size: initial;
+  overflow: auto;
+  height: 2rem;
+  padding-bottom: 0.05rem;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsBodyContainer .regulationBodyTitleBox {
+  font-size: initial;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsBodyContainer .regulationBodyTitleBox .regulationBodyTitle {
+  font-size: 0.18rem;
+  color: #e03e2d;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsBodyContainer .regulationsBody {
+  font-size: initial;
+}
+.type5TurnTableMainContainer .turnTableBoxContainers .turnTableTableMainContainer .turnTableTableRegulations .regulationsBodyContainer .regulationsBody .bodyContentsTable {
+  font-size: 0.18rem;
+  color: #95a5a6;
+  line-height: 1.5;
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes canvasRrotation {
+  from {
+    transform: rotate(0deg);
+  }
+}/*# sourceMappingURL=turnTableType5.css.map */

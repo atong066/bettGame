@@ -1,0 +1,87 @@
+.buttonContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: 1.3rem;
+}
+.buttonContainers button {
+  display: flex;
+  width: 1.3rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.1rems;
+  height: 0.6rem;
+  padding: 0 0.1rem;
+  white-space: pre-wrap;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.2rem;
+  justify-content: center;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  word-break: break-word;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.buttonContainers button span {
+  display: -webkit-box;
+  align-items: center;
+  margin-bottom: -1.64706px;
+  padding-bottom: 1.64706px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: currentColor;
+}
+
+.missaoContainer {
+  display: flex;
+  gap: 0.3rem;
+}
+.missaoContainer .mainContainerMission {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+.missaoContainer .mainContainerMission .missionContainer {
+  background-color: #1c1e23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  justify-content: space-between;
+}
+.missaoContainer .mainContainerMission .missionContainer .containerLeft {
+  display: flex;
+  align-items: center;
+}
+.missaoContainer .mainContainerMission .missionContainer .containerLeft img {
+  height: 0.6rem;
+}
+.missaoContainer .mainContainerMission .missionContainer .containerLeft .missDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.missaoContainer .mainContainerMission .missionContainer .containerRight {
+  display: flex;
+  align-items: center;
+}
+.missaoContainer .mainContainerMission .missionContainer .containerRight a {
+  align-items: center;
+  background-color: #f0c059;
+  color: #874404;
+  border: none;
+  border-radius: 0.1rem;
+  display: flex;
+  font-size: 0.16rem;
+  height: 0.4rem;
+  justify-content: center;
+  line-height: 1.1;
+  padding: 0 !important;
+  white-space: pre-wrap;
+  width: 1rem;
+  cursor: pointer;
+}/*# sourceMappingURL=missionPage.css.map */

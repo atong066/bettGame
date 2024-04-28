@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #1c1e23;
+    gap: 10px;
+    border-radius: 7px;
+    position: relative;
+    .navArrow {
+      position: absolute;
+      left: 20px;
+      color: #adb6c3;
+      height: 1.5rem;
+      width: 2rem;
+    }
+    .turnBack {
+      position: absolute;
+      left: 50px;
+      color: #adb6c3;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      cursor: pointer;
+      font-size: 1.4rem;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .titleWing {
+        width: 5rem;
+        &:nth-child(3) {
+          rotate: 180deg;
+        }
+      }
+      .vipHeaderTitle {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+  }

@@ -1,0 +1,878 @@
+.supportSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.supportSection .supportHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #1C1E23;
+  gap: 10px;
+  border-radius: 7px;
+}
+.supportSection .supportHeader .titleWing {
+  width: 5rem;
+}
+.supportSection .supportHeader .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.supportSection .supportHeader .supportHeaderTitle {
+  font-size: 0.24rem;
+  font-weight: bold;
+  color: #fff;
+}
+.supportSection .supportMainContainer {
+  border-radius: 7px;
+}
+.supportSection .supportMainContainer .tablLink {
+  font-size: initial;
+  height: 0.7rem;
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .tablLink.active button {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer a {
+  font-size: initial;
+  height: 0.7rem;
+}
+.supportSection .supportMainContainer .supportTabs {
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.2rem;
+  margin-top: 0.13rem;
+  text-transform: capitalize;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+  margin-bottom: 0;
+  gap: 1rem;
+  background-color: #202329;
+  padding: 1rem;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #1C1E23;
+  cursor: pointer;
+  gap: 10px;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox label {
+  cursor: pointer;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .iconBox {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .iconBox .noticeIcon {
+  color: green;
+  height: 5rem;
+  width: 3rem;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .iconBox .noticeIconRead {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .iconBox .noticeIconSound {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noticeBoxContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noticeBoxContent .noticeContent {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noticeBoxContent .noticeContentRead {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noticeBoxContent .noticeDate {
+  color: #68707B;
+  font-size: 15px;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noticeBoxContent .noticeContentSound {
+  color: #fff;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .arrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem;
+  gap: 10px;
+  width: 10%;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .arrowBox .arrowTitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .arrowBox .arrowIcon {
+  height: 2rem;
+  width: 1.5rem;
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noMsessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+  margin: auto;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noMsessage .noMessageImage {
+  width: 15rem;
+}
+.supportSection .supportMainContainer .noticeContainerSuppory .noticeBox .noMsessage .noMessageLabel {
+  font-size: 24px;
+  font-weight: 500;
+  color: #68707B;
+}
+.supportSection .supportMainContainer .supportBox {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  gap: 15px;
+  font-size: initial;
+  background-color: #1C1E23;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+.supportSection .supportMainContainer .supportBox .imageBox {
+  display: flex;
+  justify-content: center;
+}
+.supportSection .supportMainContainer .supportBox .imageBox .supportImage {
+  width: 0.74rem;
+}
+.supportSection .supportMainContainer .supportBox .supportMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60%;
+}
+.supportSection .supportMainContainer .supportBox .supportMessage .supportTitleBox .supportTitle {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+.supportSection .supportMainContainer .supportBox .supportMessage .supportContentBox .supportContent {
+  color: #68707B;
+  font-size: 18px;
+}
+.supportSection .supportMainContainer .supportBox .buttonBox {
+  display: flex;
+  justify-content: center;
+  line-height: 0.18rem;
+  margin-left: 0.2rem;
+  text-align: center;
+  margin-left: auto;
+}
+.supportSection .supportMainContainer .supportBox .buttonBox .supportButton {
+  font-size: 0.16rem;
+  text-transform: capitalize;
+  height: 0.4rem;
+  font-weight: 100;
+  border: 1px solid;
+  width: 1rem;
+  color: #f0c059 !important;
+  border-radius: 0.1rem !important;
+}
+.supportSection .supportMainContainer .supportBoxContent {
+  background-color: #1C1E23;
+  margin-top: 0.2rem;
+  border-radius: 0.1rem;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele {
+  margin-top: 0.2rem;
+  padding: 0 0.2rem;
+  padding-bottom: 0.2rem;
+}
+@media screen and (max-width: 430px) {
+  .supportSection .supportMainContainer .supportBoxContent .supportTele {
+    grid-template-columns: auto;
+  }
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent {
+  border: thin solid #313843;
+  border-radius: 7px;
+  padding: 0.2rem 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 5.7rem;
+  height: 1rem;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .imageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .imageBox .teleImage {
+  width: 0.46rem;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .contentBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .contentBox .contentLabel {
+  font-size: 17px;
+  color: #fff;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .contentBox .contentTitle {
+  color: #68707B;
+  font-weight: 600;
+}
+.supportSection .supportMainContainer .supportBoxContent .supportTele .teleContent .boxButton .supportButton {
+  border-radius: 0.1rem;
+  font-size: 0.16rem;
+  height: 0.4rem;
+  line-height: 0.18rem;
+  padding: 0 0.06rem;
+  width: 1rem;
+  text-transform: capitalize;
+  color: #874404 !important;
+}
+.supportSection .supportMainContainer .bonusContainer {
+  background-color: #1C1E23;
+  border-bottom-right-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+}
+.supportSection .supportMainContainer .bonusContainer .css-1776hvf {
+  border: none;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0.2rem 0.2rem 0.2rem;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaLabelBox {
+  display: flex;
+  gap: 5px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaLabelBox .textAreaLabel {
+  color: #fff;
+  font-size: 18px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaLabelBox .textAreaLabelNote {
+  color: #68707B;
+  font-style: italic;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaBox {
+  width: 100%;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaBox .bonusTextArea {
+  border-radius: 0.1rem;
+  color: #fff;
+  border: thin solid #313843;
+  resize: vertical;
+  width: 100%;
+  font-size: 0.18rem;
+  outline: none;
+  padding: 0.2rem 0.2rem 0.3rem;
+  min-height: 1.87rem;
+  background-color: #1c1e23;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaBox .bonusTextArea:hover {
+  border: thin solid #f0c059 !important;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaBox .bonusTextArea:focus {
+  border: thin solid #f0c059 !important;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .textAreaBox .textAreaCounter {
+  color: #68707B;
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imagePickerLabelBox {
+  display: flex;
+  gap: 5px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imagePickerLabelBox .imagePickerLabel {
+  color: #fff;
+  font-size: 18px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imagePickerLabelBox .imagePickerLabelNote {
+  color: #68707B;
+  font-style: italic;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imagePicker {
+  border: thin solid #313843;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  cursor: pointer;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imagePicker .addIcon {
+  width: 3rem;
+  height: 5rem;
+  color: #313843;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .imagePickerContainer .imageSizeLabel {
+  color: #68707B;
+  font-style: italic;
+  font-size: 15px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .noticeImageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .noticeImageContainer .title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.18rem;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .noticeImageContainer .titleBody {
+  color: #68707B;
+  font-size: 0.18rem;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .buttonContainer {
+  font-size: initial;
+  margin-top: 0.2rem;
+}
+.supportSection .supportMainContainer .bonusContainer .createBonusContainer .buttonContainer .imagePickerButton {
+  background-color: #f0c059;
+  color: #874404;
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+  font-size: 0.2rem;
+  height: 0.55rem;
+  line-height: 0.2rem;
+  white-space: pre-wrap;
+  width: 1.8rem;
+  border-radius: 0.1rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus {
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #202329;
+  border-radius: 0.1rem;
+  margin: 0.2rem 0 0;
+  max-width: 12rem;
+  padding: 0.2rem;
+  gap: 0.1rem;
+  max-height: 6rem;
+  overflow: auto;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item {
+  background-color: #1c1e23;
+  border-radius: 0.1rem;
+  box-shadow: 0 0.03rem 0.09rem 0 rgba(0, 0, 0, 0.06);
+  font-size: 0.18rem;
+  padding: 0.3rem 0.2rem 0.2rem;
+  position: relative;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+  display: flex;
+  justify-content: space-between;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .leftItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .leftItem span {
+  color: #68707B;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .rightItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  justify-content: flex-start;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .rightItem span {
+  color: #68707B;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .rightItem .viewItem {
+  display: flex;
+  gap: 0.1rem;
+  color: #ffaa09;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .item .rightItem .viewItem img {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(3%) saturate(1774%) hue-rotate(176deg) brightness(94%) contrast(89%);
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .pendingTitle {
+  color: #68707B;
+  font-size: 19px;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .pendingTitleContent {
+  color: #f0c059;
+  font-weight: 600;
+  font-size: 19px;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingContainer .pendingButton {
+  color: #874404;
+  background-color: #f0c059;
+  font-weight: 600;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  background-color: #202329;
+  height: auto;
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 7px;
+  background-color: #1C1E23;
+  cursor: pointer;
+  gap: 0.1rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox label {
+  cursor: pointer;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .iconBox {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .iconBox .noticeIcon {
+  color: green;
+  height: 5rem;
+  width: 3rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .iconBox .noticeIconRead {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .iconBox .noticeIconSound {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noticeBoxContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noticeBoxContent .noticeContent {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noticeBoxContent .noticeContentRead {
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noticeBoxContent .noticeDate {
+  color: #68707B;
+  font-size: 15px;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noticeBoxContent .noticeContentSound {
+  color: #fff;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .arrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem;
+  gap: 10px;
+  width: 10%;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .arrowBox .arrowTitle {
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .arrowBox .arrowIcon {
+  height: 2rem;
+  width: 1.5rem;
+  color: #f0c059;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noMsessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+  margin: auto;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noMsessage .noMessageImage {
+  width: 15rem;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .noticeBox .noMsessage .noMessageLabel {
+  font-size: 24px;
+  font-weight: 500;
+  color: #68707B;
+}
+.supportSection .supportMainContainer .bonusContainer .pendingBonus .pendingBonusContainer .viewFeedbackButton {
+  line-height: normal;
+  font-size: 11px;
+  border: thin solid;
+}
+
+.modalButton {
+  font-weight: 600 !important;
+}
+
+.css-nm1wuk-MuiTypography-root-MuiDialogTitle-root {
+  background-color: #17191d;
+  color: #f0c059;
+}
+
+.css-153eyq5-MuiModal-root-MuiDialog-root .MuiDialogContent-root {
+  background-color: #1C1E23;
+  color: #fff;
+}
+
+html {
+  scroll-padding-top: 120px !important;
+}
+
+.replyContainer {
+  display: flex;
+  flex-direction: column;
+}
+.replyContainer .topBoxReply {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.replyContainer .topBoxReply .contentBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.replyContainer .topBoxReply .contentBox .contentLabel {
+  color: #fff;
+}
+.replyContainer .topBoxReply .contentBox .contentFeedBackPage {
+  color: #f0c059;
+}
+.replyContainer .textAreaReply {
+  margin-top: 1rem;
+  min-width: 800px;
+  max-width: 100%;
+}
+.replyContainer .noDataLabel {
+  color: rgb(28, 100, 245);
+  font-style: italic;
+  font-size: 14px;
+}
+.replyContainer .replyBox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.replyContainer .replyBox .yourBox {
+  display: flex;
+  align-items: center;
+}
+.replyContainer .replyBox .yourBox .yourLabel {
+  color: #fff;
+  font-style: italic;
+  font-size: 14px;
+}
+.replyContainer .replyBox .yourBox .yourLabel.active {
+  color: #f0c059;
+}
+.replyContainer .replyBox .yourBox .yourReply {
+  color: #f0c059;
+  font-style: italic;
+  font-size: 14px;
+  max-width: 40rem;
+  word-break: break-all;
+}
+.replyContainer .replyBox .yourBox .yourReply.active {
+  color: #fff;
+}
+.replyContainer .replyBox .yourBox .yourReplyTime {
+  color: #f0c059;
+  font-style: italic;
+  font-size: 14px;
+}
+.replyContainer .replyBox .yourBox .yourReplyTime.active {
+  color: #fff;
+}
+.replyContainer .replyBox .yourBox .openClose {
+  color: #fff;
+  font-size: 14px;
+}
+.replyContainer .replyBox .yourBox .openClose.active {
+  color: #f0c059;
+}
+
+.noticeContainerSupport {
+  padding: 0.2rem 0.2rem 0.2rem;
+  background-color: #1c1e23;
+  height: calc(100vh - 1.9rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+.noticeContainerSupport .noticeBox {
+  display: flex;
+  align-items: center;
+  background-color: #1c1e23;
+  padding: 0.2rem 0.2rem 0.2rem 0.26rem;
+  font-size: initial;
+  margin-bottom: 0.2rem;
+  border-radius: 0.1rem;
+  gap: 0.2rem;
+}
+.noticeContainerSupport .noticeBox .noticeBoxContent {
+  font-size: initial;
+}
+.noticeContainerSupport .noticeBox .noticeBoxContent .noticeTitleBox label {
+  font-size: 0.18rem;
+  color: red !important;
+}
+.noticeContainerSupport .noticeBox .arrowBox {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.noticeContainerSupport .noticeBox .arrowBox .arrowTitle {
+  cursor: pointer;
+}
+.noticeContainerSupport .noticeBox .arrowBox .arrowTitle label {
+  font-size: 0.18rem;
+}
+.noticeContainerSupport .noticeBox .noMsessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.noticeContainerSupport .noticeBox .noMsessage .noMessageLabel {
+  color: #68707B;
+}
+
+.noticeBoxContainer {
+  padding: 0.2rem;
+  background-color: #202329;
+  border-radius: 0.1rem;
+  height: 100%;
+  overflow: auto;
+}
+.noticeBoxContainer .alertContainer {
+  color: red;
+}
+
+.noticeBoxempty {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noticeBoxempty .noMsessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.noticeBoxempty .noMsessage .noMessageLabel {
+  color: #68707B;
+}
+
+.alertContainer {
+  font-size: 0.2rem !important;
+}
+.alertContainer span {
+  font-size: 0.18rem !important;
+}
+
+.fileUpload {
+  background-color: #1c1e23;
+  border: 0.01rem solid #313843;
+  height: 1.25rem;
+  position: relative;
+  width: 1.25rem;
+}
+.fileUpload input {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.fileUpload .fileX {
+  background-color: #313843;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0.37rem;
+  width: 0.02rem;
+}
+.fileUpload .fileY {
+  background-color: #313843;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 0.02rem;
+  width: 0.37rem;
+}
+
+.tab-container {
+  font-size: initial;
+  display: flex;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+}
+.tab-container button {
+  border: thin solid #313843;
+  color: #68707B;
+  align-items: center;
+  border-radius: 0.25rem;
+  display: flex;
+  font-size: 0.18rem;
+  height: 0.4rem;
+  justify-content: center;
+  line-height: 0.18rem;
+  margin-right: 0.2rem;
+  width: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sentEntry {
+  text-align: end;
+}
+.sentEntry p {
+  word-wrap: anywhere;
+  background-color: #1c1e23;
+  border-radius: 0.1rem;
+  color: var(--theme-text-color-lighten);
+  display: inline-flex;
+  font-size: 0.18rem;
+  line-height: 1.56;
+  margin: 0 0.1rem 0 auto;
+  padding: 0.1rem 0.2rem;
+  position: relative;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: right;
+  margin-top: 0.1rem;
+  color: #adb6c3;
+}
+.sentEntry p::after {
+  border-color: transparent transparent transparent #1c1e23;
+  border-style: solid;
+  border-width: 0.1rem 0 0.1rem 0.1rem;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -0.09rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+}
+
+.receivetEntry {
+  text-align: start;
+}
+.receivetEntry p {
+  word-wrap: anywhere;
+  background-color: #1c1e23;
+  border-radius: 0.1rem;
+  color: var(--theme-text-color-lighten);
+  display: inline-flex;
+  font-size: 0.18rem;
+  line-height: 1.56;
+  margin: 0 0.1rem 0 auto;
+  padding: 0.1rem 0.2rem;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: left;
+  margin-top: 0.1rem;
+  color: #adb6c3;
+}
+.receivetEntry p::before {
+  border-color: transparent transparent transparent #1c1e23;
+  border-style: solid;
+  border-width: 0.1rem 0 0.1rem 0.1rem;
+  content: "";
+  height: 0;
+  position: absolute;
+  left: -0.091rem;
+  transform: translateY(-30%);
+  width: 0;
+  rotate: 180deg;
+}
+
+.entriesFeedback {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.collectionBtn {
+  align-items: center;
+  display: flex;
+  height: 0.4rem;
+  justify-content: center;
+  line-height: 0.18rem;
+  margin-left: 0.2rem;
+  width: 1rem;
+  background-color: #999;
+  border-color: #999;
+  color: #fff;
+  border-radius: 0.1rem;
+  padding: 0 0.1rem;
+}
+.collectionBtn span {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  font-size: 0.16rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-wrap;
+  pointer-events: none;
+  word-wrap: break-word;
+}/*# sourceMappingURL=support.css.map */

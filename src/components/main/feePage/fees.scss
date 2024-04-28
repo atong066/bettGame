@@ -1,0 +1,370 @@
+.feesMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .2rem;
+
+    .jurosContentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: #1C1E23;
+        border-radius: .1rem;
+
+        .jurosMenuContainer {
+            width: 100%;
+            font-size: initial;
+
+            .jurosTabs {
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .css-ahj2mt-MuiTypography-root {
+                padding: 0 !important;
+            }
+
+            .cardsContainer {
+                display: flex;
+                gap: 0.2rem;
+                padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+                font-size: initial;
+                border: 0.01rem solid #313843;
+                margin: 0.2rem 0.2rem 0 0.2rem;
+                border-radius: 0.1rem;
+
+                .cardBox1,
+                .cardBox2,
+                .cardBox3 {
+                    height: 2rem;
+                    color: #fff;
+                    padding: .1rem;
+                    width: 100%;
+                    position: relative;
+                    border-radius: .1rem;
+                    font-size: initial;
+
+                    .labelBox {
+                        font-size: initial;
+
+                        .labelTitle {
+                            font-size: .18rem;
+                            font-weight: 600;
+                        }
+
+                        .labelAmount {
+                            font-size: .20rem;
+                            font-weight: 600;
+                            position: absolute;
+                            bottom: .5rem;
+                        }
+
+                        .labelEarningRate {
+                            font-size: .18rem;
+                            font-weight: 600;
+                            position: absolute;
+                            bottom: .1rem;
+                        }
+                    }
+
+                    .coinBox {
+                        position: absolute;
+                        bottom: 0;
+                        right: .1rem;
+                    }
+                }
+
+                .cardBox1 {
+                    background: linear-gradient(180deg, #79d873, #76d2ad);
+                }
+
+                .cardBox2 {
+                    background: linear-gradient(180deg, #7adcf5, #54a9e2);
+                }
+
+                .cardBox3 {
+                    background: linear-gradient(180deg, #64aff6, #4c6ef5);
+                }
+
+            }
+
+            .graphContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                .graphScrollBox {
+                    overflow-y: hidden !important;
+                    overflow-x: auto !important;
+
+                    &::-webkit-scrollbar {
+                        display: block;
+                    }
+
+                    .graphTitle {
+                        color: #fff;
+                        font-size: 20px;
+                    }
+                }
+
+            }
+
+            .registrationMainContainer {
+                width: 100%;
+                padding: .2rem;
+
+            }
+
+            .regrasContainer {
+                margin: .2rem;
+                padding: .2rem;
+                border: thin solid #313843;
+                border-radius: .1rem;
+                color: #adb6b9;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                gap: .16rem;
+
+                .balanceBonusBox {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .16rem;
+
+                    .balanceTitle {
+                        font-size: .18rem;
+                        font-weight: 100;
+                        color: #fff;
+                    }
+
+                    .titleBox {
+                        width: 85%;
+
+                        .title {
+                            font-size: .18rem;
+                            color: #ADB6C3;
+                        }
+                    }
+
+                    .balanceBox {
+                        border: thin solid #313843;
+                        padding: .2rem;
+                        border-radius: .1rem;
+                        position: relative;
+                        font-size: initial;
+
+                        .imageBox {
+                            position: absolute;
+                            bottom: -.1rem;
+                            right: .1rem;
+
+                            .balanceImage {
+                                width: 1.6rem;
+                            }
+                        }
+                    }
+                }
+
+                .balanceInstructions {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .1rem;
+
+                    .balanceTitle {
+                        font-size: .18rem;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+
+                    .balanceTitleWithTable {
+                        margin-top: 8px;
+                    }
+
+                    .boxContainer {
+                        display: flex;
+                        gap: .2rem;
+
+                        .titleBox {
+                            width: 85%;
+
+                            .title {
+                                font-size: 15px;
+                                color: #ADB6C3;
+                            }
+                        }
+
+                        .balanceBox1,
+                        .balanceBox2,
+                        .balanceBox3 {
+                            border: thin solid #313843;
+                            padding: .2rem;
+                            border-radius: 7px;
+                            position: relative;
+                            width: 60%;
+                            display: flex;
+                            align-items: center;
+                            font-size: initial;
+
+                            .imageBox {
+                                position: absolute;
+                                bottom: 0;
+                                right: 0;
+
+                                .balanceImage {
+                                    width: .7rem;
+                                }
+                            }
+                        }
+
+                        .balanceBox3 {
+                            width: 100%;
+                        }
+                    }
+
+                    .middleBoxConrtainer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .2rem;
+                        border: thin solid #313843;
+                        padding: .2rem;
+                        border-radius: .1rem;
+                        margin-top: .05rem;
+
+                        .firstBox {
+                            width: 100%;
+                            font-size: initial;
+
+                            .firstP {
+                                color: #ADB6C3;
+                                font-size: .18rem;
+                            }
+                        }
+                    }
+                }
+
+                .balanceCompliance {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .balanceTitle {
+                        font-size: .18rem;
+                        font-weight: 600;
+                        color: #fff;
+                    }
+
+                    .boxContainer {
+                        display: flex;
+                        gap: .2rem;
+
+                        .titleBox {
+
+                            .title {
+                                font-size: .15rem;
+                                color: #ADB6C3;
+                            }
+                        }
+
+                        .balanceBox1,
+                        .balanceBox2,
+                        .balanceBox3 {
+                            border: thin solid #313843;
+                            padding: .2rem;
+                            border-radius: 7px;
+                            position: relative;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 1;
+                            font-size: initial;
+
+                            .spanBox {
+                                position: absolute;
+                                mix-blend-mode: overlay;
+
+                                .spanNumber {
+                                    font-size: 1rem;
+                                    font-weight: 600;
+                                    color: rgb(28, 100, 245);
+                                    opacity: .3
+                                }
+                            }
+
+                            .titleBox {
+                                .title {
+                                    font-size: 17px;
+                                    color: #ADB6C3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .feeBannerMainContainer {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .bannerContainer {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 100%;
+                font-size: initial;
+                margin: .2rem;
+                padding: .2rem;
+                font-size: initial;
+                border: .01rem solid;
+                border-color: #313843;
+
+                .contentContainer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    font-size: initial;
+
+                    .labelContainer {
+                        display: flex;
+                        align-items: center;
+                        gap: .1rem;
+                        font-size: .18rem;
+
+                        .contentLabel {
+                            font-size: .18rem;
+                            color: #68707B;
+                        }
+
+                        .contentsLabel {
+                            font-size: .18rem;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .contentContainerSecond {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                }
+            }
+        }
+    }
+
+    .bonusSearchButton {
+        font-size: .18rem;
+        height: .5rem;
+        margin-left: .2rem;
+        width: 1.2rem;
+        font-weight: 100;
+        color: #874404;
+    }
+}

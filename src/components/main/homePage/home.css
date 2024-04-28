@@ -1,0 +1,731 @@
+.content {
+  height: 100%;
+  margin-top: 2rem !important;
+}
+
+.content .slider {
+  position: relative;
+}
+
+.content .slider .leftArrow {
+  position: absolute;
+  color: white;
+  height: 40px;
+  width: 40px;
+  top: 3rem;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.192);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.scrolltoTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .05rem;
+  border-radius: .1rem;
+  flex-direction: column;
+  border: .01rem solid #313843;
+  background-color: #1c1e23;
+  padding: .1rem;
+  height: .78rem;
+  width: .84rem;
+  cursor: pointer;
+}
+
+.scrolltoTop:active{
+  scale: .9;
+}
+
+.content .slider .rightArrow {
+  position: absolute;
+  color: white;
+  height: 40px;
+  width: 40px;
+  top: 3rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.192);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content .slider .slider-content {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.content .slider .slider-content .item {
+  max-width: 40rem;
+  cursor: pointer;
+}
+
+.content .slider .slider-content .item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.content .slider .slider-content .item:nth-child(1) {
+  scale: 1.5;
+  filter: blur(1.5px);
+  position: relative;
+  left: 7rem;
+}
+
+.content .slider .slider-content .item:nth-child(2) {
+  z-index: 2;
+  scale: 1.8;
+}
+
+.content .slider .slider-content .item:nth-child(3) {
+  filter: blur(1.5px);
+  scale: 1.5;
+  position: relative;
+  right: 7rem;
+}
+
+.content .playList {
+  margin-top: 2rem;
+}
+
+.content .playList .playListContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: #1c1e23;
+  border-radius: .1rem;
+  padding: .06rem .2rem;
+  font-size: .14rem;
+  height: .5325rem;
+}
+
+.content .playList .playListContainer .audioIcon {
+  width: .25rem;
+  height: .22rem;
+  margin: auto;
+}
+
+.content .playList .playListContainer .marqueeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content .playList .playListContainer .marqueeContainer .marqueeText {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  will-change: transform;
+  font-size: .22rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.marquee p span {
+  color: red;
+  font-size: .18rem !important;
+}
+
+.marquee span {
+  text-wrap: nowrap !important;
+}
+
+.marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 98%;
+}
+
+.marquee p {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  /* text-align: center; */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -moz-animation: scroll-left 2s linear infinite;
+  -webkit-animation: scroll-left 2s linear infinite;
+  animation: scroll-left 30s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.content .playList .playListContainer .marqueeContainer .marqueeText .marquees {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  font-size: 19px !important;
+  width: 100%;
+  animation: marquee 30s linear infinite;
+}
+
+.content .playList .playListContainer .marqueeContainer .marqueeText .marquees span {
+  font-size: 17px !important;
+  color: red !important;
+}
+
+.content .playList .playListContainer .marqueeContainer .marqueeText .marquees p {
+  font-size: 20px !important;
+  color: red !important;
+}
+
+.content .playList .playListContainer .marqueeContainer .marqueeText .marquees a {
+  font-size: 20px !important;
+  color: red !important;
+  background: none !important;
+}
+
+.content .playList .playListContainer .messageIcon {
+  color: #adb6c4;
+  width: .34rem;
+  height: .345rem;
+}
+
+.content .gameContainers {
+  position: relative;
+  z-index: 999;
+  background-color: #1c1e23;
+  height: 100%;
+  margin-top: .2rem;
+  border-radius: 15px;
+}
+
+.content .gameContainers .gameTabs {
+  display: flex;
+  overflow: auto;
+
+  padding-top: .07rem;
+  padding-left: .15rem;
+  height: .74rem;
+}
+
+.content .gameContainers .gameTabs .search {
+  font-size: .14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: .59rem;
+  width: .7113rem;
+  cursor: pointer;
+}
+
+.content .gameContainers .gameTabs .search img {
+  width: .33rem;
+  height: .33rem;
+}
+
+.content .gameContainers .gameTabs .gameIcons {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  border-bottom: 2px solid #313843;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox {
+  color: #adb6c4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  min-width: 1rem;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox.active {
+  /* border-bottom: 2px solid;
+  border-color: #f0c059; */
+  padding-bottom: 5px;
+  color: #f0c059;
+  position: relative;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox.active .imageContainer img {
+  filter: none !important;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox .imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  font-size: .4rem;
+  height: .3rem;
+  margin: 0 auto .04rem;
+  width: .4rem;
+  height: .3rem;
+  width: .4rem;
+}
+.content .gameContainers .gameTabs .gameIcons .gameBox .imageContainer.fav {
+  height: .30rem;
+  width: .30rem;
+}
+.content .gameContainers .gameTabs .gameIcons .gameBox .imageContainer img {
+  position: absolute;
+  width: .32rem;
+  height: .25rem;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox .labelContainer {
+  width: -moz-max-content !important;
+  width: max-content !important;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: .16rem;
+  color: #68707b;
+  height: .29rem;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox.active .labelContainer {
+  width: -moz-max-content !important;
+  width: max-content !important;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: .16rem;
+  height: .22rem !important;
+  color: currentColor !important;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox.active .labelContainer::after {
+  background-color: currentColor;
+  border-radius: 0.03rem 0.03rem 0px 0px;
+  bottom: -0.01rem;
+  content: "";
+  display: block;
+  height: 0.03rem;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain {
+  margin-bottom: 0.8rem;
+  padding-bottom: 1rem;
+  padding: 0px 0.2rem;
+}
+
+.content .gameContainers .gamesMain .gameItems {
+  padding: 0.2rem 0px;
+  border-bottom: 1px solid #313843;
+  position: relative;
+}
+.content .gameContainers .gamesMain .gameItemss {
+  padding: 0.2rem 0px;
+  border-bottom: 1px solid #313843;
+  position: relative;
+}
+
+.content .gameContainers .gamesMain .gameItems:first-child {
+  padding: 0.2rem 0px;
+  border: none;
+  position: relative;
+}
+.content .gameContainers .gamesMain .gameItems:last-child{
+  border: none;
+}
+.content .gameContainers .gamesMain .gameItems .imageContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.content .gameContainers .gamesMain .gameItems .imageContainer .left {
+  display: flex;
+  gap: .12rem;
+  align-items: center;
+}
+
+.content .gameContainers .gamesMain .gameItems .imageContainer .left .labelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .gameContainers .gamesMain .gameItems .imageContainer .left .labelContainer span {
+  font-size: .24rem;
+  color: white;
+}
+
+.content .gameContainers .gamesMain .gameItems .imageContainer .right {
+  position: absolute;
+  color: #f0c059;
+  margin-right: 4rem;
+  cursor: pointer;
+  bottom: -35px;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox .labelContainer {
+  color: #68707b !important;
+}
+
+.content .gameContainers .gameTabs .gameIcons .gameBox .imageContainer img {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(7%) saturate(659%) hue-rotate(175deg) brightness(91%) contrast(88%);
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox img {
+  display: inline-block;
+  font-size: .4rem;
+  height: .3rem;
+  margin: 0 auto .04rem;
+  width: .4rem;
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox .imageContainer {
+  height: 3rem;
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox .imageContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox .labelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: .29rem;
+  line-height: normal;
+  max-width: .92rem;
+  width: .92rem !important;
+}
+
+.content .gameContainers .gamesMain .gameItems .gameBox .labelContainer span {
+  font-size: .20rem;
+  font-weight: bold;
+  color: white;
+}
+
+.content .gameContainers .gamesMain .gameItems .games {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
+  padding: 0.3rem 0.1rem 0px;
+  height: 100%;
+  column-gap: .258rem;
+}
+
+/* @media only screen and (max-width: 1600px) and (min-width: 1300px) {
+  .content .gameContainers .gamesMain .gameItems .games .imgGames {
+    width: 14%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1100px) {
+  .content .gameContainers .gamesMain .gameItems .games .imgGames {
+    width: 13%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .content .gameContainers .gamesMain .gameItems .games .imgGames {
+    width: 14.7%;
+    height: auto;
+  }
+} */
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames {
+  cursor: pointer;
+  position: relative;
+  background-image: url("/public/images/loading-bg.png");
+  border-radius: 20px;
+  background-size: 85%;
+  background-position: center;
+  background-repeat: no-repeat ;
+  width: 1.7rem;
+  height: 2.26rem;
+  background-color: #292d36;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames .gameName {
+  position: absolute;
+  color: white;
+  bottom: 0.03rem;
+  width: 100%;
+  text-align: center;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames .playBtn {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames .playBtn .icon {
+  width: .8rem !important;
+  height: .8rem !important;
+  opacity: 0;
+  transition: opacity 400ms ease;
+  cursor: pointer;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames:hover .playBtn {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(5, 5, 5, 0.3490196078);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .imgGames:hover .playBtn .icon {
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.content .gameContainers .gamesMain .gameItems .games span {
+  height: 100%;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .gameCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .gameCard:hover .backDrop {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(5, 5, 5, 0.3490196078);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .gameCard:hover .backDrop .icon {
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .gameCard .backDrop {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content .gameContainers .gamesMain .gameItems .games .gameCard .backDrop .icon {
+  width: 5rem;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+@media screen and (max-width: 430px) {
+  .content .gameContainers .gamesMain .gameItems .games {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px !important;
+    padding: 0 !important;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.popUpModalTableContainer {
+  border-radius: 10px;
+  padding: .16rem;
+  min-width: 7rem;
+}
+
+.popUpModalTableContainer .table {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: auto;
+}
+
+.popUpModalTableContainer .table .tableHeads {
+  display: table-header-group;
+  border-radius: 5px;
+  font-size: .20rem;
+  height: .7rem;
+}
+
+.popUpModalTableContainer .table .tableHeads .tableRow {
+  display: table-row;
+}
+
+.popUpModalTableContainer .table .tableHeads .tableRow:first-child .tableCell:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-right: none;
+}
+
+.popUpModalTableContainer .table .tableHeads .tableRow:first-child .tableCell:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+}
+
+.popUpModalTableContainer .table .tableHeads .tableRow:first-child .tableCell:not(:first-child):not(:last-child) {
+  border: thin solid;
+  border-color: #313843;
+  border-left: none;
+  border-right: none;
+}
+
+.popUpModalTableContainer .table .tableHeads .tableRow .tableCell {
+  display: table-cell;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: .16rem;
+  border-right: none;
+  border-left: none;
+  vertical-align: middle;
+}
+
+.popUpModalTableContainer .table .tableBodys {
+  display: table-row-group;
+  font-size: .16rem;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow {
+  display: table-row;
+  transition: all 0.3s ease;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(even) {
+  background-color: currentColor;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(even) .tableCell:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-right: none;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(even) .tableCell:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: none;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(even) .tableCell:not(:first-child):not(:last-child) {
+  border-left: none;
+  border-right: none;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(odd) {
+  background-color: transparent !important;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(odd) .tableCell:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow:nth-child(odd) .tableCell:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.popUpModalTableContainer .table .tableBodys .tableRow .tableCell {
+  display: table-cell;
+  text-align: center;
+  color: #68707b;
+  padding: 0.16rem;
+  vertical-align: middle;
+  font-size: 0.16rem;
+}
+
+.homeContent {
+  margin-top: 0 !important;
+}
+
+.marqueeContainerHome {
+  margin-top: 0 !important;
+}
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,61 @@
+.noDataContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .noDataImageBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .noDataImage{
+            width: 2.1rem;
+        }
+        .noDataImageV2{
+            width: 1.1rem;
+        }
+        .noDataImageV3{
+            width: 2rem;
+        }
+        label{
+            text-align: center;
+            font-size: .24rem;
+        }
+        .noDataLabelV2{
+            font-size: .15rem !important;
+            color: #b0a58e;
+        }
+        
+        .noDataLabelV3{
+            font-size: .18rem !important;
+            color: #b0a58e;
+        }
+    }
+    .noDataLabelBox{
+        display: flex;
+        align-items: center;
+        font-size: .18rem;
+        height: .18rem;
+        .noDataLabel{
+            font-size: .18rem;
+            height: .18rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #b0a58e;
+        }
+        .noDataLabelV2{
+            font-size: .1rem;
+            height: .1rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #b0a58e;
+        }
+        .noDataLabelV3{
+            font-size: .18rem;
+            height: .1rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #b0a58e;
+        }
+    }
+}

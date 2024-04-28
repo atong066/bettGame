@@ -1,0 +1,36 @@
+.faqContainer {
+  display: flex;
+  gap: 1.5rem;
+}
+.faqContainer .butts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 10vw;
+}
+.faqContainer .butts button {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: #ADB6C3;
+  width: 100%;
+  font-size: large;
+  border: none;
+}
+.faqContainer .butts .acitveBtn {
+  background-color: rgb(240, 184, 63);
+  color: rgb(135, 68, 4);
+}
+.faqContainer .butts .notActiveBtn {
+  background-color: blue;
+}
+.faqContainer .contents {
+  width: 100%;
+  color: white;
+}
+.faqContainer .contents .main-content {
+  padding: 1rem;
+  background-color: #121212;
+  border-radius: 7px;
+}/*# sourceMappingURL=faq.css.map */

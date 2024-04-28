@@ -1,0 +1,105 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem;
+  margin-bottom: .2rem;
+}
+
+.cardContainer {
+  .cardHeader {
+    color: #adb6c3;
+    margin-bottom: .2rem;
+    margin-top: 0 !important;
+  }
+
+  .cardBody {
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: separate;
+    border: thin solid;
+    border-radius: 0.1rem;
+    overflow: hidden;
+
+    .subTitles {
+      display: table-header-group;
+      background-color: #f0c059;
+      font-size: .145rem;
+
+      .rows {
+        display: table-row;
+
+        &:first-child {
+          .cell {
+            &:first-child {
+              border-top-left-radius: 7px;
+              border-right: none;
+              text-align: center;
+            }
+
+            &:last-child {
+              border-top-right-radius: 7px;
+              border-left: none;
+            }
+
+            &:not(:first-child):not(:last-child) {
+              border-left: none;
+              border-right: none;
+            }
+          }
+        }
+
+        .cell {
+          display: table-cell;
+          padding: .2rem 3px;
+          color: #ADB6C3;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+
+    .subBody {
+      display: table-row-group;
+      font-size: 13.5px;
+      border: thin solid;
+
+      .rows {
+        display: table-row;
+        transition: all 0.3s ease;
+        border: thin solid;
+
+        &:nth-child(even) {
+          .cell {
+            &:first-child {
+              border-top-left-radius: 7px;
+              border-bottom-left-radius: 7px;
+              border: thin solid;
+              border-right: none;
+            }
+
+            &:last-child {
+              border-top-right-radius: 7px;
+              border-bottom-right-radius: 7px;
+              border: thin solid;
+              border-left: none;
+            }
+
+            &:not(:first-child):not(:last-child) {
+              border: thin solid;
+              border-left: none;
+              border-right: none;
+            }
+          }
+        }
+
+        .cell {
+          display: table-cell;
+          text-align: center;
+          color: white;
+          padding: .2rem 3px;
+        }
+      }
+    }
+  }
+}

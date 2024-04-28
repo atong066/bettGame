@@ -1,0 +1,298 @@
+.turnWheelMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 20%;
+    left: 0;
+
+    .turnBackGround {
+        display: flex;
+        position: relative;
+
+        .backBox {
+            .wheelBack {
+                width: 47vw;
+            }
+        }
+
+        .controlBox {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 2.3rem;
+            z-index: 3;
+            gap: 10px;
+
+            .controlIcons {
+                width: 3.3rem;
+                height: 2.2rem;
+                cursor: pointer;
+
+                &:active {
+                    scale: .9;
+                }
+            }
+        }
+
+        .titleHead {
+            display: flex;
+            position: absolute;
+            right: .5rem;
+            top: .5rem;
+
+            .titleHeadImage {
+                width: 30rem;
+            }
+
+            .contentLabel {
+                position: absolute;
+                bottom: 28px;
+                left: 150px;
+
+                .content {
+                    color: #fff;
+                    font-size: 28px;
+                    font-family: Poppins-BoldItalic, Poppins;
+                }
+
+                .contentWin {
+                    color: #fff;
+                    font-size: 14px;
+                }
+
+                .numberTitleContent {
+                    background: linear-gradient(180deg, #f88bd0, #ffdf12);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            }
+
+            .contentLabelWin {
+                top: 10px;
+                left: 90px;
+            }
+        }
+
+        .manBox {
+            position: absolute;
+            right: 13rem;
+            top: 7rem;
+
+            .manImage {
+                width: 19rem;
+            }
+        }
+
+        .contentBox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 4rem;
+            right: 6rem;
+
+            .contentImage {
+                width: 18rem;
+            }
+
+            .contentLabel {
+                position: absolute;
+
+                .content {
+                    color: #fff;
+                    font-size: 28px;
+                    font-family: Poppins-BoldItalic, Poppins;
+                }
+            }
+
+            .circleContent {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -40px;
+                right: -40px;
+
+                .circleValue {
+                    position: absolute;
+                    color: #fff;
+                    font-size: 28px;
+                    font-family: Poppins-BoldItalic, Poppins;
+                }
+            }
+
+
+        }
+
+        .viewList {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 25px;
+            right: 185px;
+            z-index: 3;
+
+            .winPointer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .viewListLabel {
+                    color: #fff;
+                    font-style: italic;
+                    font-weight: 600;
+                    font-family: Poppins-BoldItalic, Poppins;
+                    cursor: pointer;
+                }
+
+                .winArrow {
+                    color: #fff;
+                    width: 1.5rem;
+                    height: 1rem;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    scale: .9;
+                }
+            }
+
+        }
+
+        .turnLateSpinContainerMain {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            // top: 190px;
+            // left: 190px;
+            top: -10px;
+            left: -10px;
+
+            .turnLateSpinContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .turnLateSpinners {
+                    position: absolute;
+                    animation: rotation 10s infinite linear;
+                }
+
+                .turnLateSpinnersWhite {
+                    animation: rotations 15s infinite linear;
+                }
+
+                .markers {
+                    position: absolute;
+                    z-index: 3;
+                    cursor: pointer;
+
+                    &:active {
+                        scale: .97;
+                    }
+                }
+
+                .canvasContainer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 2;
+
+                    &.active {
+                        animation-name: canvasRrotation;
+                    }
+
+                }
+            }
+        }
+
+
+        .markerContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            // left: 190px;
+            // top: -15px;
+            left: 200px;
+            top: -5px;
+
+            .marker {
+                position: absolute;
+                z-index: 2;
+            }
+        }
+
+        .recentWinMainContainer {
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: -60px;
+
+            .recentWinContainer {
+                overflow: auto;
+                height: 626px;
+                background: linear-gradient(180deg, #2078fb, #0a0f32 13%, #0a0f32);
+            }
+
+            .rule_closeButton__ZF4Nj001 {
+                &:active {
+                    scale: .9;
+                }
+            }
+
+            .rule_father__LnAaM1001 {
+                span {
+                    color: #fff;
+                }
+            }
+
+            .rule_father__LnAaM1001 {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .recentWinTable_closeButton__3iRQE001 {
+                &:active {
+                    scale: .9;
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes canvasRrotation {
+    from {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotations {
+    from {
+        transform: rotate(359deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}

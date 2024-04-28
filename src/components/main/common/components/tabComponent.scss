@@ -1,0 +1,44 @@
+.tabContainers {
+    height: .7rem;
+    display: flex;
+    gap: .5rem;
+    padding: .2rem;
+    margin-bottom: 0.04rem;
+    position: relative;
+    .search{
+        position: absolute;
+        right: -7rem;
+        cursor: pointer;
+        img{
+            height: .38rem;
+            width: .43rem;
+        }
+    }
+    .tabContent {
+        font-size: .2rem;
+        color: #adb6c3;
+        cursor: pointer;
+        position: relative;
+        height: .5rem;
+        padding-top: .04rem;
+        text-align: center;
+        line-height: .19rem;
+
+        &.active {
+            // color: #f0c059;
+
+            &::after {
+                background-color: currentColor;
+                border-radius: .05rem;
+                bottom: -0.05rem;
+                content: "";
+                display: block;
+                height: 0.04rem;
+                left: 0px;
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+   
+}

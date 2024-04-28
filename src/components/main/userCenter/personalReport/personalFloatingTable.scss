@@ -1,0 +1,6 @@
+.personalFloatingTable{
+    overflow: auto;
+    &::-webkit-scrollbar{
+        display: block;
+    }
+}

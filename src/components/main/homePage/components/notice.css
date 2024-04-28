@@ -1,0 +1,66 @@
+.noticeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 20%;
+  left: 0;
+}
+.noticeContainer .notice {
+  position: relative;
+  width: 6.9rem;
+}
+.noticeContainer .notice img {
+  width: 6.5rem;
+  height: 5.4rem;
+  background-size: 100% 100%;
+  border-radius: 0.2rem;
+}
+.noticeContainer .notice .closeIcon {
+  position: absolute;
+  right: -0.2rem;
+  top: -0.3rem;
+}
+.noticeContainer .notice .swiper-button-next::after {
+  background-color: rgba(0, 0, 0, 0.4705882353) !important;
+  font-size: 0.2rem !important;
+}
+.noticeContainer .notice .swiper-button-prev::after {
+  background-color: rgba(0, 0, 0, 0.4705882353) !important;
+  font-size: 0.22rem !important;
+}
+.noticeContainer .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.dontShowContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.01rem 0.01rem 0.01rem 0.15rem;
+  border-radius: 0.1rem;
+  display: flex;
+  min-width: 8rem !important;
+}
+.dontShowContainer button {
+  background-color: transparent;
+  border-radius: 0.05rem;
+  border: thin solid white;
+  white-space: nowrap;
+  width: 2rem;
+  overflow: hidden;
+  font-size: 0.18rem;
+  color: white;
+  text-overflow: ellipsis;
+  padding: 0.08rem;
+  cursor: pointer;
+}
+
+.vipBody {
+  overflow: auto;
+  height: 6rem;
+}
+.vipBody .bipRow:nth-child(even) {
+  background: #202329;
+  border-radius: 0.1rem;
+}/*# sourceMappingURL=notice.css.map */

@@ -1,0 +1,96 @@
+.mainDown {
+  padding: 0;
+}
+
+.downloadPageMainConrtainer {
+  width: 100% !important;
+}
+.downloadPageMainConrtainer .mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #fff;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 7rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .boyImageBox {
+  width: 100%;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .boyImageBox .boyImage {
+  width: 5rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer {
+  display: flex;
+  gap: 0.2rem;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 0.2rem;
+  width: 100%;
+  height: auto;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .logImage {
+  width: 2rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .gameImage {
+  width: 2rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .iconBox .deviceBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .iconBox .deviceBox .deviceLabel {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.3rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .imagesConBox .logoImage .iconBox .deviceBox .deviceIcons {
+  font-size: 0.4rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .qrButtonBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .qrButtonBox .logoImage .qrImage {
+  width: 1.5rem;
+}
+.downloadPageMainConrtainer .mainContainer .imagesContainer .infoLogoContainer .qrButtonBox .appDownLoadButton {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border: 0.01rem solid;
+  border-color: #fff;
+  border-radius: 0.1rem;
+  color: #fff;
+  font-size: 0.18rem;
+}/*# sourceMappingURL=download-page.css.map */

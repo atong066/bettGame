@@ -1,0 +1,9 @@
+.withdrawMainContainers {
+  border-radius: 7px;
+  margin-bottom: 0.2rem;
+}
+.withdrawMainContainers .MuiTabs-root button {
+  color: white;
+  font-size: 0.2rem;
+  text-transform: capitalize;
+}/*# sourceMappingURL=indexWithdrawMoney.css.map */

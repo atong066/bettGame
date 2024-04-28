@@ -1,0 +1,134 @@
+.pointRedemptionMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    .pointRedemptionContainer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .2rem;
+        background-color: #1C1E23;
+        border-radius: 7px;
+        padding: .2rem;
+        gap: .2rem;
+
+        .dateButton {
+            background-color: #f0c059;
+            color: #874404;
+            font-weight: 600;
+            line-height: normal;
+            font-size: .18rem;
+            height: .5rem;
+            border-radius: .1rem;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.pointExContentBox {
+    width: 5rem;
+    font-size: .18rem;
+    padding: .2rem;
+
+    .pointExContent {
+        display: flex;
+        flex-direction: column;
+        gap: .15rem;
+        font-size: .18rem;
+
+        .pointRedemptionRatioBox {
+            display: flex;
+            gap: 0 !important;
+            font-size: .18rem;
+
+            .pointLabel {
+                margin-right: 5px;
+                font-size: .18rem;
+            }
+        }
+
+        .pointContentBox {
+            display: flex;
+            gap: 5px;
+
+            .pointLabel {
+                color: #fff;
+                font-size: .18rem;
+            }
+
+            .pointCurrency {
+                color: #f0c059;
+                font-style: italic;
+                font-size: .18rem;
+            }
+
+            .pointContent {
+                font-weight: 600;
+                color: #fff;
+                font-size: .18rem;
+            }
+
+            .pointSelectBox {
+                .css-u4tvz2-MuiFormLabel-root {
+                    color: #fff;
+                    font-size: .18rem;
+                }
+
+                .css-u4tvz2-MuiFormLabel-root.Mui-focused,
+                .css-1de7op1-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+                    color: #f0c059;
+                    font-weight: 600;
+                    font-size: .18rem;
+                }
+            }
+
+            .ratioDivider,
+            .pointRatio2,
+            .pointRatio1 {
+                color: #f0c059;
+                font-weight: 600;
+                font-style: italic;
+                font-size: .18rem;
+            }
+
+            .pointLabelMax,
+            .pointLabelMin {
+                color: #f0c059;
+                font-style: italic;
+                font-size: .18rem;
+            }
+
+            .pointLabelMaxContent,
+            .pointLabelMinContent {
+                font-weight: 600;
+                font-size: .18rem;
+            }
+
+            .pointLabelMinContent,
+            .pointLabelMaxContent {
+                color: #fff;
+                font-style: italic;
+                font-size: .18rem;
+            }
+        }
+    }
+}
+
+.css-knqc4i-MuiDialogActions-root {
+    .pointRedemptionButton {
+        background: #f0c059 !important;
+        color: #874404;
+        font-weight: 600;
+        font-size: .18rem;
+    }
+}
+
+.redemptionButton {
+    background: #f0c059;
+    color: #874404;
+    font-size: .18rem !important;
+    border-radius: .1rem !important;
+    height: .4rem;
+    text-transform: capitalize !important;
+    border-color: #f0c059;
+}

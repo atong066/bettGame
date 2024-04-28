@@ -1,0 +1,18 @@
+
+    .overCard{
+      border: 2px solid;
+      border-color: #313843;
+      background: transparent;
+      color: #f0c059;
+      display: flex;
+      align-items: center;
+      border-radius: .1rem;
+      padding: .2rem;
+      gap: .1rem;
+      width: fit-content;
+      .info{
+        display: flex;
+        gap: .1rem;
+        color: #adb6c3;
+      }
+    }

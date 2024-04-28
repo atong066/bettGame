@@ -1,0 +1,35 @@
+.pendingMainContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.15rem;
+}
+.pendingMainContainer .pendingContainer {
+  background-color: #1C1E23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+.pendingMainContainer .pendingContainer .topBox {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 0.2rem;
+}
+.pendingMainContainer .pendingContainer .topBox .labelBox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.pendingMainContainer .pendingContainer .topBox .labelBox .labelTitle {
+  font-size: 18px;
+  color: #fff;
+}
+.pendingMainContainer .pendingContainer .topBox .labelBox .labelContent {
+  font-size: 18px;
+  color: #f0c059;
+}
+.pendingMainContainer .pendingContainer .topBox .labelBox .collectAllButton {
+  margin-left: 10px;
+  text-transform: capitalize !important;
+  font-size: 0.18rem;
+}/*# sourceMappingURL=pending.css.map */

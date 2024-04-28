@@ -1,0 +1,123 @@
+.withdrawPasswordMainConainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  border-radius: 7px;
+  gap: 0.5rem;
+  width: 100%;
+}
+.withdrawPasswordMainConainer .withdrawBoxNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 40%;
+}
+.withdrawPasswordMainConainer .withdrawBoxNew .withsrawPassLabel {
+  font-size: 0.18rem;
+  line-height: 27px;
+  text-align: center;
+  color: #04BE02;
+}
+.withdrawPasswordMainConainer .withdrawBoxNew .withdrawConfrimPass {
+  color: #874404;
+  background-color: #F0C059;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 0.2rem;
+  height: 0.55rem;
+  line-height: 1.2;
+  white-space: normal;
+  width: 1.8rem;
+  word-break: break-word;
+}
+
+.enterPassMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.enterPassMainContainer .enterPassContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.enterPassMainContainer .enterPassContainer .labelWithEyeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.enterPassMainContainer .enterPassContainer .labelWithEyeBox .passWordEye .MuiSvgIcon-root {
+  font-size: 1.8rem;
+}
+.enterPassMainContainer .enterPassContainer .labelWithEyeBox .inputLabelsPass {
+  font-size: 0.18rem;
+  line-height: normal;
+  color: #fff;
+}
+.enterPassMainContainer .enterPassContainer input::-moz-selection {
+  background-color: transparent;
+}
+.enterPassMainContainer .enterPassContainer input::selection {
+  background-color: transparent;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab {
+  width: 100% !important;
+  height: 0.8rem;
+  border: thin solid;
+  border-color: #313843;
+  background-color: transparent;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  caret-color: transparent;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:focus {
+  outline: none;
+  border: 1.8px solid;
+  border-color: #F0C059;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:focus:last-child {
+  border-left: 1.8px solid;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:focus:not(:first-child):not(:last-child) {
+  border-right: 1.8px solid;
+  border-left: 1.8px solid;
+  border-color: #F0C059;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: none;
+}
+.enterPassMainContainer .enterPassContainer .withdrawPassAutoTab:not(:first-child):not(:last-child) {
+  border-right: thin solid;
+  border-left: none;
+  border-color: #313843;
+}
+.enterPassMainContainer .footLabel {
+  color: #FFAA09;
+  font-size: 0.16rem;
+  letter-spacing: normal;
+  position: relative;
+  left: -0.1rem;
+}
+.enterPassMainContainer .headLabel {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.18rem;
+  letter-spacing: normal;
+  position: relative;
+  left: -0.1rem;
+}/*# sourceMappingURL=indexWithdrawInfo.css.map */

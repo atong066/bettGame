@@ -1,0 +1,330 @@
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #313843;
+  font-size: .12rem;
+  top: 0;
+  margin-top: 0;
+  height: 0.8rem;
+  max-height: 0.8rem;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    height: 100%;
+    background-color: #141417;
+
+    .navLeft {
+      display: flex;
+      align-items: center;
+      width: 40%;
+
+
+      .navArrow {
+        margin-left: .15rem;
+        transition: rotate 200ms ease;
+        width: .27rem;
+        cursor: pointer;
+
+        &.active {
+          rotate: -180deg;
+          transition: rotate 200ms ease;
+        }
+      }
+
+      .logoContainer {
+        display: flex;
+        align-items: center;
+        margin-left: .2rem;
+
+        .logoImage {
+          height: auto;
+          width: 2.2rem;
+        }
+      }
+
+      .timeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.4rem;
+        width: 1rem;
+        margin-right: 0.2rem;
+        line-height: 1.5;
+
+        .timeDate {
+          color: #ADB6C3;
+        }
+
+        .timeDateUTC {
+          color: #ADB6C3;
+        }
+      }
+    }
+
+    .navMiddle {
+      display: flex;
+      align-items: center;
+      gap: .15rem;
+      width: 100%;
+
+      .bonusMoney {
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-color: #313843;
+        border-radius: 1rem;
+        font-size: .22rem;
+        padding: 0 .05rem 0 .05rem;
+        gap: .05rem;
+        margin-left: .2rem;
+        height: .4rem;
+        cursor: pointer;
+
+        .bonusMoneyImage {
+          width: .4rem;
+          cursor: pointer;
+        }
+
+        .moneyValue {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          font-size: .18rem;
+          color: #ADB6C3;
+          cursor: pointer;
+
+          .moneyLabel {
+            font-size: .22rem;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .moneyDisplayBox {
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-color: #313843;
+        border-radius: 1rem;
+        font-size: .22rem;
+        padding: 0 .05rem 0 .02rem;
+        gap: .02rem;
+        position: relative;
+        height: .4rem;
+        gap: 0.1rem;
+
+        .flagContainer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          .moneyFlag {
+            position: relative;
+
+            &:last-child {
+              position: absolute;
+            }
+
+            width: .32rem;
+            height: .32rem;
+          }
+        }
+
+        .moneyValue {
+          font-size: .22rem;
+        }
+
+        .refreshIconButton {
+          display: flex;
+          align-items: center;
+
+          .refreshIcon {
+            width: .22rem;
+            height: .22rem;
+            cursor: pointer;
+
+            &.active {
+              -webkit-animation: spin 0.5s linear infinite;
+              animation: spin 0.5s linear infinite;
+            }
+          }
+        }
+      }
+
+      .buttonContainer {
+        .navButtons {
+          text-transform: capitalize !important;
+          font-size: .16rem;
+          height: 0.4rem;
+          border: 1px solid;
+          border-radius: 0.1rem;
+          min-width: 1rem;
+          color: #F0C059;
+          border: 1px solid;
+          border-color: #F0C059;
+          background-color: transparent;
+        }
+
+        .navButtonsDepo {
+          background-color: #F0C059;
+          color: #874404;
+        }
+      }
+    }
+
+    .navRight {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 40%;
+      gap: .2rem;
+
+      .credentialButtons {
+        margin-right: 2.36rem;
+
+        .credentialButton {
+          text-transform: capitalize !important;
+          font-size: .16rem;
+          height: 0.4rem;
+          border: 1px solid;
+          border-color: #F0C059;
+          border-radius: .1rem;
+          color: #874404;
+          min-width: 1rem;
+          background-color: #F0C059;
+        }
+
+        .credentialButtonRegister {
+          background-color: transparent;
+          color: #F0C059;
+        }
+      }
+
+      .menuBox {
+        display: flex;
+        align-items: center;
+        margin-right: 2.2rem;
+
+        .profileMenu {
+          display: flex;
+          align-items: center;
+          gap: .1rem;
+
+          .vipLevelContainer {
+            position: relative;
+            .profileImage {
+              width: 0.56rem;
+              height: 0.56rem;
+              border-radius: 0.1rem;
+            }
+
+            .vipBox {
+              display: flex;
+              align-items: center;
+              background-color: #24B299;
+              border-radius: .04rem 0 .04rem 0;
+              height: .12rem;
+              justify-content: center;
+              max-width: .33rem;
+              min-width: .29rem;
+              position: absolute;
+              right: 0;
+              bottom: 0.03rem;
+
+              .vipBadge {
+                width: .163rem;
+                margin-top: .01rem;
+              }
+
+              span {
+                color: transparent;
+                display: inline-block;
+                font-size: .14rem;
+                font-style: italic;
+                font-weight: 700;
+                margin: -.02rem 0 0;
+                position: relative;
+                text-shadow: 0 0.01rem 0 rgba(0, 0, 0, .4);
+                -webkit-transform: scale(.6);
+                transform: scale(.6);
+                color: #F7C80C;
+              }
+            }
+          }
+
+
+          .UserInfo {
+            display: flex;
+            align-items: flex-end;
+            margin-top: -0.05rem;
+
+            .infoBoxs {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+
+              .usernameLabel {
+                font-size: .18rem;
+                color: #ADB6C3;
+              }
+
+              .userCopyBox {
+                display: flex;
+                align-items: center;
+                gap: .05rem;
+
+                .usernameLabel {
+                  font-size: .18rem;
+                  color: #ADB6C3;
+                }
+
+                .userID {
+                  font-size: .18rem;
+                  color: #ADB6C3;
+                }
+
+                .copyIcon {
+                  width: .22rem;
+                  height: .22rem;
+                  cursor: pointer;
+
+                  &:active {
+                    scale: .9;
+                  }
+                }
+              }
+            }
+          }
+
+          .arrowDownIcon {
+            width: .2rem;
+            height: .2rem;
+            transition: rotate 200ms ease;
+
+            &.active {
+              rotate: 180deg;
+              transition: rotate 200ms ease;
+            }
+          }
+        }
+      }
+
+      // .navMenuIcon {}
+
+      .colorPicker {
+        display: flex;
+        align-items: center;
+        margin-right: .2rem;
+      }
+    }
+  }
+}

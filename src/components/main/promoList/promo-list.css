@@ -1,0 +1,133 @@
+.promoListMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.promoListMainContainer .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #1C1E23;
+  gap: 10px;
+  border-radius: 7px;
+}
+.promoListMainContainer .header .titleWing {
+  width: 5rem;
+}
+.promoListMainContainer .header .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.promoListMainContainer .header .headerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.promoListMainContainer .promoListMainBody {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: #17191d;
+  border-radius: 7px;
+  border: 2px solid;
+  border-color: rgba(240, 192, 89, 0.3725490196);
+  padding: 0.1rem;
+  margin: 0.1rem;
+  height: 3.5rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox {
+  display: flex;
+  gap: 5px;
+  color: #adb6c3;
+  font-size: 0.18rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .promoTitle {
+  color: #adb6c3;
+  font-size: 0.22rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .vipContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .timeContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .usernameContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .promoteCodeContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .promoteLinkContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .encryptedPromoLinkContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .promoPageContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .visitorContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .registersContent {
+  color: #f0c059;
+  font-size: 0.18rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLabelBox .vipContent {
+  text-transform: uppercase;
+  font-size: 0.22rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLinkBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLinkBox .promoteLinkContent,
+.promoListMainContainer .promoListMainBody .promoListOuterBox .promoLinkBox .encryptedPromoLinkContent {
+  font-style: italic;
+  color: rgb(25, 153, 25);
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .imageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0.3rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .imageBox .medalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .imageBox .medalContainer .medalRibbonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .imageBox .medalContainer .medalRibbonContainer .vipLevel {
+  color: #e4b74f;
+  font-size: 0.35rem;
+  position: relative;
+  top: 0px;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .lineDiv {
+  width: 100%;
+  border: thin solid;
+  border-color: rgba(240, 192, 89, 0.3725490196);
+}
+.promoListMainContainer .promoListMainBody .promoListOuterBox .regButton {
+  background-color: #f0c059;
+  color: #874404;
+  font-size: 0.18rem;
+  height: 0.4rem;
+  width: 2.9rem;
+  text-transform: capitalize;
+  border-radius: 0.1rem;
+}/*# sourceMappingURL=promo-list.css.map */

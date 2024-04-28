@@ -1,0 +1,276 @@
+.navbarContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #313843;
+  font-size: 0.12rem;
+  top: 0;
+  margin-top: 0;
+  height: 0.8rem;
+  max-height: 0.8rem;
+}
+.navbarContainer .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  height: 100%;
+  background-color: #141417;
+}
+.navbarContainer .navbar .navLeft {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.navbarContainer .navbar .navLeft .navArrow {
+  margin-left: 0.15rem;
+  transition: rotate 200ms ease;
+  width: 0.27rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navLeft .navArrow.active {
+  rotate: -180deg;
+  transition: rotate 200ms ease;
+}
+.navbarContainer .navbar .navLeft .logoContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+}
+.navbarContainer .navbar .navLeft .logoContainer .logoImage {
+  height: auto;
+  width: 2.2rem;
+}
+.navbarContainer .navbar .navLeft .timeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.4rem;
+  width: 1rem;
+  margin-right: 0.2rem;
+  line-height: 1.5;
+}
+.navbarContainer .navbar .navLeft .timeContainer .timeDate {
+  color: #ADB6C3;
+}
+.navbarContainer .navbar .navLeft .timeContainer .timeDateUTC {
+  color: #ADB6C3;
+}
+.navbarContainer .navbar .navMiddle {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  width: 100%;
+}
+.navbarContainer .navbar .navMiddle .bonusMoney {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-color: #313843;
+  border-radius: 1rem;
+  font-size: 0.22rem;
+  padding: 0 0.05rem 0 0.05rem;
+  gap: 0.05rem;
+  margin-left: 0.2rem;
+  height: 0.4rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navMiddle .bonusMoney .bonusMoneyImage {
+  width: 0.4rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navMiddle .bonusMoney .moneyValue {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.18rem;
+  color: #ADB6C3;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navMiddle .bonusMoney .moneyValue .moneyLabel {
+  font-size: 0.22rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-color: #313843;
+  border-radius: 1rem;
+  font-size: 0.22rem;
+  padding: 0 0.05rem 0 0.02rem;
+  gap: 0.02rem;
+  position: relative;
+  height: 0.4rem;
+  gap: 0.1rem;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .flagContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .flagContainer .moneyFlag {
+  position: relative;
+  width: 0.32rem;
+  height: 0.32rem;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .flagContainer .moneyFlag:last-child {
+  position: absolute;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .moneyValue {
+  font-size: 0.22rem;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .refreshIconButton {
+  display: flex;
+  align-items: center;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .refreshIconButton .refreshIcon {
+  width: 0.22rem;
+  height: 0.22rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navMiddle .moneyDisplayBox .refreshIconButton .refreshIcon.active {
+  animation: spin 0.5s linear infinite;
+}
+.navbarContainer .navbar .navMiddle .buttonContainer .navButtons {
+  text-transform: capitalize !important;
+  font-size: 0.16rem;
+  height: 0.4rem;
+  border: 1px solid;
+  border-radius: 0.1rem;
+  min-width: 1rem;
+  color: #F0C059;
+  border: 1px solid;
+  border-color: #F0C059;
+  background-color: transparent;
+}
+.navbarContainer .navbar .navMiddle .buttonContainer .navButtonsDepo {
+  background-color: #F0C059;
+  color: #874404;
+}
+.navbarContainer .navbar .navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+  gap: 0.2rem;
+}
+.navbarContainer .navbar .navRight .credentialButtons {
+  margin-right: 2.36rem;
+}
+.navbarContainer .navbar .navRight .credentialButtons .credentialButton {
+  text-transform: capitalize !important;
+  font-size: 0.16rem;
+  height: 0.4rem;
+  border: 1px solid;
+  border-color: #F0C059;
+  border-radius: 0.1rem;
+  color: #874404;
+  min-width: 1rem;
+  background-color: #F0C059;
+}
+.navbarContainer .navbar .navRight .credentialButtons .credentialButtonRegister {
+  background-color: transparent;
+  color: #F0C059;
+}
+.navbarContainer .navbar .navRight .menuBox {
+  display: flex;
+  align-items: center;
+  margin-right: 2.2rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .vipLevelContainer {
+  position: relative;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .vipLevelContainer .profileImage {
+  width: 0.56rem;
+  height: 0.56rem;
+  border-radius: 0.1rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .vipLevelContainer .vipBox {
+  display: flex;
+  align-items: center;
+  background-color: #24B299;
+  border-radius: 0.04rem 0 0.04rem 0;
+  height: 0.12rem;
+  justify-content: center;
+  max-width: 0.33rem;
+  min-width: 0.29rem;
+  position: absolute;
+  right: 0;
+  bottom: 0.03rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .vipLevelContainer .vipBox .vipBadge {
+  width: 0.163rem;
+  margin-top: 0.01rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .vipLevelContainer .vipBox span {
+  color: transparent;
+  display: inline-block;
+  font-size: 0.14rem;
+  font-style: italic;
+  font-weight: 700;
+  margin: -0.02rem 0 0;
+  position: relative;
+  text-shadow: 0 0.01rem 0 rgba(0, 0, 0, 0.4);
+  transform: scale(0.6);
+  color: #F7C80C;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -0.05rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .usernameLabel {
+  font-size: 0.18rem;
+  color: #ADB6C3;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .userCopyBox {
+  display: flex;
+  align-items: center;
+  gap: 0.05rem;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .userCopyBox .usernameLabel {
+  font-size: 0.18rem;
+  color: #ADB6C3;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .userCopyBox .userID {
+  font-size: 0.18rem;
+  color: #ADB6C3;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .userCopyBox .copyIcon {
+  width: 0.22rem;
+  height: 0.22rem;
+  cursor: pointer;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .UserInfo .infoBoxs .userCopyBox .copyIcon:active {
+  scale: 0.9;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .arrowDownIcon {
+  width: 0.2rem;
+  height: 0.2rem;
+  transition: rotate 200ms ease;
+}
+.navbarContainer .navbar .navRight .menuBox .profileMenu .arrowDownIcon.active {
+  rotate: 180deg;
+  transition: rotate 200ms ease;
+}
+.navbarContainer .navbar .navRight .colorPicker {
+  display: flex;
+  align-items: center;
+  margin-right: 0.2rem;
+}/*# sourceMappingURL=navbar.css.map */

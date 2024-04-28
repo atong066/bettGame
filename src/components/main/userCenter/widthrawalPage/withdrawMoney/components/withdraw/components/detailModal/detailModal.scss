@@ -1,0 +1,40 @@
+.bankWithdrawalInfoContainers {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    padding: 0 .2rem .2rem .2rem;
+    width: 12rem;
+
+    .infoBox {
+        background-color: #232328;
+        width: 100%;
+        padding: .2rem;
+        border-radius: .1rem;
+        border: thin solid #874404;
+        font-size: .18rem;
+
+        .infoLabelBox {
+            display: flex;
+            gap: .1rem;
+
+            .infoLAbel {
+                color: #c5c5c5;
+            }
+
+            .infoContent {
+                color: #FFAA09;
+            }
+
+            .timesLabel {
+                font-style: italic;
+                color: red;
+            }
+
+            .currencyLabel {
+                font-weight: 600;
+                font-style: italic;
+                color: #874404;
+            }
+        }
+    }
+}

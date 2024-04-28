@@ -1,0 +1,27 @@
+[{
+    "id":"2",
+    "name":"Slots",
+    "iconActive":"slots.png",
+    "iconInactive":"slots.png"
+},{
+    "id":"7",
+    "name":"Fishing",
+    "iconActive":"fishing.png",
+    "iconInactive":"fishing.png"
+},{
+    "id":"1",
+    "name":"Live",
+    "iconActive":"blockchain.png",
+    "iconInactive":"blockchain.png"
+},{
+    "id":"4",
+    "name":"E-Sports",
+    "iconActive":"esports.png",
+    "iconInactive":"esports.png"
+},{
+    "id":"0",
+    "name":"Sports",
+    "iconActive":"history.png",
+    "iconInactive":"history.png"
+}
+]

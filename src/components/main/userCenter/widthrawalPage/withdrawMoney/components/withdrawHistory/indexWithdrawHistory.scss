@@ -1,0 +1,153 @@
+.withdrawMainHistoryTable {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    padding: .2rem;
+
+    .hederTableContainerBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .collectionBox {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            .collectionLabel {
+                color: #68707B;
+                font-size: .18rem;
+
+                &:last-child {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .historyTableContainer {
+        .historyTable {
+            display: table;
+            width: 100%;
+            border-spacing: 0;
+            border-collapse: separate;
+            overflow: auto;
+
+            .tableHeadhistory {
+                display: table-header-group;
+                border-radius: 5px;
+                font-size: .18rem,;
+
+                .tableRowhistory {
+                    display: table-row;
+
+                    &:first-child {
+                        background-color: #202329;
+
+                        .tableCellHistory {
+                            color: #fff !important;
+                            &:first-child {
+                                border-top-left-radius: 7px;
+                                border-bottom-left-radius: 7px;
+                                border: thin solid;
+                                border-color: #313843;
+                                border-right: none;
+                            }
+
+                            &:last-child {
+                                border-top-right-radius: 7px;
+                                border-bottom-right-radius: 7px;
+                                border: thin solid;
+                                border-color: #313843;
+                                border-left: none;
+                            }
+
+                            &:not(:first-child):not(:last-child) {
+                                border: thin solid;
+                                border-color: #313843;
+                                border-left: none;
+                                border-right: none;
+                            }
+                        }
+                    }
+
+                    .tableCellHistory {
+                        display: table-cell;
+                        color: white !important;
+                        text-align: center;
+                        font-weight: bold;
+                        padding: .25rem;
+                        border-right: none;
+                        border-left: none;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .tableBodyhistory {
+                display: table-row-group;
+                font-size: 13.5px;
+
+                .tableRowBodyhistory {
+                    display: table-row;
+                    transition: all 0.3s ease;
+
+                    &:nth-child(even) {
+                        background-color: #202329;
+
+                        .tableCellHistory {
+                            color: #fff !important;
+                            &:first-child {
+                                border-top-left-radius: 7px;
+                                border-bottom-left-radius: 7px;
+                                border: thin solid;
+                                border-color: #313843;
+                                border-right: none;
+                            }
+
+                            &:last-child {
+                                border-top-right-radius: 7px;
+                                border-bottom-right-radius: 7px;
+                                border: thin solid;
+                                border-color: #313843;
+                                border-left: none;
+                            }
+
+                            &:not(:first-child):not(:last-child) {
+                                border: thin solid;
+                                border-color: #313843;
+                                border-left: none;
+                                border-right: none;
+                            }
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        background-color: transparent !important;
+
+                        .tableCellHistory {
+                            color: #fff !important;
+                            &:first-child {
+                                border-top-left-radius: 7px;
+                                border-bottom-left-radius: 7px;
+                            }
+
+                            &:last-child {
+                                border-top-right-radius: 7px;
+                                border-bottom-right-radius: 7px;
+                            }
+                        }
+                    }
+
+                    .tableCellHistory {
+                        display: table-cell;
+                        text-align: center;
+                        color: white !important;
+                        padding: .15rem;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}

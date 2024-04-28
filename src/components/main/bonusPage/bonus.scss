@@ -1,0 +1,99 @@
+.bonusPage {
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+
+  .bonusHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .returnButton {
+      background-color: #444;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: #555;
+      }
+    }
+
+    .statusDropdown {
+      select {
+        background-color: #444;
+        border: none;
+        padding: 0.5rem 1rem;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    .headerRight {
+      display: flex;
+      align-items: center;
+
+      .collectButton,
+      .collectAllButton {
+        background-color: #f8e825;
+        border: none;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          background-color: #dcd00f;
+        }
+      }
+
+      .bonusAmount {
+        background-color: #333;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  .bonusContent {
+    
+    border-radius: 8px;
+    padding: 1rem;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .noRecords {
+      font-size: 2rem;
+      opacity: 0.5;
+    }
+  }
+  .bonusTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    th, td {
+      border: 1px solid #555;
+      padding: 0.5rem 1rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #333;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #262626;
+    }
+
+    tr:hover {
+      background-color: #333;
+    }
+  }
+
+  .noRecords {
+    font-size: 2rem;
+    opacity: 0.5;
+  }
+}

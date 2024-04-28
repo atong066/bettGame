@@ -1,0 +1,477 @@
+.profileMainContainer {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profileMainContainer .profileHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 0.4rem;
+  background-color: #1c1e23;
+  gap: 0.1rem;
+  border-radius: 0.1rem;
+}
+.profileMainContainer .profileHeader .titleWing {
+  width: 5rem;
+}
+.profileMainContainer .profileHeader .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.profileMainContainer .profileHeader .profileHeaderTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.profileMainContainer .profileContainer {
+  background-color: #1c1e23;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+.profileMainContainer .profileContainer .profileBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 3rem 0 3rem;
+}
+.profileMainContainer .profileContainer .profileBox .profileImageBox {
+  width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.profileMainContainer .profileContainer .profileBox .profileImageBox .profileImage {
+  width: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+.profileMainContainer .profileContainer .profileBox .profileImageBox .configButton {
+  background-color: transparent;
+  color: #f0c059;
+  font-weight: 600;
+  font-size: 0.18rem;
+  text-transform: none;
+}
+.profileMainContainer .profileContainer .inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.18rem;
+  padding: 0.3rem 3rem 1rem;
+}
+.profileMainContainer .profileContainer .inputContainer .profileButtons {
+  font-size: 0.2rem;
+  height: 0.55rem;
+  line-height: 0.55rem;
+  margin-right: 0.2rem;
+  text-align: center;
+  width: 1.8rem;
+  background-color: #1C1E23;
+  color: #F0C059;
+}
+.profileMainContainer .profileContainer .inputContainer .profileSaveButton {
+  background-color: #F0C059;
+  color: #874404;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.15rem;
+  gap: 0.15rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .passWordValidation {
+  display: none;
+  align-items: center;
+  min-height: 0.3rem;
+  margin-top: 0.05rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .passWordValidation.active {
+  display: flex;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .passWordValidation img {
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-right: 0.1rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .passWordValidation span {
+  font-size: 0.14rem;
+  line-height: 1;
+  color: #EA4E3D;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .inputContainerBox {
+  display: flex;
+  align-items: center;
+  border: 0.01rem solid;
+  border-color: #313843;
+  width: 100%;
+  padding: 0.05rem 0.1rem 0.05rem 0.1rem;
+  border-radius: 0.1rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .inputContainerBox .nameIconBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .inputContainerBox .nameIconBox .nameIcon {
+  height: 0.3rem;
+  width: 0.3rem;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .inputContainerBox .nameIconBox .nameInput {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0 0.1rem;
+  height: 0.4rem;
+  outline: none;
+  font-size: 0.18rem;
+  color: #fff;
+}
+.profileMainContainer .profileContainer .inputContainer .dateSelect .textFieldContainer .inputContainerBox:has(input[type=text]:focus) {
+  border: 1px solid;
+  border-color: #F0C059;
+}
+.profileMainContainer .profileContainer .inputContainer button {
+  text-transform: capitalize !important;
+  font-size: 0.16rem;
+  height: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.1rem;
+  width: 1.5rem;
+  color: #F0C059;
+  border: 1px solid;
+  border-color: #F0C059;
+  background-color: transparent;
+  margin-right: 0.1rem;
+  margin-top: 0.2rem;
+}
+.profileMainContainer .profileContainer .inputContainer #btnsalvar {
+  text-transform: capitalize !important;
+  font-size: 0.16rem;
+  height: 0.5rem;
+  border: 1px solid;
+  border-radius: 0.1rem;
+  min-width: 1rem;
+  color: #5f4203;
+  border: 1px solid;
+  background-color: #F0C059;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .MuiOutlinedInput-notchedOutline {
+  border: thin solid #313843;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .inputIcon {
+  color: #adb6c3;
+  font-size: 0.28rem;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #fff;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .whatsAppIcon {
+  color: white;
+  border-radius: 50%;
+  background-color: #28a219;
+  height: 0.2rem;
+  width: 0.2rem;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .teleIcon {
+  color: #fff;
+  background-color: #33a8da;
+  border-radius: 50%;
+  height: 0.2rem;
+  width: 0.2rem;
+}
+.profileMainContainer .profileContainer .inputContainer .MuiStack-root .Mui-focused {
+  border: thin solid #f0c059;
+  transition: 0.5s;
+}
+.profileMainContainer .profileContainer .inputContainer .configButton {
+  background-color: #f0c059;
+  color: #874404;
+  font-weight: 600;
+  font-size: 0.18rem;
+}
+.profileMainContainer .profileContainer .inputContainer .profileButtonGo {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  color: #f0c059;
+  font-size: 0.18rem;
+  text-transform: capitalize;
+  border: none;
+  font-size: 0.18rem;
+  border-color: transparent !important;
+}
+.profileMainContainer .profileContainer .profileFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.profileMainContainer .profileContainer .profileFooter .labelBox {
+  width: 40rem;
+}
+.profileMainContainer .profileContainer .profileFooter .labelBox .footerLabel {
+  color: #fff;
+  font-size: 20px;
+}
+.profileMainContainer .profileContainer .profileFooter .inputBox {
+  width: 40rem;
+}
+.profileMainContainer .profileContainer .profileFooter .configButton {
+  background-color: #f0c059;
+  color: #874404;
+  font-weight: 600;
+  width: 10rem;
+  height: 3rem;
+}
+.profileMainContainer .profileContainer .profileFooter .returnButton {
+  background-color: transparent;
+  border: 1px solid #f0c059;
+  color: #f0c059;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .MuiOutlinedInput-notchedOutline {
+  border: thin solid #313843;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #fff;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #b8b8b8;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .Mui-focused {
+  border: thin solid #f0c059;
+  transition: 0.5s;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  color: #fff;
+}
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-bpeome-MuiSvgIcon-root-MuiSelect-icon,
+.profileMainContainer .profileContainer .profileFooter .MuiStack-root .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  color: #fff;
+}
+
+.profileContainer {
+  display: flex;
+}
+.profileContainer .imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.profileContainer .imageContainer .buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.profileContainer .imageContainer .buttonBox .avatarButtons {
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-size: 0.18rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  background: none;
+  color: #ADB6C3;
+  border: 0.01rem solid;
+  border-color: #313843;
+  width: 1.5rem;
+  height: 0.4rem;
+}
+.profileContainer .imageContainer .buttonBox .avatarButtons.active {
+  color: #874404;
+  background-color: #f0c059;
+  border-color: #F0C059;
+}
+.profileContainer .imageContainer .buttonBox .avatarButtonsSave {
+  height: 0.55rem;
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.55rem;
+  border-radius: 0.1rem;
+  text-transform: capitalize;
+  background-color: #f0c059;
+  color: #874404;
+}
+.profileContainer .imageContainer .mainImageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.3rem;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .avatars {
+  width: 0.8rem;
+  height: 0.8rem;
+  cursor: pointer;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  width: 0.9rem;
+  height: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox.active {
+  border: 2px Solid;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox .badge {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  display: none;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox .badge .checkIcon {
+  color: #874404;
+  rotate: -45deg;
+  right: 10px;
+}
+.profileContainer .imageContainer .mainImageBox .imageBox .imgBox .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}
+
+.profileContainers {
+  display: flex;
+  padding: 0 0.4rem 0 0.4rem;
+}
+.profileContainers .imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.profileContainers .imageContainer .buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  width: 100%;
+}
+.profileContainers .imageContainer .buttonBox .avatarButtons {
+  min-width: -moz-max-content;
+  min-width: max-content;
+  font-size: 0.18rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  background: none;
+  color: #ADB6C3;
+  border: 0.01rem solid;
+  border-color: #313843;
+  width: 1.5rem;
+  height: 0.4rem;
+}
+.profileContainers .imageContainer .buttonBox .avatarButtons.active {
+  color: #874404;
+  background-color: #f0c059;
+  border-color: #F0C059;
+}
+.profileContainers .imageContainer .buttonBox .avatarButtonsSave {
+  height: 0.55rem;
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.55rem;
+  border-radius: 0.1rem;
+  text-transform: capitalize;
+  background-color: #f0c059;
+  color: #874404;
+}
+.profileContainers .imageContainer .mainImageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.3rem;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .avatars {
+  width: 0.8rem;
+  height: 0.8rem;
+  cursor: pointer;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  width: 0.9rem;
+  height: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox.active {
+  border: 2px Solid;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox .badge {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  display: none;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox .badge .checkIcon {
+  color: #874404;
+  rotate: -45deg;
+  right: 10px;
+}
+.profileContainers .imageContainer .mainImageBox .imageBox .imgBox .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}/*# sourceMappingURL=profile.css.map */

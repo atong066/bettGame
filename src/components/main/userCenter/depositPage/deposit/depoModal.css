@@ -1,0 +1,113 @@
+.ydMainContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 0.2rem;
+}
+.ydMainContainer .ydContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: initial;
+  cursor: pointer;
+  position: relative;
+}
+.ydMainContainer .ydContainer .activeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25px;
+  left: -7px;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  border: solid 3px #fff;
+  background-color: #7fbd12;
+  box-shadow: 1px 1px 5px 3px rgba(3, 3, 3, 0.59);
+  rotate: 350deg;
+  opacity: 0;
+}
+.ydMainContainer .ydContainer .activeBox.active {
+  opacity: 1;
+}
+.ydMainContainer .ydContainer:hover .ydImageBox .ydLogo {
+  scale: 0.8;
+  transition: scale 300ms ease-in-out;
+}
+.ydMainContainer .ydContainer .ydImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.01rem 0.1rem 0.01rem 0.1rem;
+  width: 100%;
+  background-color: #fff;
+  font-size: initial;
+}
+.ydMainContainer .ydContainer .ydImageBox .ydLogo {
+  height: 0.35rem;
+  scale: 1;
+  transition: scale 200ms ease-in-out;
+}
+.ydMainContainer .ydContainer .ydNameBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.2rem;
+  padding: 0.1rem;
+  width: 100%;
+  background-color: #4682b4;
+  font-size: initial;
+  line-height: normal;
+}
+.ydMainContainer .ydContainer .ydNameBox .ydName {
+  display: flex;
+  font-size: 0.14rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.depocardSelection {
+  position: relative;
+  width: 64.4%;
+  font-size: initial;
+}
+.depocardSelection .remarks {
+  margin-top: 0.05rem;
+}
+.depocardSelection .remarks .questionBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: initial;
+  width: 3rem;
+}
+.depocardSelection .remarks .questionBox span {
+  line-height: normal;
+  font-size: 0.18rem;
+}
+
+.cardContainervs .rem {
+  display: flex;
+  position: absolute;
+  bottom: -0.65rem;
+  width: 100%;
+  text-align: left;
+  height: 100%;
+  font-size: initial;
+  line-height: normal;
+}
+.cardContainervs .rem .ram {
+  font-size: 0.15rem;
+  line-height: normal;
+  color: #adb6c3;
+}
+
+.ramRem {
+  font-size: initial;
+}
+.ramRem .remRam {
+  font-size: 0.15rem;
+  line-height: normal;
+  color: red;
+}/*# sourceMappingURL=depoModal.css.map */

@@ -1,0 +1,75 @@
+.confirmOutLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: initial;
+  padding: 0 0.3rem 0.3rem 0.3rem;
+  word-wrap: break-word;
+}
+.confirmOutLabel .labelBoxOut {
+  color: #ADB6C3;
+  font-size: 0.18rem;
+  margin: 0.2rem 0 0.49rem;
+}
+.confirmOutLabel .labelBoxOut span {
+  font-size: 0.14rem;
+  line-height: 1.5;
+}
+.confirmOutLabel .buttonBoxOut {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.confirmOutLabel .buttonBoxOut .buttonOut {
+  text-transform: capitalize;
+  border-radius: 0.1rem;
+  font-size: 0.2rem;
+  height: 0.55rem;
+  background-color: transparent;
+  border: 0.01rem solid;
+  border-color: #F0C059;
+  color: #F0C059;
+  width: 2.27rem;
+  margin-top: 0.15rem;
+}
+.confirmOutLabel .buttonBoxOut .buttonOut:last-child {
+  background-color: #F0C059;
+  color: #874404;
+}
+
+.termsConditionMainContainer .termsConditionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.termsConditionMainContainer .termsConditionContainer .termsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: initial;
+}
+.termsConditionMainContainer .termsConditionContainer .termsTitle .title {
+  font-size: 0.19rem;
+  color: #ADB6C3;
+  text-align: center;
+  font-weight: 600;
+}
+.termsConditionMainContainer .termsConditionContainer .termsContentBox {
+  display: flex;
+  flex-direction: column;
+  font-size: initial;
+}
+.termsConditionMainContainer .termsConditionContainer .termsContentBox .termsContent {
+  font-size: 0.19rem;
+  line-height: 1.5;
+  color: #ADB6C3;
+}
+
+.termsButton {
+  height: 0.5rem;
+  font-size: 0.18rem !important;
+  text-transform: capitalize !important;
+  border-radius: 0.1rem !important;
+  width: 100%;
+}/*# sourceMappingURL=confirmOutModal.css.map */

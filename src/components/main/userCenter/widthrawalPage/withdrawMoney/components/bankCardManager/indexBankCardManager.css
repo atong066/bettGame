@@ -1,0 +1,459 @@
+.bankCardAddMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  padding: 0.2rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .typeLabelBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .typeLabelBox .bankLabel {
+  color: #fff;
+  font-size: 0.18rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .typeLabelBox .bankLabel:last-child {
+  color: #68707B;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem;
+  position: relative;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer {
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+  width: 100%;
+  height: 100%;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border-radius: 7px;
+  padding: 0.3rem 0.1rem 0.3rem 0.1rem;
+  align-items: center;
+  border: thin solid;
+  border-color: #313843;
+  color: #313843;
+  gap: 3px;
+  cursor: pointer;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox:hover {
+  border: thin solid #F0C059;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox:hover .bankName {
+  color: #F0C059;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox.active {
+  border: thin solid #F0C059;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox.active .bankName {
+  color: #F0C059;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .cardBox .bankName {
+  color: #313843;
+  font-size: 0.18rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .badge {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  display: none;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .badge .checkIcon {
+  color: #874404;
+  rotate: -45deg;
+  right: 10px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .checkContainer .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox {
+  display: flex;
+  align-items: center;
+  border: thin solid;
+  border-color: #313843;
+  border-radius: 7px;
+  padding: 0.1rem 0.1rem 0.1rem 0.2rem;
+  width: 100%;
+  height: 0.8rem;
+  cursor: pointer;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankIcon {
+  width: 0.6rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .additionalAddLabel {
+  color: #fff;
+  font-size: 0.18rem;
+  height: 0.18rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx .accountCard {
+  display: flex;
+  align-items: center;
+  color: #68707B;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx .accountCard .copyID {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx .accountCard .copyID .copyIcon {
+  width: 0.2rem;
+  cursor: pointer;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx .accountCard .copyID .copyIcon:hover {
+  scale: 1.1;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankIconBox .bankInfoBOx .accountCard .copyID .copyIcon:active {
+  scale: 0.9;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankArrowBox {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox .bankArrowBox .arrowIcon {
+  color: #313843;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBoxes .bankMainBox.active {
+  border-color: #F0C059;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .typeLabelBox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .typeLabelBox .bankLabel {
+  color: #fff;
+  font-size: 18px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .typeLabelBox .bankLabel:last-child {
+  color: #68707B;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox {
+  display: flex;
+  align-items: center;
+  border: thin solid;
+  border-color: #313843;
+  border-radius: 7px;
+  padding: 0.6rem 0.5rem 0.6rem 1.3rem;
+  width: 50%;
+  cursor: pointer;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox .bankIconBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox .bankIconBox .bankIcon {
+  width: 3.7rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox .bankIconBox .additionalAddLabel {
+  color: #fff;
+  font-size: 0.18rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox .bankArrowBox {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox .bankArrowBox .arrowIcon {
+  color: #313843;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+.bankCardAddMainContainer .selectBankTypeContainer .bankTypeBox .bankMainBox.active {
+  border-color: #F0C059;
+}
+
+.realNameInputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.2rem 0.2rem 0.2rem;
+  width: 5rem;
+  gap: 1.5rem;
+}
+.realNameInputContainer input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.realNameInputContainer input::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+.realNameInputContainer .inputContainerBox {
+  display: flex;
+  align-items: center;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  border: thin solid;
+  border-color: #313843;
+  border-radius: 7px;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+.realNameInputContainer .inputContainerBox .nameIconBox {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  width: 100%;
+}
+.realNameInputContainer .inputContainerBox .nameIconBox .nameIcon {
+  color: #68707B;
+  font-size: 25px;
+  width: 0.3rem;
+}
+.realNameInputContainer .inputContainerBox .nameIconBox .nameInput {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: normal;
+}
+.realNameInputContainer .inputContainerBox:has(input[type=text]:focus) {
+  border-color: #F0C059;
+}
+.realNameInputContainer .modalButton {
+  background-color: #F0C059;
+  text-transform: capitalize;
+  font-size: 0.18rem;
+  font-style: 400;
+  font-weight: 100;
+  height: 0.55rem;
+  color: #874404;
+  border-radius: 0.1rem;
+}
+.realNameInputContainer .pixLabel {
+  color: #EA4E3D;
+  font-size: 0.14rem;
+}
+
+.usdtMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.2rem 0.2rem 0.2rem;
+  width: 5rem;
+  gap: 1.5rem;
+}
+.usdtMainContainer .modalButton {
+  background-color: #F0C059;
+  text-transform: capitalize;
+  font-size: 0.18rem;
+  font-style: 400;
+  font-weight: 100;
+  height: 0.55rem;
+  color: #874404;
+  border-radius: 0.1rem;
+}
+
+.usdtQRContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.2rem 0.2rem 0.2rem;
+  width: 6rem;
+}
+.usdtQRContainer .remarkBox {
+  width: 100%;
+  text-align: justify;
+  color: #fff;
+  font-size: 0.18rem;
+}
+.usdtQRContainer .copyQrBox {
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem 0.2rem 0.2rem;
+}
+.usdtQRContainer .copyQrBox .copyID {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  font-size: 0.18rem;
+  height: 0.18rem;
+}
+.usdtQRContainer .copyQrBox .copyID .copyIcon {
+  width: 0.2rem;
+  cursor: pointer;
+}
+.usdtQRContainer .copyQrBox .copyID .copyIcon:active {
+  scale: 0.9;
+}
+.usdtQRContainer .qrImageBox {
+  padding: 0.1rem 0 0 0;
+}
+.usdtQRContainer .qrImageBox .qrImage {
+  width: 2rem;
+  border-radius: 0.2rem;
+}
+.usdtQRContainer .TRXBox {
+  width: 100%;
+  font-size: 0.18rem;
+}
+.usdtQRContainer .TRXBox .trxLabel {
+  color: #fff;
+  font-size: 0.18rem;
+}
+
+.enterPassContainerConfirmPass {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+.enterPassContainerConfirmPass .enterPassContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.enterPassContainerConfirmPass .enterPassContainer .labelWithEyeBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 95%;
+  margin: auto;
+}
+.enterPassContainerConfirmPass .enterPassContainer .labelWithEyeBox .passWordEye .MuiSvgIcon-root {
+  font-size: 1.8rem;
+}
+.enterPassContainerConfirmPass .enterPassContainer .labelWithEyeBox .inputLabelsPass {
+  font-size: 0.18rem;
+  line-height: normal;
+  color: #fff;
+}
+.enterPassContainerConfirmPass .enterPassContainer input::-moz-selection {
+  background-color: transparent;
+}
+.enterPassContainerConfirmPass .enterPassContainer input::selection {
+  background-color: transparent;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab {
+  width: 0.8rem !important;
+  height: 0.8rem;
+  border: thin solid;
+  border-color: #313843;
+  background-color: transparent;
+  font-size: 60px;
+  color: #fff;
+  cursor: pointer;
+  caret-color: transparent;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:focus {
+  outline: none;
+  border: thin solid;
+  border-color: #F0C059;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:focus:last-child {
+  border-left: thin solid;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:focus:not(:first-child):not(:last-child) {
+  border-right: thin solid;
+  border-left: thin solid;
+  border-color: #F0C059;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:first-child {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:last-child {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-left: none;
+}
+.enterPassContainerConfirmPass .enterPassContainer .withdrawPassAutoTab:not(:first-child):not(:last-child) {
+  border-right: thin solid;
+  border-left: none;
+  border-color: #313843;
+}
+.enterPassContainerConfirmPass .paraLabelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: initial;
+}
+.enterPassContainerConfirmPass .paraLabelContainer .labelBoxes {
+  font-size: 0.16rem;
+  width: 90%;
+  color: #fff;
+  line-height: 1.5;
+}
+.enterPassContainerConfirmPass .paraLabelContainer .labelQuestion {
+  font-size: 0.16rem;
+  width: 25%;
+  text-align: right;
+  color: #F0C059;
+  line-height: 1.5;
+}
+.enterPassContainerConfirmPass .confirmButton {
+  font-size: 0.2rem;
+  text-transform: capitalize;
+  height: 0.5rem;
+  border-radius: 0.1rem;
+  background-color: #F0C059;
+  font-weight: 100;
+  color: #874404;
+}
+.enterPassContainerConfirmPass .footLabel {
+  color: #FFAA09;
+  font-size: 0.16rem;
+  letter-spacing: normal;
+  position: relative;
+  left: -0.1rem;
+}
+.enterPassContainerConfirmPass .headLabel {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.18rem;
+  letter-spacing: normal;
+  position: relative;
+  left: -0.1rem;
+}/*# sourceMappingURL=indexBankCardManager.css.map */

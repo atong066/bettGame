@@ -1,0 +1,480 @@
+.depostSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+
+    .secondSection {
+        background-color: #1C1E23;
+        border-radius: 7px;
+        margin-bottom: 1.5px !important;
+
+        .supportTabs {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .MuiTabs-root {
+            button {
+                color: white;
+                text-transform: capitalize;
+            }
+
+            button[aria-selected="true"] {
+                color: #f0c059;
+                text-transform: capitalize;
+            }
+        }
+
+        .transferMainContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0 !important;
+            gap: 15px;
+
+            .cardContainer {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                width: 100%;
+                justify-items: stretch;
+
+                .bankCards {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    min-width: 6px;
+                    height: .6rem;
+                    display: flex;
+                    padding: 15px;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    color: #f0c059;
+                    letter-spacing: 2px;
+                    border: thin solid;
+                    font-size: 18px;
+
+                    &.active {
+                        border: 2px solid;
+                        border-color: #f0c059;
+                    }
+
+                    &:hover {
+                        border: 2px solid;
+                    }
+                }
+
+                .checkContainer {
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 7px;
+
+                    .badge {
+                        display: none;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        padding: 3px;
+                        rotate: 45deg;
+                        height: 50px;
+                        width: 50px;
+                        margin: -25px;
+
+                        &.active {
+                            background-color: #f0c059;
+                            display: block;
+                        }
+
+                        .checkIcon {
+                            color: #874404;
+                            rotate: -45deg;
+                            right: 10px;
+                        }
+
+                        .MuiAvatar-root {
+                            top: 11px !important;
+                            right: 4px !important;
+                        }
+                    }
+                }
+            }
+
+            .paymentMethod {
+                display: flex;
+                flex-direction: column;
+
+                .paymentMethodDetails {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+
+                    .details {
+                        background-color: #282b32;
+                        padding: 15px;
+                        border-radius: 7px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+                        font-size: 18px;
+
+                        .detailsLabel {
+                            color: #fff;
+                            font-style: italic;
+                            font-size: 18px;
+                        }
+
+                        .detailsContent {
+                            font-size: 19px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .crdBank {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #282b32;
+                        min-width: 22px;
+                        width: auto;
+                        height: auto;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: 2px solid;
+                        border-color: #f0c059;
+                        padding: 15px;
+
+                        .cardName {
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+
+                        .cardBody {
+                            .cardBox {
+                                display: flex;
+                                gap: 10px;
+
+                                .cardLabel {
+                                    font-style: italic;
+                                    color: #fff;
+                                    font-size: .18rem;
+                                }
+
+                                .cardContent {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    font-weight: 600;
+                                    font-size: .18rem;
+                                    cursor: pointer;
+
+                                    .copyIcon {
+                                        width:.18rem;
+                                        mar
+
+                                        &:active {
+                                            scale: .9;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .qrCodeContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .qrCodeLabelBox {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .details {
+                        background-color: #282b32;
+                        padding: 15px;
+                        border-radius: 7px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+                        color: #fff;
+                        font-style: italic;
+                    }
+
+                    .qrCodeLabel {
+                        font-size: 0.14rem;
+                        font-style: italic;
+                        width: 100% !important;
+                    }
+                }
+
+                .qrCodeBox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .qrCodeImage {
+                        width: 3rem !important;
+                        border-radius: 7px;
+                    }
+                }
+
+                .paymentChannel {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    .payName {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #282b32;
+                        width: 15px;
+                        height: 5px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: 2px solid;
+                        border-color: #f0c059;
+                        padding: 15px;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                    }
+                }
+
+                .depoAmountContainer {
+                    display: grid;
+                    grid-template-columns: repeat(10, 1fr);
+                    gap: 15px;
+                    width: 100%;
+
+                    .amountValue {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #282b32;
+                        padding: 15px;
+                        border: 1px solid;
+                        border-color: #f0c05955;
+                        border-radius: 7px;
+                        cursor: pointer;
+                        font-size: .18rem;
+                        &.active {
+                            border: 2px solid;
+                            border-color: #f0c059;
+                        }
+                    }
+
+                    .checkContainer {
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 7px;
+                        width: 100%;
+
+                        .badge {
+                            position: absolute;
+                            right: 0px;
+                            bottom: 0;
+                            padding: 3px;
+                            display: none;
+                            rotate: 45deg;
+                            height: 50px;
+                            width: 50px;
+                            margin: -25px;
+
+                            &.active {
+                                background-color: #f0c059;
+                                display: block;
+                            }
+
+                            .checkIcon {
+                                color: #874404;
+                                rotate: -54deg;
+                                right: 10px;
+                            }
+
+                            .MuiAvatar-root {
+                                top: 11px !important;
+                                right: 4px !important;
+                            }
+                        }
+                    }
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+                    color: #f0c059;
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+                    color: #f0c059;
+                }
+            }
+
+            .buttonContainer {
+                text-align: center;
+
+                .configButton {
+                     // background-color: #f0c059;
+                    // color: #874404;
+                    border-radius: 6px;
+                    // background-color: var(--theme-primary-color);
+                    border-radius: .1rem;
+                    // color: var(--theme-primary-font-color);
+                    font-size: .2rem;
+                    height: .55rem;
+                    text-align: center;
+                    width: 4.4rem;
+                    text-transform: capitalize;
+                }
+            }
+
+            .buttonContainers {
+                .configButtons {
+                    // background-color: #f0c059;
+                    // color: #874404;
+                    width: 7px;
+                    min-width: fit-content;
+                }
+            }
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                font-size: 14px;
+                .details {
+                    background-color: #282b32;
+                    padding: 15px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-style: italic;
+                }
+
+                .buttonContainers {
+                    .configButtons {
+                        // background-color: #f0c059;
+                        // color: #874404;
+                        width: 7px;
+                        min-width: fit-content;
+                    }
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+                    color: #f0c059;
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+                    color: #f0c059;
+                }
+            }
+
+            .notesContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .details {
+                    background-color: #282b32;
+                    padding: 15px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-style: italic;
+                }
+
+                .minNote {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    color: #fff;
+                    .noteLabelBox {
+                        display: flex;
+
+                        .noteLabel {
+                            color: #fff;
+                            margin-right: 10px;
+                            font-size: 16px;
+                            font-style: italic;
+                        }
+
+                        .noteLabelContent {
+                            margin-right: 3px;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .miniCurrency {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #874404;
+                        }
+                    }
+                }
+            }
+
+            .noOnlineConfigContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .noConfigLabel {
+                    color: #fff;
+                    font-weight: 600;
+                    font-style: italic;
+                    font-size: 22px;
+                    padding: .4px;
+                    width: 17px;
+                    min-width: fit-content;
+                    text-align: center;
+                    border: 4px solid;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+}
+
+.onlineListContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    // .checkContainer {
+    //     .bankCards {
+    //         min-width: 10px !important;
+    //     }
+
+    // }
+}
+.formController{
+    font-size: .14rem;
+}
+.accntActionsContainer{
+    padding:.15rem;
+    display: flex;
+    gap: .20rem;
+}
+.vsremark{
+    // position: absolute;
+    font-size: .18rem;
+    color: #adb6c3;
+    word-break: break-all;
+}

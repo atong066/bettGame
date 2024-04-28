@@ -1,0 +1,13 @@
+.recorderMainContainer {
+    display: flex;
+    flex-direction: column;
+    // gap: .2rem;
+
+    .recorderContainer {
+        display: flex;
+        flex-direction: column;
+        gap: .1rem;
+        padding: .2rem;
+        border-radius: .1rem;
+    }
+}

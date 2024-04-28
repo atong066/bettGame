@@ -1,0 +1,37 @@
+.activityMainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.activityMainContainer .timeHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.activityMainContainer .timeHeaderContainer .startTimeBox {
+  display: flex;
+  gap: 0.5rem;
+}
+.activityMainContainer .timeHeaderContainer .startTimeBox .timeBoxLabel {
+  color: #fff;
+}
+.activityMainContainer .timeHeaderContainer .startTimeBox .timeBoxLabelContent {
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+}
+.activityMainContainer .contentContainerActivity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 7px;
+  color: #fff;
+}
+.activityMainContainer .contentContainerActivity p,
+.activityMainContainer .contentContainerActivity span {
+  color: #fff;
+}/*# sourceMappingURL=activity.css.map */

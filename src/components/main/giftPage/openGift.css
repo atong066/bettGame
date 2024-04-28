@@ -1,0 +1,52 @@
+.solar {
+  animation: roli_rotate2 10s linear infinite;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  z-index: 4;
+}
+
+.stars {
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  z-index: 0;
+}
+
+.giftBoxOpen {
+  z-index: 5;
+}
+
+.rewardInfo {
+  position: absolute;
+  bottom: -20px;
+  width: 2rem;
+}
+.rewardInfo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.finish-box {
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  justify-content: center;
+  background-size: 100% 100%;
+  padding: 0.1rem;
+}
+
+.claimButton {
+  position: absolute;
+  bottom: -84px;
+  padding: 8px;
+  width: 1rem;
+  border-radius: 1rem;
+  background: transparent !important;
+  border: thin solid;
+  cursor: pointer;
+  color: white;
+  margin-left: 8px;
+}/*# sourceMappingURL=openGift.css.map */

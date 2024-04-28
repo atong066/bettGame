@@ -1,0 +1,6 @@
+.bettingRecordScrollingTable {
+  overflow: auto;
+}
+.bettingRecordScrollingTable::-webkit-scrollbar {
+  display: block;
+}/*# sourceMappingURL=bettingRecordScrollingTable.css.map */

@@ -1,0 +1,91 @@
+.envelopMainContainer {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  border-radius: 0.1rem;
+  padding: 0.1rem;
+  margin-bottom: 0.2rem;
+  background-color: #1c1e23;
+  color: #fff;
+}
+.envelopMainContainer .linkBox {
+  display: flex;
+  gap: 0.1rem;
+  margin-top: 0.6rem;
+}
+.envelopMainContainer .linkBox .telegramLabel {
+  font-size: 0.22rem;
+  color: #fff;
+  line-height: 1.9;
+}
+.envelopMainContainer .linkBox .telegramLink {
+  font-size: 0.22rem;
+  color: #666;
+  line-height: 1.9;
+}
+.envelopMainContainer .linkBox .telegramLink a {
+  color: #666;
+}
+.envelopMainContainer .activityContentBox {
+  margin-bottom: 0.5rem;
+}
+.envelopMainContainer .activityContentBox .activityContentTitle {
+  font-size: 0.22rem;
+  color: #fff;
+  line-height: 1.9;
+}
+.envelopMainContainer .activityContentBox .activityContentTitle div p {
+  font-size: 0.19rem;
+}
+.envelopMainContainer .tableContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.envelopMainContainer .tableContainer .firstRow {
+  border: 1px solid;
+  border-right: none;
+  border-bottom: none;
+  border-color: #53575d;
+}
+.envelopMainContainer .tableContainer .firstRow .rowContent {
+  border: none;
+  border-bottom: 1px solid;
+  padding: 0.35rem 0.05rem;
+  font-size: 0.2rem;
+  color: #a1a3bc;
+  border-color: #53575d;
+}
+.envelopMainContainer .tableContainer .firstRow .rowContentHead {
+  font-size: 0.25rem;
+  color: #a1a3bc;
+  font-weight: 600;
+}
+.envelopMainContainer .tableContainer .firstRow .rowContent2 {
+  border-right: 1px solid;
+  border-color: #53575d;
+}
+.envelopMainContainer .tableContainer .firstRow .rowEnds {
+  display: flex;
+  align-items: center;
+  height: 2.82rem;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #53575d;
+}
+.envelopMainContainer .tableContainer .firstRow .rowEnds2 {
+  border-right: 1px solid;
+  border-color: #53575d;
+}
+.envelopMainContainer .notesContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+.envelopMainContainer .notesContainer .note {
+  text-align: center;
+  font-size: 0.22rem;
+  line-height: 1.5;
+  color: #a1a3bc;
+}/*# sourceMappingURL=envelop.css.map */

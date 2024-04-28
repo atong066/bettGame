@@ -1,0 +1,139 @@
+.withdrawPasswordMainConainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    border-radius: 7px;
+    gap: .5rem;
+    width: 100%;
+
+    .withdrawBoxNew {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        width: 40%;
+
+        .withsrawPassLabel {
+            font-size: .18rem;
+            line-height: 27px;
+            text-align: center;
+            color: #04BE02;
+        }
+
+        .withdrawConfrimPass {
+            color: #874404;
+            background-color: #F0C059;
+            border: none;
+            border-radius: 10px;
+            text-transform: capitalize;
+            font-size: .2rem;
+            height: 0.55rem;
+            line-height: 1.2;
+            white-space: normal;
+            width: 1.8rem;
+            word-break: break-word;
+        }
+    }
+}
+
+.enterPassMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    .enterPassContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        .labelWithEyeBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .passWordEye {
+                .MuiSvgIcon-root {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .inputLabelsPass {
+                font-size: .18rem;
+                line-height: normal;
+                color: #fff;
+            }
+        }
+
+        input::selection {
+            background-color: transparent;
+        }
+
+        .withdrawPassAutoTab {
+            width: 100% !important;
+            height: .8rem;
+            border: thin solid;
+            border-color: #313843;
+            background-color: transparent;
+            font-size: 60px;
+            color: #fff;
+            cursor: pointer;
+            caret-color: transparent;
+
+            &:focus {
+                outline: none;
+                border: 1.8px solid;
+                border-color: #F0C059;
+
+                &:last-child {
+                    border-left: 1.8px solid;
+                }
+
+                &:not(:first-child):not(:last-child) {
+                    border-right: 1.8px solid;
+                    border-left: 1.8px solid;
+                    border-color: #F0C059;
+                }
+            }
+
+            &:first-child {
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+                border-left: none;
+            }
+
+            &:not(:first-child):not(:last-child) {
+                border-right: thin solid;
+                border-left: none;
+                border-color: #313843;
+            }
+        }
+    }
+
+    .footLabel {
+        color: #FFAA09;
+        font-size: .16rem;
+        letter-spacing: normal;
+        position: relative;
+        left: -0.1rem;
+    }
+
+    .headLabel {
+        color: #fff;
+        font-weight: 600;
+        font-size: .18rem;
+        letter-spacing: normal;
+        position: relative;
+        left: -0.1rem;
+    }
+}

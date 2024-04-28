@@ -1,0 +1,269 @@
+.withdrawMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.withdrawMainContainer .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: #1C1E23;
+  gap: 10px;
+  border-radius: 7px;
+}
+.withdrawMainContainer .header .titleWing {
+  width: 5rem;
+}
+.withdrawMainContainer .header .titleWing:nth-child(3) {
+  rotate: 180deg;
+}
+.withdrawMainContainer .header .headerTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+.withdrawMainContainer .walletContainer {
+  background-color: #1C1E23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  border-radius: 7px;
+}
+.withdrawMainContainer .walletContainer .MuiTabs-root button {
+  color: white;
+  font-weight: 600;
+}
+.withdrawMainContainer .walletContainer .css-1776hvf {
+  border: none;
+}
+.withdrawMainContainer .walletContainer .css-1gsv261 {
+  border-bottom: 2px solid;
+  border-color: #313843;
+}
+.withdrawMainContainer .walletContainer .walletIconBox .walletIcon {
+  width: 7rem;
+  height: 7rem;
+}
+.withdrawMainContainer .walletContainer .walletLabelBox {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.withdrawMainContainer .walletContainer .walletLabelBox .walletLabel {
+  font-size: 22px;
+  font-weight: 500;
+}
+.withdrawMainContainer .walletContainer .walletLabelBox .walletContent {
+  display: flex;
+  gap: 5px;
+}
+.withdrawMainContainer .walletContainer .walletLabelBox .walletContent .walletCurrency {
+  color: #874404;
+  font-weight: 600;
+  font-style: italic;
+}
+.withdrawMainContainer .walletContainer .walletLabelBox .walletContent .walletAmount {
+  color: #FFAA09;
+  font-weight: 500;
+}
+.withdrawMainContainer .bankCardContainer {
+  background-color: #1C1E23;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 7px;
+  width: 100%;
+}
+.withdrawMainContainer .bankCardContainer .bankAmount {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .bankAmount .amountLabel {
+  font-size: 22px;
+  font-style: italic;
+}
+.withdrawMainContainer .bankCardContainer .bankAmount .walletCurrency {
+  font-size: 22px;
+  color: #874404;
+  font-weight: 600;
+  font-style: italic;
+}
+.withdrawMainContainer .bankCardContainer .bankAmount .walletAmount {
+  font-size: 22px;
+  color: #FFAA09;
+  font-weight: 500;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .bankCardLabel {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c5c5c5;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer {
+  background-color: #232328;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox {
+  background-color: #141417;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 7px;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: thin solid;
+  gap: 3px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox:hover {
+  border: 2px solid rgba(255, 169, 9, 0.1490196078);
+  cursor: pointer;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox.active {
+  border: 2px solid rgba(255, 169, 9, 0.6196078431);
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox .bankName {
+  color: #fff;
+  font-weight: 600;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox .bankHolder {
+  color: #FFAA09;
+  font-weight: 600;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .cardBox .bankNumber {
+  color: #fff;
+  font-weight: 600;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .checkContainer {
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .checkContainer .badge {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  display: none;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .checkContainer .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .checkContainer .badge .checkIcon {
+  color: #874404;
+  rotate: -45deg;
+  right: 10px;
+}
+.withdrawMainContainer .bankCardContainer .bankCardBox .cardBoxContainer .checkContainer .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .MuiOutlinedInput-notchedOutline {
+  border: thin solid rgba(240, 192, 89, 0.737254902);
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-152mnda-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+  -webkit-text-fill-color: #b8b8b8;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-1wc848c-MuiFormHelperText-root {
+  color: #fff;
+  font-size: 14px;
+  font-style: italic;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .MuiStack-root .css-i4bv87-MuiSvgIcon-root {
+  color: #fff;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankButtons {
+  font-weight: 600;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox {
+  background-color: #232328;
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 7px;
+  border: thin solid #874404;
+  font-size: 17px;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox .infoLabelBox {
+  display: flex;
+  gap: 5px;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox .infoLabelBox .infoLAbel {
+  color: #c5c5c5;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox .infoLabelBox .infoContent {
+  color: #FFAA09;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox .infoLabelBox .timesLabel {
+  font-style: italic;
+  color: red;
+}
+.withdrawMainContainer .bankCardContainer .amountInputContainer .bankWithdrawalInfoContainer .infoBox .infoLabelBox .currencyLabel {
+  font-weight: 600;
+  font-style: italic;
+  color: #874404;
+}
+.withdrawMainContainer .addCardButtonBox {
+  background-color: #1C1E23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.withdrawMainContainer .addCardButtonBox .bankButtons {
+  font-weight: 600;
+  height: 3rem;
+}
+
+.bnkWithrawalData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.2rem;
+}/*# sourceMappingURL=withdraw.css.map */

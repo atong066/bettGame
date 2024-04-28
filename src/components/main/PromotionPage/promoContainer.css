@@ -1,0 +1,965 @@
+.mainInvite {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.mainInvite .promoContianer {
+  display: flex;
+  border-radius: 0.1rem;
+  gap: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.mainInvite .promoContianer .promoLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+}
+.mainInvite .promoContianer .promoLinks button {
+  font-size: 0.17rem;
+  word-break: break-word;
+  padding: 0.1rem;
+  color: #ADB6C3;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.1rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  background: no-repeat;
+  background-size: 100% 100%;
+}
+.mainInvite .promoContianer .promoMain {
+  height: 100%;
+  background-color: #202329;
+  width: 100%;
+  max-width: 10.6rem;
+  border-radius: 0.1rem;
+}
+.mainInvite .collectionContainer {
+  display: flex;
+  padding: 0.2rem;
+  background-color: #181b29;
+  border-radius: 0.1rem;
+  height: 1.5rem;
+  width: 12.1rem;
+}
+.mainInvite .collectionContainer .collectionBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox .iconAlert {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  cursor: pointer;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox .iconAlert:active {
+  scale: 0.9;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox .medalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox .medalContainer .medalRibbonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+.mainInvite .collectionContainer .collectionBox .imageBox .medalContainer .medalRibbonContainer .vipLevel {
+  color: #e4b74f;
+  font-size: 0.4rem;
+  position: relative;
+  top: 0rem;
+  font-weight: 600;
+  text-shadow: 0.01rem 0.01rem 0.02rem #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  gap: 0.1rem;
+  width: 100%;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0.05rem;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .label {
+  color: #68707B;
+  font-size: 0.2rem;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .labelContent {
+  color: #fff;
+  font-size: 0.2rem;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .copyIDV2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .copyIDV2 .copyIcon {
+  width: 0.3rem;
+  height: 0.3rem;
+  cursor: pointer;
+  position: relative;
+  top: -0.06rem;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .copyIDV2 .copyIcon:hover {
+  scale: 1.1;
+}
+.mainInvite .collectionContainer .collectionBox .labelCon .labelBox .copyIDV2 .copyIcon:active {
+  scale: 0.9;
+}
+.mainInvite .collectionContainer .collectionBox .collectibleBox {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.mainInvite .collectionContainer .collectionBox .collectibleBox .labelBox {
+  display: flex;
+  gap: 0.05rem;
+}
+.mainInvite .collectionContainer .collectionBox .collectibleBox .labelBox .label {
+  color: #ADB6C3;
+  font-size: 0.2rem;
+}
+.mainInvite .collectionContainer .collectionBox .collectibleBox .labelBox .labelContent {
+  font-size: 0.2rem;
+}
+.mainInvite .collectionContainer .collectionBox .buttonConBox {
+  font-size: initial;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  width: 100%;
+}
+.mainInvite .collectionContainer .collectionBox .buttonConBox .collectionButton {
+  text-transform: capitalize;
+  font-size: 0.18rem;
+  border-radius: 0.1rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.mainInvite .AllDataMainBox .extraContainer .extraTab .contents .top {
+  border-top: none !important;
+}
+.mainInvite .AllDataMainBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .topBox {
+  display: flex;
+  margin-bottom: 0.1rem;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .topBox .searchButton {
+  font-weight: 600;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .topBox .backButton {
+  margin-left: auto;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .tableContainer .copyID {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .tableContainer .copyID .copyIcon {
+  width: 0.2rem;
+  height: 0.5rem;
+  cursor: pointer;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .tableContainer .copyID .copyIcon:hover {
+  scale: 1.1;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .tableContainer .copyID .copyIcon:active {
+  scale: 0.9;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .vipTabs {
+  color: #fff;
+  font-weight: 600;
+}
+.mainInvite .AllDataMainBox .myPerformanceContainer .MuiTabs-root button {
+  color: white;
+}
+
+.copyIDV3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+}
+.copyIDV3 .copyIcon {
+  width: 0.2rem;
+  cursor: pointer;
+}
+.copyIDV3 .copyIcon:hover {
+  scale: 1.1;
+}
+.copyIDV3 .copyIcon:active {
+  scale: 0.9;
+}
+
+.mainLabelBox {
+  display: flex;
+  align-items: center;
+}
+.mainLabelBox .modLabels {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.mainLabelBox .modLabels .moLaabel {
+  font-size: 0.18rem;
+}
+
+.maionBX {
+  border-radius: 0.1rem;
+  padding-bottom: 0.0005rem;
+}
+
+.top1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+.top1 .CardContainer {
+  display: flex;
+  border: thin solid #313843;
+  width: 70%;
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+}
+.top1 .CardContainer .card-agent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.top1 .CardContainer .card-agent .textArea {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  align-items: center;
+  justify-content: center;
+}
+.top1 .CardContainer .card-agent .textArea .textTop {
+  color: #68707B;
+  font-size: 0.18rem;
+}
+.top1 .CardContainer .card-agent .textArea .textBottom {
+  color: #f0c059;
+  font-size: 0.18rem;
+}
+.top1 .CardContainer .card-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  gap: 0.1rem;
+}
+.top1 .CardContainer .card-right em {
+  font-size: 0.18rem;
+  color: #fff;
+}
+.top1 .CardContainer .card-right div {
+  color: #fff;
+  font-size: 0.18rem;
+}
+
+.arrowMid {
+  display: flex;
+  width: 100%;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  margin-top: 0.1rem;
+  justify-content: center;
+}
+.arrowMid img {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(56%) saturate(1543%) hue-rotate(353deg) brightness(105%) contrast(102%);
+}
+.arrowMid .left {
+  position: relative;
+  right: 0.62rem;
+  top: -0.1rem;
+}
+.arrowMid .left img {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.arrowMid .left div {
+  color: #fff;
+  font-size: 0.18rem;
+}
+.arrowMid .left .tops {
+  position: absolute;
+  rotate: -45deg;
+  left: -0.54rem;
+  right: -0.9rem;
+  bottom: 1.5rem;
+  top: 0.28rem;
+}
+.arrowMid .left .bottom {
+  position: absolute;
+  top: 0.95rem;
+  left: 0.07rem;
+  rotate: -46deg;
+  width: 1.7rem;
+}
+.arrowMid .mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0.01rem;
+  gap: 0.25rem;
+}
+.arrowMid .mid img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.arrowMid .mid div {
+  color: #fff;
+  font-size: 0.18rem;
+}
+.arrowMid .right {
+  position: relative;
+  left: 0.59rem;
+  top: -0.07rem;
+}
+.arrowMid .right div {
+  color: #fff;
+  font-size: 0.18rem;
+}
+.arrowMid .right img {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+.arrowMid .right .tops {
+  position: absolute;
+  left: -0.59rem;
+  rotate: 0.45deg;
+  top: 0.27rem;
+  right: 0rem;
+  bottom: -1.6rem;
+  width: 1.77rem;
+  rotate: 45deg;
+}
+.arrowMid .right .tops img {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(83%) saturate(6706%) hue-rotate(349deg) brightness(106%) contrast(103%);
+}
+.arrowMid .right .bottom {
+  position: absolute;
+  top: 1.01rem;
+  rotate: 45deg;
+}
+
+.thirdDiv {
+  display: flex;
+  position: relative;
+  grid-area: 2rem;
+  justify-content: center;
+  margin-top: 0.4rem;
+}
+.thirdDiv .cardContainerP {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  gap: 1rem;
+  font-size: initial;
+}
+.thirdDiv .cardContainerP .card {
+  border: 0.01rem solid #f0c059;
+  width: 15rem;
+  border-radius: 0.1rem;
+}
+.thirdDiv .cardContainerP .card .agentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.5rem;
+}
+.thirdDiv .cardContainerP .card .agentIcon .agentContainer {
+  position: relative;
+  top: -0.2rem;
+}
+.thirdDiv .cardContainerP .card .conetnt {
+  color: white;
+  text-align: center;
+  border-bottom: 0.01rem solid #f0c059;
+  height: 1rem;
+  padding: 0.2rem;
+}
+.thirdDiv .cardContainerP .card .conetnt .text {
+  font-size: 0.2rem;
+  color: #68707B !important;
+  line-height: 1.3;
+}
+.thirdDiv .cardContainerP .card .footerDiv {
+  text-align: center;
+  padding: 0.2rem;
+  color: #fff;
+  font-size: 0.18rem;
+  font-weight: 600;
+}
+
+.agentContainer {
+  max-width: 1rem;
+  max-height: 1rem;
+  border: 0.03rem solid #F0C059 !important;
+  border-radius: 80%;
+  position: relative;
+}
+.agentContainer .agentType {
+  position: absolute;
+  background-color: #F0C059 !important;
+  border-radius: 80%;
+  height: 0.3rem;
+  width: 0.3rem;
+  font-size: 0.18rem;
+  color: #874404 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -0.03rem;
+  top: 0.65rem;
+}
+.agentContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.fourthDiv {
+  margin-top: 0.2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: stretch;
+  justify-content: space-evenly;
+  padding-bottom: 0.2rem;
+  flex-direction: column;
+}
+.fourthDiv img {
+  filter: brightness(0) saturate(100%) invert(65%) sepia(56%) saturate(1543%) hue-rotate(353deg) brightness(105%) contrast(102%);
+}
+.fourthDiv .cardContainerP .left {
+  position: relative;
+  display: grid;
+  left: 0.33rem;
+  gap: 0.18rem;
+}
+.fourthDiv .cardContainerP .left img {
+  height: 0.7rem;
+  width: 0.4rem;
+}
+.fourthDiv .cardContainerP .center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.fourthDiv .cardContainerP .center img {
+  height: 0.7rem;
+  width: 3rem;
+}
+.fourthDiv .cardContainerP .right {
+  position: relative;
+  right: 0.13rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.fourthDiv .cardContainerP .right img {
+  height: 0.7rem;
+  width: 0.4rem;
+  margin: 0 auto;
+}
+.fourthDiv .leftArrow {
+  position: relative;
+  margin: auto;
+}
+.fourthDiv .centerArrow {
+  right: 1.4rem;
+  position: relative;
+}
+.fourthDiv .rightArrow {
+  position: relative;
+}
+.fourthDiv p {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.18rem;
+}
+
+.fifthDiv {
+  display: flex;
+  position: relative;
+  grid-area: 2rem;
+  justify-content: center;
+  margin-top: 0.35rem;
+}
+.fifthDiv .cardContainerP {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  gap: 1rem;
+}
+.fifthDiv .cardContainerP .card {
+  border: 0.01rem solid #f0c059;
+  width: 15rem;
+  border-radius: 0.1rem;
+}
+.fifthDiv .cardContainerP .card .agentIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.5rem;
+}
+.fifthDiv .cardContainerP .card .agentIcon .agentContainer {
+  position: relative;
+  top: -0.2rem;
+}
+.fifthDiv .cardContainerP .card .conetnt {
+  color: white;
+  text-align: center;
+  border-bottom: 0.01rem solid #f0c059;
+  height: 1rem;
+  padding: 0.15rem 0.1rem 0.25rem;
+}
+.fifthDiv .cardContainerP .card .conetnt .text {
+  font-size: 0.2rem;
+  color: #68707B !important;
+  line-height: 1.3;
+}
+.fifthDiv .cardContainerP .card .footerDiv {
+  text-align: center;
+  padding: 0.2rem;
+  color: #fff;
+  font-size: 0.18rem;
+  font-weight: 600;
+}
+
+.cardContainerP {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  gap: 1rem;
+}
+
+.bottomDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.1rem;
+  color: #fff !important;
+  border: thin solid #313843;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  border-radius: 0.1rem;
+}
+.bottomDiv div:nth-child(2) {
+  text-indent: 0.4rem;
+}
+.bottomDiv .indent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.02rem;
+}
+.bottomDiv .indent div {
+  color: #fff !important;
+  font-size: 0.18rem;
+}
+.bottomDiv .indent div span {
+  color: #fff !important;
+  font-size: 0.18rem;
+}
+.bottomDiv .indent span {
+  color: #fff !important;
+  font-size: 0.18rem;
+}
+.bottomDiv div {
+  color: #fff !important;
+  font-size: 0.18rem;
+}
+.bottomDiv span {
+  color: #fff;
+  font-size: 0.18rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  background: #1c1e23;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+.socialLinks .qrContainer .qrcode {
+  background: #fff;
+  border: 0.01rem solid var(--theme-color-line);
+  border-radius: 0.14rem;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 1.9rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.socialLinks .qrContainer .qrcode canvas {
+  margin-bottom: 0.06rem;
+  height: 1.3rem;
+  margin: 0.1rem;
+  width: 1.3rem;
+}
+.socialLinks .qrContainer .qrcode .qrImag {
+  margin: 0.2rem;
+}
+.socialLinks .qrContainer .qrcode .clickBg {
+  background-color: #f0c059;
+  border-radius: 0 0 0.05rem 0.05rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #874404;
+  font-size: 0.2rem;
+  height: auto;
+  line-height: 0.22rem;
+  min-height: 0.4rem;
+  padding-bottom: 0.05rem;
+  white-space: pre-wrap;
+  width: 1.5rem;
+  word-break: break-word;
+  text-align: center;
+}
+.socialLinks .qrContainer .qrcode .clickBg label {
+  font-size: 0.2rem;
+  color: #874404;
+  cursor: no-drop;
+  text-align: center;
+}
+.socialLinks .socialSites {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+}
+.socialLinks .socialSites .title {
+  font-size: 0.18rem;
+  color: white;
+}
+.socialLinks .socialSites .link {
+  border: thin solid #f0c059;
+  width: 100%;
+  border-radius: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.1rem;
+  color: #68707b;
+  font-size: 0.18rem;
+  cursor: pointer;
+}
+.socialLinks .socialSites .link:hover {
+  border-color: #f0c059 !important;
+}
+.socialLinks .socialSites .link svg {
+  cursor: pointer;
+  color: white;
+  height: 0.4rem;
+}
+.socialLinks .socialSites .socialLinkstab {
+  display: flex;
+  gap: 0.2rem;
+  margin-left: 0.2rem;
+}
+.socialLinks .socialSites .socialLinkstab .linktab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.2rem;
+}
+.socialLinks .socialSites .socialLinkstab .linktab img {
+  height: 0.48rem;
+  width: 0.48rem;
+}
+.socialLinks .socialSites .socialLinkstab .linktab .linksLabel {
+  font-size: 0.16rem;
+  color: #68707b;
+  font-weight: 100;
+}
+
+.extraTableContainer {
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.extraTableContainer .extraContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.extraTableContainer .extraContainer .extraTab {
+  display: flex;
+  background-color: #181b29;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.1rem;
+}
+.extraTableContainer .extraContainer .extraTab .title {
+  display: flex;
+  color: white;
+  font-size: 0.18rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+}
+.extraTableContainer .extraContainer .extraTab .title .titleWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.extraTableContainer .extraContainer .extraTab .title .titleWithIcon .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.extraTableContainer .extraContainer .extraTab .title .titleWithIcon .more .arrowIconRight {
+  width: 1.5vw;
+  margin-left: 0.5rem;
+}
+.extraTableContainer .extraContainer .extraTab .contents {
+  display: grid;
+  grid-template-columns: auto;
+}
+.extraTableContainer .extraContainer .extraTab .contents .top {
+  display: flex;
+  border-bottom: thin solid #313843;
+  padding: 0.2rem;
+}
+.extraTableContainer .extraContainer .extraTab .contents .top span {
+  font-size: 0.18rem;
+}
+.extraTableContainer .extraContainer .extraTab .contents .top div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  width: 50%;
+  color: white;
+}
+.extraTableContainer .extraContainer .extraTab .contents .top div span {
+  font-size: 0.18rem;
+}
+.extraTableContainer .extraContainer .extraTab .contents .bottom {
+  display: flex;
+  padding: 0.2rem;
+}
+.extraTableContainer .extraContainer .extraTab .contents .bottom div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 50%;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.promoMain .extraTab:nth-child(3) .title {
+  border: none !important;
+}
+
+.extraContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.extraContainer .extraTab {
+  display: flex;
+  background-color: #181b29;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0.1rem;
+}
+.extraContainer .extraTab .title {
+  display: flex;
+  color: white;
+  font-size: 0.18rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem;
+  border-bottom: thin solid #313843;
+}
+.extraContainer .extraTab .title .titleWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extraContainer .extraTab .title .titleWithIcon .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.extraContainer .extraTab .title .titleWithIcon .more .arrowIconRight {
+  width: 1.5vw;
+  margin-left: 0.1rem;
+}
+.extraContainer .extraTab .contents {
+  display: grid;
+  grid-template-columns: auto;
+}
+.extraContainer .extraTab .contents .top {
+  display: flex;
+  border-top: thin solid #313843;
+  padding: 0.2rem;
+  font-size: 0.18rem;
+}
+.extraContainer .extraTab .contents .top div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  width: 50%;
+  color: white;
+  font-size: 0.18rem;
+}
+.extraContainer .extraTab .contents .bottom {
+  display: flex;
+  padding: 0.2rem;
+}
+.extraContainer .extraTab .contents .bottom div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 50%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nomiNietitle {
+  background: #1c1e23;
+  color: white;
+  font-weight: 600;
+  font-size: 0.22rem;
+  border-bottom: thin solid #313843;
+  padding: 0.2rem;
+  border-top-right-radius: 0.1rem;
+  border-top-left-radius: 0.1rem;
+}
+
+.commissionFooter {
+  padding: 0.2rem;
+  color: #ADB6C3;
+  font-size: 0.18rem;
+}
+
+.red {
+  color: #68707B;
+}
+
+.medalContainerv2 {
+  position: relative;
+  cursor: pointer;
+}
+.medalContainerv2 .medalRibbonContainer {
+  width: 1.3rem;
+}
+.medalContainerv2 .medalRibbonContainer img {
+  position: relative;
+  top: -0.15rem;
+  width: 0.8rem;
+  height: 0.7rem;
+}
+
+.medalRowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medalRowContainer span.viplevelspan {
+  color: #68707B;
+  margin-left: 0.15rem;
+  font-size: 0.18rem;
+}
+.medalRowContainer .imgContainer {
+  max-height: 0.7rem;
+  max-width: 0.7rem;
+}
+.medalRowContainer .imgContainer .imgIconX {
+  width: 100%;
+  height: 100%;
+}
+.medalRowContainer .medalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 0.45rem;
+  height: 0.45rem;
+}
+.medalRowContainer .medalContainer .medalRibbonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 0.45rem;
+  height: 0.45rem;
+}
+.medalRowContainer .medalContainer .medalRibbonContainer .vipLevel {
+  color: #e4b74f;
+  font-size: 0.2rem;
+  position: relative;
+  font-weight: 600;
+  text-shadow: 0.01rem 0.01rem 0.02rem #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC", miui, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}/*# sourceMappingURL=promoContainer.css.map */

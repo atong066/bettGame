@@ -1,0 +1,111 @@
+.rechargeMainContainer {
+  padding-bottom: 0.3rem;
+}
+.rechargeMainContainer .banner {
+  margin-top: .3rem;
+}
+.rechargeMainContainer .banner img {
+  width: 100%;
+}
+.rechargeMainContainer .prizeContianer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 0.3rem;
+  row-gap: 0.3rem;
+  width: 100%;
+  position: relative;
+  margin-top: 0.2rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.16rem;
+  border-radius: 10px;
+  color: white;
+  width: 3.8rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .titleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 0.16rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .titleContainer .title{
+  min-height: .3rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .unclock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 0.2px solid;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .unclock .redeem {
+  max-width: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: .3rem;
+  font-size: .14rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .unclock .redeem img {
+  width: 100%;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .progressBarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .progressBarContainer .progressbar {
+  width: 100%;
+  height: 0.3rem;
+  background: white;
+  color: black;
+  text-align: center;
+  border-radius: 0.1rem;
+  position: relative;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .progressBarContainer .progressbar .progressBarLoader {
+  border-radius: 5rem;
+  height: 0.3rem;
+  padding: 4px;
+  position: relative;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .progressCount .progressBarContainer .progressbar span {
+  display: flex;
+  position: absolute;
+  color: #000;
+  width: 100%;
+  top: 0.07rem;
+  justify-content: center;
+  font-size: .16rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .unlockDescription {
+  min-height: 1rem;
+  padding: 0.02rem 0.15rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .recieveAction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.1rem 0.2rem;
+}
+.rechargeMainContainer .prizeContianer .prizeCard .recieveAction button {
+  font-weight: 600;
+  font-size: 0.17rem;
+  width: 10rem;
+  text-transform: capitalize;
+  border: none;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=recharge.css.map */

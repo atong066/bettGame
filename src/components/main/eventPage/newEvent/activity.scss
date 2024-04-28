@@ -1,0 +1,43 @@
+.activityMainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .timeHeaderContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 7px;
+
+        .startTimeBox {
+            display: flex;
+            gap: .5rem;
+
+            .timeBoxLabel {
+                color: #fff;
+            }
+
+            .timeBoxLabelContent {
+                color: #fff;
+                font-weight: 600;
+                font-style: italic;
+            }
+        }
+    }
+
+    .contentContainerActivity {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 7px;
+        color: #fff;
+
+        p,
+        span {
+            color: #fff;
+        }
+    }
+}

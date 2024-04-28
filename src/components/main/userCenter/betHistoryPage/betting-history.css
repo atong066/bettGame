@@ -1,0 +1,21 @@
+.bettingHistoryMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.bettingHistoryMainContainer .filtersInputsContainers {
+  background-color: #1C1E23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}
+.bettingHistoryMainContainer .filtersInputsContainers .searchButton {
+  background-color: #f0c059;
+  color: #874404;
+  height: 0.4rem;
+}
+.bettingHistoryMainContainer .tablesContentsContainers {
+  margin-bottom: 1.5rem;
+  background-color: #1C1E23;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  margin-top: 0.2rem;
+}/*# sourceMappingURL=betting-history.css.map */

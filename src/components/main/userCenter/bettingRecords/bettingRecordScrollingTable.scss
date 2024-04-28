@@ -1,0 +1,6 @@
+.bettingRecordScrollingTable{
+    overflow: auto;
+    &::-webkit-scrollbar{
+        display: block;
+    }
+}

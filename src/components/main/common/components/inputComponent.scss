@@ -1,0 +1,48 @@
+.searchInputContainer {
+    display: flex;
+    border: thin solid #313843;
+    border-radius: .37rem;
+    position: relative;
+    min-height: 0.45rem;
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-radius: 37rem;
+        padding: 0 .2rem;
+        font-size: .18rem;
+        color: #adb6c4;
+        width: 100%;
+        outline: none;
+
+        &:focus {
+            outline: none;
+            border-color: thin solid #f0c059;
+        }
+
+        &:hover {
+            border-color: thin solid #f0c059;
+        }
+    }
+
+    &:has(input[type="number"]:focus) {
+        border: thin solid;
+        border-color: #F0C059;
+    }
+
+    .searchIcon {
+        width: fit-content;
+        background: none;
+        position: absolute;
+        right: .1rem;
+        top: .1rem;
+        border: none;
+
+        img {
+            height: .25rem;
+            filter: brightness(0) saturate(100%) invert(89%) sepia(89%) saturate(4033%) hue-rotate(315deg) brightness(101%) contrast(88%);
+        }
+
+        cursor: pointer;
+    }
+}

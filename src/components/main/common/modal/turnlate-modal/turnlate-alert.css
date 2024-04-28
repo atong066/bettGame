@@ -1,0 +1,40 @@
+.turnAlertMainContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.turnAlertMainContainer .turnAlertBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.turnAlertMainContainer .turnAlertBack .backImage {
+  position: relative;
+}
+.turnAlertMainContainer .turnAlertBack .labelAndPrizeImageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 0.2rem;
+  gap: 0.2rem;
+}
+.turnAlertMainContainer .turnAlertBack .labelAndPrizeImageBox .prizeBox {
+  text-align: center;
+  position: relative;
+  font-size: initial;
+}
+.turnAlertMainContainer .turnAlertBack .labelAndPrizeImageBox .prizeBox .prizeLabel {
+  font-size: 0.22rem;
+  color: #fff;
+}
+.turnAlertMainContainer .turnAlertBack .labelAndPrizeImageBox .prizeImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}/*# sourceMappingURL=turnlate-alert.css.map */

@@ -1,0 +1,872 @@
+.depostSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+
+    .secondSection {
+        background-color: #1C1E23;
+        border-radius: 7px;
+        margin-bottom: 1.5px !important;
+
+        .supportTabs {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .MuiTabs-root {
+            button {
+                color: white;
+            }
+
+            button[aria-selected="true"] {
+                color: #f0c059;
+            }
+        }
+
+        .transferMainContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 0px;
+            gap: 15px;
+            min-width: 40px;
+
+            .cardContainervs {
+                display: grid !important;
+                grid-template-columns: auto auto;
+                gap: 15px;
+
+                &.channel {
+                    display: flex !important;
+                    width: 64.4%;
+                    text-align: center;
+
+                    .bankCards2 {
+                        text-align: center !important;
+                        justify-content: center;
+
+                        font-size: 18px;
+                    }
+                }
+
+                .bankCards2 {
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    min-width: 6px;
+                    height: .6rem;
+                    border: 1px solid;
+                    // border-color: #313843;
+                    padding: 15px;
+                    border-radius: 7px;
+                    cursor: pointer;
+                    font-weight: 600;
+                    color: #adb6c3;
+                    letter-spacing: 2px;
+                    font-size: 18px;
+
+                    .bnkNames {
+                        position: absolute;
+                        margin-left: 1.5rem;
+                    }
+
+                    &.active {
+                        border: 2px solid;
+                        // border-color: #f0c059;
+                    }
+                }
+
+                .checkContainers {
+                    overflow: hidden;
+                    position: relative;
+                    border-radius: 7px;
+                    width: 100%;
+
+                    .channel {
+                        display: flex !important;
+                    }
+
+                    .badge {
+                        display: none;
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0;
+                        padding: 3px;
+                        rotate: 45deg;
+                        height: 50px;
+                        width: 50px;
+                        margin: -25px;
+
+                        &.active {
+                            background-color: #f0c059;
+                            display: block;
+                        }
+
+                        .checkIcon {
+                            color: #874404;
+                            rotate: -54deg;
+                            right: 10px;
+                        }
+
+                        .MuiAvatar-root {
+                            top: 11px !important;
+                            right: 4px !important;
+                        }
+                    }
+                }
+            }
+
+            .paymentMethod {
+                display: flex;
+                flex-direction: column;
+
+                .paymentMethodDetails {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 15px;
+
+                    .details {
+                        background-color: #282b32;
+                        padding: 15px;
+                        border-radius: 7px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+                        font-size: 18px;
+
+                        .detailsLabel {
+                            color: #fff;
+                            font-style: italic;
+                            font-size: 18px;
+                        }
+
+                        .detailsContent {
+                            font-size: 19px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .crdBank {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #282b32;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: 2px solid;
+                        border-color: #f0c059;
+                        padding: 15px;
+
+                        .cardName {
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+
+                        .cardBody {
+                            .cardBox {
+                                display: flex;
+                                gap: 10px;
+
+                                .cardLabel {
+                                    font-style: italic;
+                                    color: #fff;
+                                }
+
+                                .cardContent {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .qrCodeContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .qrCodeLabelBox {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    .details {
+                        background-color: #282b32;
+                        padding: 15px;
+                        border-radius: 7px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        width: 100%;
+                        color: #fff;
+                        font-style: italic;
+                        font-size: 18px;
+                    }
+
+                    .qrCodeLabel {
+                        font-size: 14px;
+                        font-style: italic;
+                        width: 100%;
+                    }
+                }
+
+                .qrCodeBox {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .qrCodeImage {
+                        width: 3rem;
+                        border-radius: 7px;
+                    }
+                }
+
+                .paymentChannel {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .payName {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #282b32;
+                        width: 15px;
+                        height: 5px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 7px;
+                        border: 2px solid;
+                        border-color: #f0c059;
+                        padding: 15px;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-weight: 600;
+                    }
+                }
+
+                .depoAmountContainer {
+                    display: flex;
+                    gap: 15px;
+
+                    .amountValue {
+                        background-color: #282b32;
+                        padding: 15px;
+                        border: 2px solid;
+                        border-color: #f0c05955;
+                        border-radius: 7px;
+                        cursor: pointer;
+
+                        &.active {
+                            border-color: #f0c059;
+                        }
+                    }
+
+                    .checkContainer {
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 7px;
+
+                        .badge {
+                            position: absolute;
+                            right: 0px;
+                            bottom: 0;
+                            padding: 3px;
+                            display: none;
+                            rotate: 45deg;
+                            height: 50px;
+                            width: 50px;
+                            margin: -25px;
+
+                            &.active {
+                                background-color: #f0c059;
+                                display: block;
+                            }
+
+                            .checkIcon {
+                                color: #874404;
+                                rotate: -45deg;
+                                right: 10px;
+                            }
+
+                            .MuiAvatar-root {
+                                top: 11px !important;
+                                right: 4px !important;
+                            }
+                        }
+                    }
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+                    color: #f0c059;
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+                    color: #f0c059;
+                }
+            }
+
+            .buttonContainer {
+                button {
+                    border-radius: 6px;
+                    // background-color: var(--theme-primary-color);
+                    border-radius: .1rem;
+                    // color: var(--theme-primary-font-color);
+                    font-size: .2rem;
+                    height: .55rem;
+                    text-align: center;
+                    width: 4.4rem;
+                }
+
+                .configButton {
+                    // background-color: #f0c059;
+                    // color: #874404;
+                    border-radius: 6px;
+                    // background-color: var(--theme-primary-color);
+                    border-radius: .1rem;
+                    // color: var(--theme-primary-font-color);
+                    font-size: .2rem;
+                    height: .55rem;
+                    text-align: center;
+                    width: 4.4rem;
+                    text-transform: capitalize;
+                }
+            }
+
+            .inputContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .details {
+                    background-color: #282b32;
+                    padding: 15px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-style: italic;
+                    font-size: 18px;
+                }
+
+                .buttonContainer {
+                    .configButton {}
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+                    color: #f0c059;
+                }
+
+                .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+                    color: #f0c059;
+                }
+            }
+
+            .notesContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .details {
+                    background-color: #282b32;
+                    padding: 15px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-style: italic;
+                    font-size: 18px;
+                }
+
+                .minNote {
+                    display: flex;
+                    flex-direction: column;
+
+                    .noteLabelBox {
+                        display: flex;
+
+                        .noteLabel {
+                            color: #fff;
+                            margin-right: 10px;
+                            font-size: 16px;
+                            font-style: italic;
+                        }
+
+                        .noteLabelContent {
+                            margin-right: 3px;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+
+                        .miniCurrency {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #874404;
+                        }
+                    }
+                }
+            }
+
+            .noOnlineConfigContainer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .noConfigLabel {
+                    color: #fff;
+                    font-weight: 600;
+                    font-style: italic;
+                    font-size: 22px;
+                    padding: .4px;
+                    width: 17px;
+                    min-width: fit-content;
+                    text-align: center;
+                    border: 4px solid;
+                    border-radius: 10px;
+                }
+            }
+
+            .qrCodeLabelBox {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .details {
+                    background-color: #282b32;
+                    padding: 15px;
+                    border-radius: 7px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    color: #fff;
+                    font-style: italic;
+                    font-size: 18px;
+                }
+
+                .qrCodeLabel {
+                    font-size: 14px;
+                    font-style: italic;
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+}
+
+.cardMainContainer2 {
+    border-bottom: 2px solid #313843;
+    padding-bottom: 15px;
+    margin: .12rem 0;
+}
+
+.valueContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+
+    .value {
+        border: 1px solid #313843;
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        padding: 14px;
+        border-radius: 15px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &.active {
+            border: 2px solid;
+            border-color: #f0c059;
+
+            .checkIcon {
+                display: block;
+                border: 2px solid #f0c059;
+                border-color: #f0c059;
+                position: absolute;
+                right: -39px;
+                bottom: -56px;
+                color: #f0c059;
+                font-size: 15px;
+                font-weight: 600;
+                background-color: #f0c059;
+                height: 5px;
+                width: 5px;
+                rotate: 47deg;
+
+                svg {
+                    position: relative;
+                    font-size: 87px;
+                    color: rgb(255, 255, 255);
+                    rotate: -50deg;
+                    width: 2px;
+                    height: 1.5px;
+                    top: 16px;
+                    left: -2px;
+                    background: none;
+                    border: none;
+                }
+            }
+        }
+
+        .checkIcon {
+            display: none;
+        }
+    }
+}
+
+.depoValue {
+    border: 1px solid #313843;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: .2px;
+
+    span {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        border-color: #f0c059;
+        cursor: pointer;
+    }
+
+    input {
+        border: none;
+        padding: 15px;
+        background-color: transparent;
+        outline: none;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        color: white;
+
+        &:focus {
+            border: none;
+        }
+    }
+}
+
+.depoHistconatinerModal {
+    min-width: 30px;
+    min-height: 35px;
+
+    .modalHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .noDatacont {
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.tableData {
+    width: 100%;
+    margin-top: 15px;
+
+    .tableDepohist {
+        .tableHeader {
+            display: grid;
+            padding: .12rem 0;
+            grid-template-columns: 2rem 1.5rem 2rem 2rem;
+            align-items: center;
+            border: 1px solid #313843;
+            border-radius: 10px;
+
+            .tblCell {
+                width: 100%;
+                text-align: center;
+                color: #fff !important;
+                font-size: .22rem;
+            }
+        }
+
+        .tableBody {
+            flex-direction: column;
+
+            .tblRow {
+                &:nth-child(even) {
+                    background-color: #202329 !important;
+                }
+
+                width: 100%;
+                display: grid;
+                grid-template-columns: 2rem 1.5rem 2rem 2rem;
+                align-items: center;
+                padding: 5px 0;
+                border-bottom: 1px solid #313843;
+
+                .tblCell {
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 10px;
+                    color: #fff !important;
+                    font-size: .22rem;
+                }
+            }
+        }
+
+    }
+}
+
+.pagination {
+    .svg {
+        height: .18rem !important;
+        width: .18rem !important;
+    }
+}
+
+.css-1xc3v61-indicatorContainer {
+    svg {
+        height: .3rem !important;
+        width: .3rem !important;
+    }
+}
+
+.css-151sz6c-indicatorContainer {
+    svg {
+        height: .3rem !important;
+        width: .3rem !important;
+    }
+}
+
+.css-1dimb5e-singleValue {
+    color: #adb6c4 !important;
+}
+
+.searchHistory {
+    background-color: #1C1E23;
+    border-radius: .1rem;
+
+    .searchHistoryItems {
+        padding: 0 .25rem;
+
+        .topItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .searchRecentLabel {
+                display: flex;
+                align-items: center;
+                gap: .05rem;
+
+                span {
+                    color: #68707b;
+                    font-size: .18rem;
+                }
+            }
+
+            .deleteSearchAll {
+                display: flex;
+                align-items: center;
+                gap: .05rem;
+                cursor: pointer;
+
+                span {
+                    color: #ea4d3d;
+                    font-size: .18rem;
+                }
+            }
+        }
+
+        .searchEntries {
+            margin: .2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: .25rem;
+            row-gap: .2rem;
+
+            .entryHItem {
+                width: fit-content;
+                position: relative;
+                display: flex;
+                align-items: center;
+                padding: 0 .15rem;
+                border: thin solid #313843;
+                border-radius: .2rem;
+                height: .4rem;
+                color: #68707b;
+                cursor: pointer;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.18rem;
+                    max-width: 2rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: #f0c059;
+                }
+
+                img {
+                    position: absolute;
+                    top: -.10rem;
+                    right: -.08rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.searchBarContainer {
+    height: .9rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem;
+    display: flex;
+    gap: .05rem;
+    border-radius: .1rem;
+    background-color: #1c1e23;
+
+    .searchIcon {
+        position: absolute;
+        right: 1.8rem;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        position: absolute;
+        right: 2.2rem;
+        cursor: pointer;
+    }
+
+    input {
+        &:focus {
+            outline: none;
+            border: thin solid;
+            border-color: #f0c059;
+        }
+
+        border-radius: .3rem;
+        border: thin solid #313843;
+        color: #ffffff;
+        font-size: .18rem;
+        height: .5rem;
+        padding: 0 .15rem;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    button {
+        font-size: .18rem;
+        height: .5rem;
+        margin-left: .2rem;
+        width: 1.2rem;
+        border-radius: .1rem;
+        padding: 0 .1rem;
+        border: 0;
+        background-color: #f0c059;
+        border-color: #f0c059;
+        color: #874404;
+        text-shadow: none;
+        cursor: pointer;
+    }
+}
+
+.depoHistBodyMain {
+    margin: .2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    overflow: auto;
+    height: 5rem;
+
+    .depoItemHist {
+        border: none;
+        background-color: #202329;
+        padding: .15rem .2rem !important;
+        border-radius: 0.1rem;
+        color: #68707b;
+        display: grid;
+        gap: .2rem;
+        cursor: pointer;
+
+        .topItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bottomItem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.detailsContainer {
+    padding: 0 .2rem;
+
+    .detailStatus {
+        align-items: center;
+        border-bottom: thin dashed #313843;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-bottom: .3rem;
+        padding-top: .16rem;
+        gap: .08rem;
+
+        span {
+            color: white
+        }
+    }
+
+    .detailInfo {
+        font-size: initial;
+        display: grid;
+        gap: .3rem;
+        margin-top: .2rem;
+
+        .entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .label {
+                font-size: .18rem;
+                color: #68707b;
+                cursor: pointer;
+            }
+
+            .info {
+                font-size: .18rem;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: .1rem;
+                color: white;
+            }
+        }
+    }
+}

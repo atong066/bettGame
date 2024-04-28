@@ -1,0 +1,403 @@
+.depostSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+}
+.depostSection .secondSection {
+  background-color: #1C1E23;
+  border-radius: 7px;
+  margin-bottom: 1.5px !important;
+}
+.depostSection .secondSection .supportTabs {
+  color: #fff;
+  font-weight: 600;
+}
+.depostSection .secondSection .MuiTabs-root button {
+  color: white;
+  text-transform: capitalize;
+}
+.depostSection .secondSection .MuiTabs-root button[aria-selected=true] {
+  color: #f0c059;
+  text-transform: capitalize;
+}
+.depostSection .secondSection .transferMainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0 !important;
+  gap: 15px;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  justify-items: stretch;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .bankCards {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-width: 6px;
+  height: 0.6rem;
+  display: flex;
+  padding: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #f0c059;
+  letter-spacing: 2px;
+  border: thin solid;
+  font-size: 18px;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .bankCards.active {
+  border: 2px solid;
+  border-color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .bankCards:hover {
+  border: 2px solid;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .checkContainer {
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .checkContainer .badge {
+  display: none;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .checkContainer .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .checkContainer .badge .checkIcon {
+  color: #874404;
+  rotate: -45deg;
+  right: 10px;
+}
+.depostSection .secondSection .transferMainContainer .cardContainer .checkContainer .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod {
+  display: flex;
+  flex-direction: column;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .details {
+  background-color: #282b32;
+  padding: 15px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .details .detailsLabel {
+  color: #fff;
+  font-style: italic;
+  font-size: 18px;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .details .detailsContent {
+  font-size: 19px;
+  font-weight: 600;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank {
+  display: flex;
+  flex-direction: column;
+  background-color: #282b32;
+  min-width: 22px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 2px solid;
+  border-color: #f0c059;
+  padding: 15px;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardName {
+  font-size: 22px;
+  font-weight: 600;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardBody .cardBox {
+  display: flex;
+  gap: 10px;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardBody .cardBox .cardLabel {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.18rem;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardBody .cardBox .cardContent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 0.18rem;
+  cursor: pointer;
+}
+.depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardBody .cardBox .cardContent .copyIcon {
+  width: 0.18rem;
+}
+mar .depostSection .secondSection .transferMainContainer .paymentMethod .paymentMethodDetails .crdBank .cardBody .cardBox .cardContent .copyIcon:active {
+  scale: 0.9;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .qrCodeLabelBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .qrCodeLabelBox .details {
+  background-color: #282b32;
+  padding: 15px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: #fff;
+  font-style: italic;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .qrCodeLabelBox .qrCodeLabel {
+  font-size: 0.14rem;
+  font-style: italic;
+  width: 100% !important;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .qrCodeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .qrCodeBox .qrCodeImage {
+  width: 3rem !important;
+  border-radius: 7px;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .paymentChannel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .paymentChannel .payName {
+  display: flex;
+  flex-direction: column;
+  background-color: #282b32;
+  width: 15px;
+  height: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: 2px solid;
+  border-color: #f0c059;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .amountValue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #282b32;
+  padding: 15px;
+  border: 1px solid;
+  border-color: rgba(240, 192, 89, 0.3333333333);
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 0.18rem;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .amountValue.active {
+  border: 2px solid;
+  border-color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .checkContainer {
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+  width: 100%;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .checkContainer .badge {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  padding: 3px;
+  display: none;
+  rotate: 45deg;
+  height: 50px;
+  width: 50px;
+  margin: -25px;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .checkContainer .badge.active {
+  background-color: #f0c059;
+  display: block;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .checkContainer .badge .checkIcon {
+  color: #874404;
+  rotate: -54deg;
+  right: 10px;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .depoAmountContainer .checkContainer .badge .MuiAvatar-root {
+  top: 11px !important;
+  right: 4px !important;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+  color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .qrCodeContainer .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+  color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .buttonContainer {
+  text-align: center;
+}
+.depostSection .secondSection .transferMainContainer .buttonContainer .configButton {
+  border-radius: 6px;
+  border-radius: 0.1rem;
+  font-size: 0.2rem;
+  height: 0.55rem;
+  text-align: center;
+  width: 4.4rem;
+  text-transform: capitalize;
+}
+.depostSection .secondSection .transferMainContainer .buttonContainers .configButtons {
+  width: 7px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.depostSection .secondSection .transferMainContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 14px;
+}
+.depostSection .secondSection .transferMainContainer .inputContainer .details {
+  background-color: #282b32;
+  padding: 15px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: #fff;
+  font-style: italic;
+}
+.depostSection .secondSection .transferMainContainer .inputContainer .buttonContainers .configButtons {
+  width: 7px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.depostSection .secondSection .transferMainContainer .inputContainer .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root:hover {
+  color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .inputContainer .css-10drtbx-MuiButtonBase-root-MuiCheckbox-root {
+  color: #f0c059;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .details {
+  background-color: #282b32;
+  padding: 15px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  color: #fff;
+  font-style: italic;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .minNote {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #fff;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .minNote .noteLabelBox {
+  display: flex;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .minNote .noteLabelBox .noteLabel {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 16px;
+  font-style: italic;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .minNote .noteLabelBox .noteLabelContent {
+  margin-right: 3px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.depostSection .secondSection .transferMainContainer .notesContainer .minNote .noteLabelBox .miniCurrency {
+  font-size: 16px;
+  font-weight: 600;
+  color: #874404;
+}
+.depostSection .secondSection .transferMainContainer .noOnlineConfigContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.depostSection .secondSection .transferMainContainer .noOnlineConfigContainer .noConfigLabel {
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 22px;
+  padding: 0.4px;
+  width: 17px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  text-align: center;
+  border: 4px solid;
+  border-radius: 10px;
+}
+
+.onlineListContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.formController {
+  font-size: 0.14rem;
+}
+
+.accntActionsContainer {
+  padding: 0.15rem;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.vsremark {
+  font-size: 0.18rem;
+  color: #adb6c3;
+  word-break: break-all;
+}/*# sourceMappingURL=deposit.css.map */

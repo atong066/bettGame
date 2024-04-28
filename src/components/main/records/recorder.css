@@ -1,0 +1,11 @@
+.recorderMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.recorderMainContainer .recorderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+}/*# sourceMappingURL=recorder.css.map */

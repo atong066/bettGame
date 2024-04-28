@@ -1,0 +1,38 @@
+.tabContainers {
+  height: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.2rem;
+  margin-bottom: 0.04rem;
+  position: relative;
+}
+.tabContainers .search {
+  position: absolute;
+  right: -7rem;
+  cursor: pointer;
+}
+.tabContainers .search img {
+  height: 0.38rem;
+  width: 0.43rem;
+}
+.tabContainers .tabContent {
+  font-size: 0.2rem;
+  color: #adb6c3;
+  cursor: pointer;
+  position: relative;
+  height: 0.5rem;
+  padding-top: 0.04rem;
+  text-align: center;
+  line-height: 0.19rem;
+}
+.tabContainers .tabContent.active::after {
+  background-color: currentColor;
+  border-radius: 0.05rem;
+  bottom: -0.05rem;
+  content: "";
+  display: block;
+  height: 0.04rem;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}/*# sourceMappingURL=tabComponent.css.map */

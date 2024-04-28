@@ -1,0 +1,55 @@
+.securityMainContainer .securityMainContainerBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer {
+  background-color: #1c1e23;
+  border-radius: 0.1rem;
+  font-size: initial;
+  padding: 0px 0.2rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBoxCursor {
+  cursor: pointer !important;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: initial;
+  padding: 0.04rem;
+  height: 0.8rem;
+  border-bottom: 0.01rem solid #313843;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox .iconWLabelBox {
+  display: flex;
+  align-items: center;
+  font-size: initial;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox .iconWLabelBox .iconImage {
+  height: 0.25rem;
+  width: 0.25rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox .iconWLabelBox .iconLabel {
+  font-size: 0.2rem;
+  color: #fff;
+  margin-left: 0.16rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox .arrowBox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: -0.1rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBox .arrowBox .arrowLabel {
+  font-size: 0.2rem;
+  color: #68707B;
+  margin-right: 0.1rem;
+}
+.securityMainContainer .securityMainContainerBox .securityContainer .securityContentBoxLast {
+  border-bottom: none;
+}/*# sourceMappingURL=security.css.map */

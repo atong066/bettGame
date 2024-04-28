@@ -1,0 +1,8 @@
+.slider-container {
+  color: white;
+}
+.slider-container .box {
+  background-color: red;
+  height: 10vh;
+  width: 20vw;
+}/*# sourceMappingURL=reactCarousel.css.map */

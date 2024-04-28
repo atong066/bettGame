@@ -1,0 +1,212 @@
+.secureMainContainer {
+    display: flex;
+    justify-content: center;
+    background-color: #1c1e23;
+    border-radius: .1rem;
+    margin-bottom: .2rem;
+    padding: .2rem;
+
+    .secureContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 6rem;
+        width: 4.9rem;
+        padding-top: 0.1rem;
+        font-size: initial;
+        min-height: 6rem;
+        padding-bottom: 0.4rem;
+
+        .labelBox {
+            width: 100%;
+            font-size: initial;
+
+            .secureLabel {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                font-size: .2rem;
+                font-weight: 700;
+                justify-content: flex-start;
+                margin-bottom: 0.3rem;
+            }
+        }
+
+        .textFieldContainer {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: .4rem;
+            font-size: initial;
+
+            .passWordValidation {
+                display: none;
+                align-items: center;
+                min-height: .3rem;
+                margin-top: 0.05rem;
+
+                &.active {
+                    display: flex;
+                }
+
+                img {
+                    width: .18rem;
+                    height: .18rem;
+                    margin-right: .1rem;
+                }
+
+                span {
+                    font-size: .14rem;
+                    line-height: 1;
+                    color: #EA4E3D;
+                }
+            }
+
+            .emailValidation {
+                display: flex;
+                align-items: center;
+                min-height: .3rem;
+                margin-top: 0.05rem;
+                visibility: hidden;
+                opacity: 0;
+                margin-bottom: 0;
+                transition: visibility, margin-bottom 200ms, opacity 2s linear;
+
+                &.active {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-bottom: .3rem;
+                    transition: opacity, margin-bottom 200ms linear;
+                    
+                }
+
+                img {
+                    width: .18rem;
+                    height: .18rem;
+                    margin-right: .1rem;
+                }
+
+                span {
+                    font-size: .14rem;
+                    line-height: 1;
+                    color: #EA4E3D;
+                }
+            }
+
+            .inputContainerBox {
+                display: flex;
+                align-items: center;
+                border: .01rem solid;
+                border-color: #313843;
+                width: 100%;
+                padding: .05rem .1rem .05rem .1rem;
+                border-radius: .1rem;
+
+                .nameIconBox {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+
+                    .nameIcon {
+                        height: 0.3rem;
+                        width: 0.3rem;
+                    }
+
+                    .nameInput {
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        padding: 0 .1rem;
+                        height: .4rem;
+                        outline: none;
+                        font-size: .18rem;
+                        color: #fff;
+
+                    }
+
+                    .receiveCode {
+                        border: none;
+                        line-height: 1.5;
+                        text-transform: capitalize;
+                        width: fit-content;
+                        min-width: fit-content;
+                        padding: 0 .05rem 0;
+                        letter-spacing: normal;
+                        color: #f0c059;
+                        font-size: .18rem;
+                    }
+                }
+
+                &:has(input[type="text"]:focus) {
+                    border: 1px solid;
+                    border-color: #F0C059;
+                }
+            }
+        }
+
+        .addPhoneButton {
+            font-size: .2rem;
+            height: 0.55rem;
+            line-height: 1.2;
+            white-space: normal;
+            width: 1.8rem;
+            word-break: break-word;
+            text-transform: capitalize;
+            color: #874404;
+            border-radius: .1rem;
+        }
+
+        .hrDivLine {
+            width: 100%;
+            border-bottom: .01rem solid;
+            border-color: #313843;
+            margin-bottom: .2rem;
+            margin-top: .2rem;
+        }
+
+        .instructionBox {
+
+            .intructionTitleBox {
+                display: flex;
+                flex-direction: column;
+
+                .instructionTitle {
+                    font-size: .18rem;
+                    margin-bottom: .05rem;
+                    color: #fff;
+                    line-height: 1.5;
+                }
+
+                .instructionLabel {
+                    font-size: .16rem;
+                    color: #68707B;
+                    line-height: 1.5;
+                }
+            }
+
+            .instructionQRBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: .2rem 0 0 0;
+
+                .instructionQR {
+                    border-radius: .1rem;
+                }
+
+                .QRAuthenticateCopierClick {
+                    margin-top: .2rem;
+                    cursor: pointer;
+                    font-size: .18rem;
+                    color: #F0C059;
+                }
+            }
+        }
+
+        .instructionBoxLast {
+            margin-bottom: .2rem;
+        }
+    }
+}

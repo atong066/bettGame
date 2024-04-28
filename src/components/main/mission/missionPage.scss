@@ -1,0 +1,97 @@
+.buttonContainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    width: 1.3rem;
+
+    button {
+        display: -ms-flexbox;
+        display: flex;
+        width: 1.3rem;
+        background-color: transparent;
+        border: none;
+        border-radius: .1rems;
+        height: .6rem;
+        padding: 0 .1rem;
+        white-space: pre-wrap;
+        align-items: center;
+        cursor: pointer;
+        font-size: .2rem;
+        justify-content: center;
+        overflow: visible;
+        position: relative;
+        text-align: center;
+        word-break: break-word;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        span {
+            display: -webkit-box;
+            align-items: center;
+            margin-bottom: -1.64706px;
+            padding-bottom: 1.64706px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: currentColor;
+        }
+    }
+}
+
+.missaoContainer {
+    display: flex;
+    gap: .3rem;
+
+    .mainContainerMission {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+        width: 100%;
+
+        .missionContainer {
+            background-color: #1c1e23;
+            padding: .2rem;
+            border-radius: .1rem;
+            justify-content: space-between;
+
+            .containerLeft {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: .6rem;
+                }
+
+                .missDetailsContainer {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .1rem;
+                }
+            }
+
+            .containerRight {
+                display: flex;
+                align-items: center;
+                a {
+                    align-items: center;
+                    background-color: #f0c059;
+                    color: #874404;
+                    border: none;
+                    border-radius: .1rem;
+                    display: -ms-flexbox;
+                    display: flex;
+                    font-size: .16rem;
+                    height: .4rem;
+                    justify-content: center;
+                    line-height: 1.1;
+                    padding: 0 !important;
+                    white-space: pre-wrap;
+                    width: 1rem;
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}

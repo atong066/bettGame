@@ -1,0 +1,49 @@
+.turnAlertMainContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .turnAlertBack {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        .backImage {
+            position: relative;
+        }
+
+        .labelAndPrizeImageBox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            // height: 100%;
+            padding: .2rem;
+            gap: .2rem;
+
+            .prizeBox {
+                text-align: center;
+                position: relative;
+                // margin-top: .1rem;
+                font-size: initial;
+                .prizeLabel {
+                    font-size: .22rem;
+                    color: #fff;
+                }
+            }
+
+            .prizeImageBox {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                position: relative;
+                margin: auto;
+            }
+        }
+    }
+
+
+}

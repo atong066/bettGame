@@ -1,0 +1,66 @@
+.recordMainContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    .recordContainer {
+        background-color: #1C1E23;
+        padding: .2rem;
+        border-radius: .1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+
+        .topBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .labelBox {
+                display: flex;
+                gap: 5px;
+                align-items: baseline;
+
+                .labelTitle {
+                    font-size: 18px;
+                    color: #fff;
+                }
+
+                .labelContent {
+                    font-size: 18px;
+                    color: #f0c059;
+                }
+
+                .collectAllButton {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.recordPageBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.1rem;
+    .labelPageBox {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-align: left;
+
+        .pageBoxLabel {
+            font-size: .2rem;
+            color: #68707b;
+        }
+
+        .pageBoxContent {
+            font-size: .2rem;
+            color: #ADB6C3;
+        }
+    }
+
+    .pageBoxLabel1 {
+        width: 2rem;
+    }
+}

@@ -1,0 +1,112 @@
+.dailyMainContainer {
+    height: 7.15rem;
+    overflow-y: auto;
+    padding: 0 0.3rem;
+
+    .dailyContainer {
+        display: flex;
+        align-items: center;
+        border-bottom: 0.01rem solid #313843;
+        justify-content: space-between;
+        padding: 0.15rem 0;
+
+        .imageLabelBox {
+            display: flex;
+            align-items: center;
+
+            .scoreImage {
+                width: 0.5rem;
+                height: 0.5rem;
+                margin-right: 0.2rem;
+            }
+
+            .labelBox {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .lableTitle {
+                    font-size: .18rem;
+                    color: #68707B;
+                    line-height: .27rem;
+                    text-align: left;
+                }
+            }
+        }
+
+        .scoreBox {
+            display: flex;
+            flex-direction: column;
+            font-size: initial;
+            text-align: end;
+
+            .scoreLabel {
+                color: #FFAA09;
+                font-size: .18rem;
+                text-align: end;
+            }
+        }
+    }
+
+    .marqueeContainer {
+        display: inline-block;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        animation: marquee 250s linear infinite;
+
+        .dailyContainer {
+            display: flex;
+            align-items: center;
+            border-bottom: 0.01rem solid #313843;
+            justify-content: space-between;
+            padding: 0.15rem 0;
+
+            .imageLabelBox {
+                display: flex;
+                align-items: center;
+
+                .scoreImage {
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    margin-right: 0.2rem;
+                }
+
+                .labelBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .lableTitle {
+                        font-size: .18rem;
+                        color: #68707B;
+                        line-height: .27rem;
+                        text-align: end;
+                    }
+                }
+            }
+
+            .scoreBox {
+                font-size: initial;
+                text-align: end;
+
+                .scoreLabel {
+                    color: #FFAA09;
+                    font-size: .18rem;
+                    text-align: end;
+                }
+            }
+        }
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}

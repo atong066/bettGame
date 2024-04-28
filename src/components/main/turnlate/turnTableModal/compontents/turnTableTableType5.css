@@ -1,0 +1,258 @@
+.dailyMainContainerType5 {
+  height: 3.1rem;
+  overflow-y: auto;
+  padding: 0 0.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.dailyMainContainerType5 .dailyContainer {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.01rem solid #313843;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+}
+.dailyMainContainerType5 .dailyContainer .imageLabelBox {
+  display: flex;
+  align-items: center;
+}
+.dailyMainContainerType5 .dailyContainer .imageLabelBox .scoreImage {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.2rem;
+}
+.dailyMainContainerType5 .dailyContainer .imageLabelBox .labelBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dailyMainContainerType5 .dailyContainer .imageLabelBox .labelBox .lableTitle {
+  font-size: 0.18rem;
+  color: #68707B;
+  line-height: normal;
+  text-align: left;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.dailyMainContainerType5 .dailyContainer .scoreBox {
+  font-size: initial;
+  text-align: end;
+}
+.dailyMainContainerType5 .dailyContainer .scoreBox .scoreLabel {
+  color: #04BE02;
+  font-size: 0.18rem;
+  text-align: end;
+}
+.dailyMainContainerType5 .marqueeContainer {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: marquee 90s linear infinite;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer {
+  display: flex;
+  align-items: center;
+  border-bottom: 0.01rem solid #313843;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .imageLabelBox {
+  display: flex;
+  align-items: center;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .imageLabelBox .scoreImage {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.2rem;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .imageLabelBox .labelBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .imageLabelBox .labelBox .lableTitle {
+  font-size: 0.18rem;
+  color: #68707B;
+  line-height: normal;
+  text-align: left;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .scoreBox {
+  font-size: initial;
+  text-align: end;
+}
+.dailyMainContainerType5 .marqueeContainer .dailyContainer .scoreBox .scoreLabel {
+  color: #04BE02;
+  font-size: 0.18rem;
+  text-align: end;
+}
+
+.shareMainContainerModal {
+  padding: 0.05rem 0.25rem 0.25rem 0.25rem;
+  font-size: initial;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.shareMainContainerModal .socialMedaPlatformContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.1rem;
+}
+.shareMainContainerModal .socialMedaPlatformContainer .socialMediaBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.08rem;
+  cursor: pointer;
+}
+.shareMainContainerModal .socialMedaPlatformContainer .socialMediaBox img {
+  width: 0.4rem;
+}
+.shareMainContainerModal .socialMedaPlatformContainer .socialMediaBox .linksLabel {
+  color: #fff;
+  font-size: 0.14rem;
+  cursor: pointer;
+}
+.shareMainContainerModal .linkBoxContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.15rem;
+  gap: 0.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.shareMainContainerModal .linkBoxContainer .linkBox {
+  display: flex;
+  align-items: center;
+  background-color: #0046af;
+  border-radius: 0.05rem;
+  padding: 0.08rem;
+  width: 3.45rem;
+  height: 0.4rem;
+}
+.shareMainContainerModal .linkBoxContainer .linkBox .linkLabel {
+  font-size: 0.17rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.shareMainContainerModal .linkBoxContainer .copyBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0046af;
+  border-radius: 0.05rem;
+  padding: 0.08rem;
+  height: 0.4rem;
+  width: 0.4rem;
+  cursor: pointer;
+}
+.shareMainContainerModal .linkBoxContainer .copyBox img {
+  width: 0.2rem;
+}
+
+.withdrawMainContainerBox {
+  font-size: initial;
+  padding: 0 0.2rem 0.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.withdrawMainContainerBox .titleMoneyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  font-size: initial;
+  margin-top: 0.1rem;
+}
+.withdrawMainContainerBox .titleMoneyBox .titleLabel {
+  font-size: 0.14rem;
+  color: #ffc700;
+}
+.withdrawMainContainerBox .titleMoneyBox .titleMoney {
+  font-size: 0.4rem;
+  font-weight: 600;
+  color: #ffc700;
+}
+.withdrawMainContainerBox .mapContainerBox {
+  display: flex;
+  flex-direction: column;
+  font-size: initial;
+  background-color: #131a26;
+  padding: 0.2rem 0.1rem 0.2rem;
+  border-radius: 0.1rem;
+  margin-top: 0.1rem;
+  gap: 0.2rem;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  position: relative;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .divLine {
+  position: absolute;
+  border-left: thin solid;
+  border-color: #8190a3;
+  height: 0.35rem;
+  bottom: -29px;
+  left: 7px;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .divLine .dotBox {
+  background-color: #8190a3;
+  width: 0.05rem;
+  height: 0.05rem;
+  border-radius: 0.05rem;
+  position: absolute;
+  bottom: -2px;
+  left: -0.024rem;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .divLine.active {
+  border-color: #1989fa;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .imageBox {
+  display: none;
+  align-items: center;
+  width: 0.15rem;
+  position: absolute;
+  left: 0;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .imageBox .mapImage {
+  width: 0.15rem;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .imageBox.active {
+  display: flex;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .mapLabel {
+  font-size: 0.15rem;
+  color: #8190a3;
+  margin-left: 0.25rem;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .mapLabel .mapMoney {
+  font-size: 0.15rem;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .mapLabel .mapMoney.active {
+  color: #FFAA09;
+}
+.withdrawMainContainerBox .mapContainerBox .mapListBox .mapLabel.active {
+  color: #1989fa;
+}
+.withdrawMainContainerBox .conVideButton {
+  height: 0.4rem;
+  font-size: 0.15rem;
+  text-transform: capitalize;
+  width: 100%;
+  border-radius: 0.06rem;
+  margin-top: 0.2rem;
+}/*# sourceMappingURL=turnTableTableType5.css.map */

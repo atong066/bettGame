@@ -1,0 +1,84 @@
+.bonusPage {
+  color: #fff;
+  padding: 2rem;
+  font-family: "Arial", sans-serif;
+}
+.bonusPage .bonusHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.bonusPage .bonusHeader .returnButton {
+  background-color: #444;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.bonusPage .bonusHeader .returnButton:hover {
+  background-color: #555;
+}
+.bonusPage .bonusHeader .statusDropdown select {
+  background-color: #444;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+}
+.bonusPage .bonusHeader .headerRight {
+  display: flex;
+  align-items: center;
+}
+.bonusPage .bonusHeader .headerRight .collectButton,
+.bonusPage .bonusHeader .headerRight .collectAllButton {
+  background-color: #f8e825;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.bonusPage .bonusHeader .headerRight .collectButton:hover,
+.bonusPage .bonusHeader .headerRight .collectAllButton:hover {
+  background-color: #dcd00f;
+}
+.bonusPage .bonusHeader .headerRight .bonusAmount {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+}
+.bonusPage .bonusContent {
+  border-radius: 8px;
+  padding: 1rem;
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bonusPage .bonusContent .noRecords {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+.bonusPage .bonusTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.bonusPage .bonusTable th, .bonusPage .bonusTable td {
+  border: 1px solid #555;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.bonusPage .bonusTable th {
+  background-color: #333;
+}
+.bonusPage .bonusTable tr:nth-child(odd) {
+  background-color: #262626;
+}
+.bonusPage .bonusTable tr:hover {
+  background-color: #333;
+}
+.bonusPage .noRecords {
+  font-size: 2rem;
+  opacity: 0.5;
+}/*# sourceMappingURL=bonus.css.map */
